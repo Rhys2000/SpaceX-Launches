@@ -15,11 +15,26 @@ struct Customer {
 struct Payload {
     var payloadName: String = ""
     var payloadAbbreviation: String = ""
-    var payloadWeight: Int = 0
+    var payloadDescription: String = ""
+    var payloadWeight: Int = 0 //Written in kilograms
     var numberOfPayloads: Int = 0
+    var payloadInstruments: [ScientificInstrument] = []
+}
+
+struct ScientificInstrument {
+    var instrumentName: String = ""
+    var instrumentAbbreviation: String = ""
+    var instrumentDescription: String = ""
+}
+
+struct OrbitalParameters {
+    var perigee: Int = 0
+    var apogee: Int = 0
+    var inclination: Double = 0.0
 }
 
 struct SpaceXLaunch {
+    var launchNumber: Int = 0
     var launchName: String = ""
     var alternativeLaunchName: String = ""
     var launchDateAndTime: String = "" //Written in ISO8601 format (2022-08-04T23:08:00+0000)
@@ -27,7 +42,29 @@ struct SpaceXLaunch {
     var launchProviderAbbreviation: String = "SpaceX"
     var launchCustomers: [Customer] = []
     var launchPayloads: [Payload] = []
-    var totalPayloadWeight: Int = 0
+    var rocketName: String = ""
+    var rocketVariant: String = ""
+    var boosterNumber: String = "" //Cloud or should be turned into a dictionary with variable below
+    var boosterFlightNumber: Int = 0
+    var launchPadName: String = ""
+    var launchPadAbbreviation: String = ""
+    var launchSiteName: String = "" //Should become an enum but works for now
+    var launchSiteAbbreviation: String = ""
+    var stateName: String = ""
+    var countryName: String = ""
+    var orbitalDestination: String = "" //Could also be a enum
+    var orbitalMetrics: OrbitalParameters = OrbitalParameters()
+    var recoveryAttempted: Bool = true
+    var marineAssets: String = "" //Also should be an enum
+    
+    //A calculated variable based on the total weight of all Payloads in the launchPayloads variable.
+    var totalPayloadWeight: Int {
+        var totalWeight: Int = 0
+        for payload in launchPayloads {
+            totalWeight += payload.payloadWeight
+        }
+        return totalWeight
+    }
 }
 
 class ViewController: UIViewController {
@@ -38,6 +75,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var Customers: UILabel!
     @IBOutlet weak var Payload: UILabel!
     @IBOutlet weak var Countdown: UILabel!
+    @IBOutlet weak var Address: UILabel!
     
     var timer = Timer()
     var tempDate = Date()
@@ -47,14 +85,12 @@ class ViewController: UIViewController {
         var launch = SpaceXLaunch()
         launch.launchName = "KPLO"
         launch.alternativeLaunchName = "Korean Pathfinder Lunar Orbiter"
-        //launch.launchCustomers = ["Korea Aerospace Research Institute (KARI)", "National Aeronautics and Space Administration (NASA)"]
-        //launch.launchPayloads = ["Korean Pathfinder Lunar Orbiter"]
         
         let missionName = launch.launchName + " (" + launch.alternativeLaunchName + ")"
         ExpectedUTC.text = missionName
         ExpectedUTC.adjustsFontSizeToFitWidth = true
         
-        let isoDate = "2022-08-06T23:08:00+0000"
+        let isoDate = "2022-08-07T23:08:00+0000"
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
@@ -134,14 +170,5 @@ extension Date {
     static func - (lhs: Date, rhs: Date) -> TimeInterval {
         return lhs.timeIntervalSinceReferenceDate - rhs.timeIntervalSinceReferenceDate
     }
-}
-
-extension TimeInterval {
-    func asMinutes() -> Double { return self / (60.0) }
-    func asHours()   -> Double { return self / (60.0 * 60.0) }
-    func asDays()    -> Double { return self / (60.0 * 60.0 * 24.0) }
-    func asWeeks()   -> Double { return self / (60.0 * 60.0 * 24.0 * 7.0) }
-    func asMonths()  -> Double { return self / (60.0 * 60.0 * 24.0 * 30.4369) }
-    func asYears()   -> Double { return self / (60.0 * 60.0 * 24.0 * 365.2422) }
 }
 

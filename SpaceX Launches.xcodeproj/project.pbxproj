@@ -17,6 +17,7 @@
 		904079AC289C49D300D967F9 /* SpaceX_LaunchesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904079AB289C49D300D967F9 /* SpaceX_LaunchesTests.swift */; };
 		904079B6289C49D300D967F9 /* SpaceX_LaunchesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904079B5289C49D300D967F9 /* SpaceX_LaunchesUITests.swift */; };
 		904079B8289C49D300D967F9 /* SpaceX_LaunchesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904079B7289C49D300D967F9 /* SpaceX_LaunchesUITestsLaunchTests.swift */; };
+		904079C528A045E400D967F9 /* launches.json in Resources */ = {isa = PBXBuildFile; fileRef = 904079C428A045E400D967F9 /* launches.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		904079B1289C49D300D967F9 /* SpaceX LaunchesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SpaceX LaunchesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		904079B5289C49D300D967F9 /* SpaceX_LaunchesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceX_LaunchesUITests.swift; sourceTree = "<group>"; };
 		904079B7289C49D300D967F9 /* SpaceX_LaunchesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceX_LaunchesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		904079C428A045E400D967F9 /* launches.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = launches.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				90407991289C49D100D967F9 /* AppDelegate.swift */,
 				90407993289C49D100D967F9 /* SceneDelegate.swift */,
 				90407995289C49D100D967F9 /* ViewController.swift */,
+				904079C428A045E400D967F9 /* launches.json */,
 				90407997289C49D100D967F9 /* Main.storyboard */,
 				9040799D289C49D300D967F9 /* Assets.xcassets */,
 				9040799F289C49D300D967F9 /* LaunchScreen.storyboard */,
@@ -234,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				904079C528A045E400D967F9 /* launches.json in Resources */,
 				904079A1289C49D300D967F9 /* LaunchScreen.storyboard in Resources */,
 				9040799E289C49D300D967F9 /* Assets.xcassets in Resources */,
 				90407999289C49D100D967F9 /* Main.storyboard in Resources */,
