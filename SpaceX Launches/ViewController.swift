@@ -118,25 +118,25 @@ class ViewController: UIViewController {
         Actual.text = rocketProvider
         Actual.adjustsFontSizeToFitWidth = true
         
-        var missionCustomers: String = ""
-        for customer in launch.launchCustomers{
-            //missionCustomers += customer + ", \n"
-        }
-        Customers.text = missionCustomers
-        let customersHeight = Customers.optimalHeight
-        Customers.frame = CGRect(x: Customers.frame.origin.x, y: Customers.frame.origin.y, width: Customers.frame.width, height: customersHeight)
-        Customers.backgroundColor = UIColor.yellow
-        Customers.numberOfLines = 0
-        
-        var missionPayloads: String = ""
-        for payload in launch.launchPayloads{
-            //missionPayloads += payload + ", \n"
-        }
-        Payload.text = missionPayloads
-        let payloadsHeight = Customers.optimalHeight
-        Payload.frame = CGRect(x: Payload.frame.origin.x, y: Payload.frame.origin.y, width: Payload.frame.width, height: payloadsHeight)
-        Payload.backgroundColor = UIColor.green
-        Payload.numberOfLines = 0
+//        var missionCustomers: String = ""
+//        for customer in launch.launchCustomers{
+//            //missionCustomers += customer + ", \n"
+//        }
+//        Customers.text = missionCustomers
+//        let customersHeight = Customers.optimalHeight
+//        Customers.frame = CGRect(x: Customers.frame.origin.x, y: Customers.frame.origin.y, width: Customers.frame.width, height: customersHeight)
+//        Customers.backgroundColor = UIColor.yellow
+//        Customers.numberOfLines = 0
+//        
+//        var missionPayloads: String = ""
+//        for payload in launch.launchPayloads{
+//            //missionPayloads += payload + ", \n"
+//        }
+//        Payload.text = missionPayloads
+//        let payloadsHeight = Customers.optimalHeight
+//        Payload.frame = CGRect(x: Payload.frame.origin.x, y: Payload.frame.origin.y, width: Payload.frame.width, height: payloadsHeight)
+//        Payload.backgroundColor = UIColor.green
+//        Payload.numberOfLines = 0
         
         self.timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { [self] _ in updateTime() })
     }
@@ -166,9 +166,9 @@ extension UILabel {
     }
 }
 
-extension Date {
-    static func - (lhs: Date, rhs: Date) -> TimeInterval {
-        return lhs.timeIntervalSinceReferenceDate - rhs.timeIntervalSinceReferenceDate
-    }
-}
+//extension Date {
+//    static func - (lhs: Date, rhs: Date) -> TimeInterval {
+//        return lhs.timeIntervalSinceReferenceDate - rhs.timeIntervalSinceReferenceDate
+//    }
+//}
 
