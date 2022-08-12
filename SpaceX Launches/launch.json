@@ -1,0 +1,26 @@
+[
+    {
+        "launchID" : 1,
+        "launchName" : "Falcon 1 Flight 1",
+        "alternativeLaunchName" : "Falcon First Flight",
+        "abbreviatedLaunchName" : "",
+        "liftOffTime" : "2006-03-24T22:30:00+0000",
+        "missionOutcome" : "Failure",
+    },
+    {
+        "launchID" : 2,
+        "launchName" : "Falcon 1 Flight 2",
+        "alternativeLaunchName" : "Falcon Demo 2",
+        "abbreviatedLaunchName" : "",
+        "liftOffTime" : "2007-03-21T01:10:00+0000",
+        "missionOutcome" : "Failure",
+    },
+    {
+        "launchID" : ,
+        "launchName" : "",
+        "alternativeLaunchName" : "",
+        "abbreviatedLaunchName" : "",
+        "liftOffTime" : "yyyy-mm-ddTMM:hh:ss+0000",
+        "missionOutcome" : "",
+    },
+]

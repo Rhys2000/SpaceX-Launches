@@ -8,24 +8,41 @@
 import Foundation
 import UIKit
 
-enum Outcome: String {
-    
-    case success = "Mission Success"
-    case failure = "Mission Failure"
-    case upcoming = "Upcoming Mission"
-    case unknown = "Unknown Outcome"
+enum Outcome: String, Codable {
+    case success = "Success"
+    case failure = "Failure"
+    case upcoming = "Upcoming"
+    case unknown = "Unknown"
 }
 
-struct Launch {
+struct Launch: Codable {
     let launchID: Int
     let launchName: String
+    let alternativeLaunchName: String
+    let abbreviatedLaunchName: String
     let liftOffTime: String
     let missionOutcome: Outcome
 }
 
-let launches: [Launch] = [
-    Launch(launchID: 1, launchName: "KPLO", liftOffTime: "2022-08-14T23:08:00+0000", missionOutcome: .success),
-    Launch(launchID: 2, launchName: "DSCOVR", liftOffTime: "2022-08-11T23:08:00+0000", missionOutcome: .success),
-    Launch(launchID: 3, launchName: "TESS", liftOffTime: "2022-08-03T23:08:00+0000", missionOutcome: .failure),
+public class LaunchLoader {
+    @Published var allLaunches = [Launch]()
     
-]
+    init() {
+        loadLaunches()
+    }
+    
+    func loadLaunches() {
+        if let fileLocation = Bundle.main.url(forResource: "launch", withExtension: "json") {
+            do {
+                let data = try Data(contentsOf: fileLocation)
+                let jsonDecoder = JSONDecoder()
+                let dataFromJson = try jsonDecoder.decode([Launch].self, from: data)
+                
+                self.allLaunches = dataFromJson
+                
+            } catch {
+                print(error)
+            }
+        }
+    }
+}

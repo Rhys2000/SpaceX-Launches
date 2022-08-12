@@ -11,6 +11,8 @@ class LaunchViewController: UIViewController {
 
     @IBOutlet weak var launchCollectionView: UICollectionView!
     
+    let launchData = LaunchLoader().allLaunches
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,12 +26,12 @@ class LaunchViewController: UIViewController {
 
 extension LaunchViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        launches.count
+        launchData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = launchCollectionView.dequeueReusableCell(withReuseIdentifier: "LaunchCollectionViewCell", for: indexPath) as! LaunchCollectionViewCell
-        cell.createLaunchPreview(with: launches[indexPath.row])
+        cell.createLaunchPreview(with: launchData[indexPath.row])
         return cell
     }
 }
@@ -43,7 +45,7 @@ extension LaunchViewController: UICollectionViewDelegateFlowLayout {
 extension LaunchViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "LaunchDetailViewController") as? LaunchDetailViewController
-        vc?.currentLaunch = launches[indexPath.row]
+        vc?.currentLaunch = launchData[indexPath.row]
         self.navigationController?.pushViewController(vc!, animated: true)
     }
 }
