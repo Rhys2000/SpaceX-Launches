@@ -49,6 +49,7 @@ class LaunchCollectionViewCell: UICollectionViewCell {
         missionName.layer.cornerRadius = 5
         missionName.layer.masksToBounds = true
         missionName.textAlignment = .center
+        missionName.layer.opacity = 0.6
         
         //launchCountdown
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
@@ -90,6 +91,7 @@ class LaunchCollectionViewCell: UICollectionViewCell {
         launchCountdown.textColor = .darkText
         launchCountdown.adjustsFontSizeToFitWidth = true
         launchCountdown.textAlignment = .center
+        launchCountdown.layer.opacity = 0.6
     }
 }
 
