@@ -20,6 +20,7 @@ struct Launch: Codable {
     let launchName: String
     let alternativeLaunchName: String
     let abbreviatedLaunchName: String
+    let alternativeAbbreviatedLaunchName: String
     let liftOffTime: String
     let missionOutcome: Outcome
 }
