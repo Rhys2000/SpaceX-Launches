@@ -211,7 +211,7 @@
                     <navigationItem key="navigationItem" title="Upcoming Launches" id="Jc0-x8-q36"/>
                     <connections>
                         <outlet property="launchCollectionView" destination="rxu-Vg-lwM" id="nCt-8h-fhL"/>
-                        <segue destination="wLg-OH-DoM" kind="show" id="ooV-cC-wwf"/>
+                        <segue destination="wLg-OH-DoM" kind="show" identifier="showDetailLaunchViewController" id="ooV-cC-wwf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5P-BB-C4e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
