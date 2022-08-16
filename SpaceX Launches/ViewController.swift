@@ -7,11 +7,6 @@
 
 import UIKit
 
-struct Customer {
-    var customerName: String = ""
-    var customerAbbreviation: String = ""
-}
-
 struct Payload {
     var payloadName: String = ""
     var payloadAbbreviation: String = ""

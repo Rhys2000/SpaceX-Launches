@@ -15,6 +15,13 @@ enum Outcome: String, Codable {
     case unknown = "Unknown"
 }
 
+struct Customer: Codable {
+    let customerName: String
+    let customerAbbreviation: String
+    let customerWikipediaPageLink: String
+    let customerWebsiteLink: String
+}
+
 struct Launch: Codable {
     let launchID: Int
     let launchName: String
