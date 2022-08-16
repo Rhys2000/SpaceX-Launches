@@ -6,7 +6,6 @@
         "abbreviatedLaunchName" : "",
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2006-03-24T22:30:00+0000",
-        "customerArray" : [ {""}, {""}, ],
         "missionOutcome" : "Failure",
     },
     {
