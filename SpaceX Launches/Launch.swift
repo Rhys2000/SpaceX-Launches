@@ -15,6 +15,20 @@ enum Outcome: String, Codable {
     case unknown = "Unknown"
 }
 
+enum Rocket: String, Codable {
+    case falcon1 = "Falcon 1"
+    case falcon9 = "Falcon 9"
+    case falconHeavy = "Falcon Heavy"
+}
+
+enum RocketVariant: String, Codable {
+    case block1 = "Block 1"
+    case block2 = "Block 2"
+    case block3 = "Block 3"
+    case block4 = "Block 4"
+    case block5 = "Block 5"
+}
+
 struct Customer: Codable {
     let customerName: String
     let customerAbbreviation: String
@@ -29,6 +43,8 @@ struct Launch: Codable {
     let abbreviatedLaunchName: String
     let alternativeAbbreviatedLaunchName: String
     let liftOffTime: String
+    let launchVehicle: Rocket
+    let launchVehicleVariant: RocketVariant
     //let customerArray: [String]
     let missionOutcome: Outcome
 }
