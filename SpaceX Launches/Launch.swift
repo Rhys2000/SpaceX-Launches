@@ -45,7 +45,7 @@ struct Launch: Codable {
     let liftOffTime: String
     let launchVehicle: Rocket
     let launchVehicleVariant: RocketVariant
-    //let customerArray: [String]
+    //let customerArray: [String] figure out next important for rideshare missions
     let missionOutcome: Outcome
 }
 
