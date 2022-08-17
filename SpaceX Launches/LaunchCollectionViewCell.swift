@@ -54,7 +54,6 @@ class LaunchCollectionViewCell: UICollectionViewCell {
         //launchCountdown
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
         dateFormatter.locale = Locale(identifier: "en-US")
-        print(currentLaunch.liftOffTime)
         let userTimezoneLaunchTime = dateFormatter.date(from: currentLaunch.liftOffTime)!
         refreshCountdownClock()
         self.countdownTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { _ in refreshCountdownClock() })

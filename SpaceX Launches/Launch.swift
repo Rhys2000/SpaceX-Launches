@@ -27,6 +27,7 @@ enum RocketVariant: String, Codable {
     case block3 = "Block 3"
     case block4 = "Block 4"
     case block5 = "Block 5"
+    case noVariant = "NA"
 }
 
 struct Customer: Codable {

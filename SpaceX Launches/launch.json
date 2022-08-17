@@ -7,7 +7,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2006-03-24T22:30:00+0000",
         "launchVehicle" : "Falcon 1",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "NA",
         "missionOutcome" : "Failure",
     },
     {
@@ -18,7 +18,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2007-03-21T01:10:00+0000",
         "launchVehicle" : "Falcon 1",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "NA",
         "missionOutcome" : "Failure",
     },
     {
@@ -29,7 +29,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2008-08-03T03:34:00+0000",
         "launchVehicle" : "Falcon 1",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "NA",
         "missionOutcome" : "Failure",
     },
     {
@@ -40,7 +40,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2008-09-28T23:15:00+0000",
         "launchVehicle" : "Falcon 1",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "NA",
         "missionOutcome" : "Success",
     },
     {
@@ -51,7 +51,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2009-07-14T03:35:00+0000",
         "launchVehicle" : "Falcon 1",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "NA",
         "missionOutcome" : "Success",
     },
     {
@@ -62,7 +62,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2010-06-04T18:45:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 1",
         "missionOutcome" : "Success",
     },
     {
@@ -73,7 +73,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2010-12-08T15:43:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 1",
         "missionOutcome" : "Success",
     },
     {
@@ -84,7 +84,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2012-05-22T07:44:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 1",
         "missionOutcome" : "Success",
     },
     {
@@ -95,7 +95,7 @@
         "alternativeAbbreviatedLaunchName" : "SpX-1",
         "liftOffTime" : "2012-10-08T00:35:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 1",
         "missionOutcome" : "Success",
     },
     {
@@ -106,7 +106,7 @@
         "alternativeAbbreviatedLaunchName" : "SpX-2",
         "liftOffTime" : "2013-03-01T15:10:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 1",
         "missionOutcome" : "Success",
     },
     {
@@ -117,7 +117,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2013-09-29T16:00:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 2",
         "missionOutcome" : "Success",
     },
     {
@@ -128,7 +128,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2013-12-03T22:41:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 2",
         "missionOutcome" : "Success",
     },
     {
@@ -139,7 +139,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2014-01-06T22:06:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 2",
         "missionOutcome" : "Success",
     },
     {
@@ -150,7 +150,7 @@
         "alternativeAbbreviatedLaunchName" : "SpX-3",
         "liftOffTime" : "2014-04-18T19:25:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 2",
         "missionOutcome" : "Success",
     },
     {
@@ -161,7 +161,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2014-07-14T15:15:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 2",
         "missionOutcome" : "Success",
     },
     {
@@ -172,7 +172,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2014-08-05T08:00:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 2",
         "missionOutcome" : "Success",
     },
     {
@@ -183,7 +183,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2014-09-07T05:00:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 2",
         "missionOutcome" : "Success",
     },
     {
@@ -194,7 +194,7 @@
         "alternativeAbbreviatedLaunchName" : "SpX-4",
         "liftOffTime" : "2014-09-21T05:52:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 2",
         "missionOutcome" : "Success",
     },
     {
@@ -205,7 +205,7 @@
         "alternativeAbbreviatedLaunchName" : "SpX-5",
         "liftOffTime" : "2015-01-10T09:47:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 2",
         "missionOutcome" : "Success",
     },
     {
@@ -216,7 +216,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2015-02-11T23:03:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 2",
         "missionOutcome" : "Success",
     },
     {
@@ -227,7 +227,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2015-03-02T03:50:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 2",
         "missionOutcome" : "Success",
     },
     {
@@ -238,7 +238,7 @@
         "alternativeAbbreviatedLaunchName" : "SpX-6",
         "liftOffTime" : "2015-04-14T20:10:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 2",
         "missionOutcome" : "Success",
     },
     {
@@ -249,7 +249,7 @@
         "alternativeAbbreviatedLaunchName" : "Thales Mission",
         "liftOffTime" : "2015-04-27T23:03:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 2",
         "missionOutcome" : "Success",
     },
     {
@@ -260,7 +260,7 @@
         "alternativeAbbreviatedLaunchName" : "SpX-7",
         "liftOffTime" : "2015-06-28T14:21:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 2",
         "missionOutcome" : "Failure",
     },
     {
@@ -271,7 +271,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2015-12-22T01:29:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 3",
         "missionOutcome" : "Success",
     },
     {
@@ -282,7 +282,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2016-01-17T18:42:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 2",
         "missionOutcome" : "Success",
     },
     {
@@ -293,7 +293,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2016-03-04T23:35:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 3",
         "missionOutcome" : "Success",
     },
     {
@@ -304,7 +304,7 @@
         "alternativeAbbreviatedLaunchName" : "SpX-8",
         "liftOffTime" : "2016-04-08T20:43:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 3",
         "missionOutcome" : "Success",
     },
     {
@@ -315,7 +315,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2016-05-06T05:21:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 3",
         "missionOutcome" : "Success",
     },
     {
@@ -326,7 +326,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2016-05-27T21:39:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 3",
         "missionOutcome" : "Success",
     },
     {
@@ -337,7 +337,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2016-06-15T14:29:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 3",
         "missionOutcome" : "Success",
     },
     {
@@ -348,7 +348,7 @@
         "alternativeAbbreviatedLaunchName" : "SpX-9",
         "liftOffTime" : "2016-07-18T04:45:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 3",
         "missionOutcome" : "Success",
     },
     {
@@ -359,7 +359,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2016-08-14T05:26:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 3",
         "missionOutcome" : "Success",
     },
     {
@@ -370,7 +370,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2016-09-03T07:00:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 3",
         "missionOutcome" : "Failure",
     },
     {
@@ -381,7 +381,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2017-01-14T17:54:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 3",
         "missionOutcome" : "Success",
     },
     {
@@ -392,7 +392,7 @@
         "alternativeAbbreviatedLaunchName" : "SpX-10",
         "liftOffTime" : "2017-02-19T14:39:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 3",
         "missionOutcome" : "Success",
     },
     {
@@ -403,7 +403,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2017-03-16T06:00:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 3",
         "missionOutcome" : "Success",
     },
     {
@@ -414,7 +414,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2017-03-30T22:37:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 3",
         "missionOutcome" : "Success",
     },
     {
@@ -425,7 +425,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2017-05-01T11:15:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 3",
         "missionOutcome" : "Success",
     },
     {
@@ -436,7 +436,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2017-05-15T23:21:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 3",
         "missionOutcome" : "Success",
     },
     {
@@ -447,7 +447,7 @@
         "alternativeAbbreviatedLaunchName" : "SpX-11",
         "liftOffTime" : "2017-06-03T21:07:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 3",
         "missionOutcome" : "Success",
     },
     {
@@ -458,7 +458,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2017-06-23T19:10:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 3",
         "missionOutcome" : "Success",
     },
     {
@@ -469,7 +469,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2017-06-25T23:38:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 3",
         "missionOutcome" : "Success",
     },
     {
@@ -480,7 +480,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2017-07-05T23:38:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 3",
         "missionOutcome" : "Success",
     },
     {
@@ -491,18 +491,18 @@
         "alternativeAbbreviatedLaunchName" : "SpX-12",
         "liftOffTime" : "2017-08-14T16:31:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 4",
         "missionOutcome" : "Success",
     },
     {
         "launchID" : 45,
-        "launchName" : "Formoat 5",
+        "launchName" : "Formosat 5",
         "alternativeLaunchName" : "",
         "abbreviatedLaunchName" : "Formosat-5",
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2017-08-24T18:51:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 3",
         "missionOutcome" : "Success",
     },
     {
@@ -513,7 +513,7 @@
         "alternativeAbbreviatedLaunchName" : "USA-277",
         "liftOffTime" : "2017-09-07T14:00:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 4",
         "missionOutcome" : "Success",
     },
     {
@@ -524,7 +524,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2017-10-09T12:37:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 4",
         "missionOutcome" : "Success",
     },
     {
@@ -535,7 +535,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2017-10-11T22:53:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 3",
         "missionOutcome" : "Success",
     },
     {
@@ -546,7 +546,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2017-10-30T19:34:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 4",
         "missionOutcome" : "Success",
     },
     {
@@ -557,7 +557,7 @@
         "alternativeAbbreviatedLaunchName" : "SpX-13",
         "liftOffTime" : "2017-12-15T15:36:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 3",
         "missionOutcome" : "Success",
     },
     {
@@ -568,7 +568,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2017-12-23T01:27:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 3",
         "missionOutcome" : "Success",
     },
     {
@@ -579,7 +579,7 @@
         "alternativeAbbreviatedLaunchName" : "USA-280",
         "liftOffTime" : "2018-01-08T01:00:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 4",
         "missionOutcome" : "Success",
     },
     {
@@ -590,7 +590,7 @@
         "alternativeAbbreviatedLaunchName" : "SES-16",
         "liftOffTime" : "2018-01-31T21:25:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 3",
         "missionOutcome" : "Success",
     },
     {
@@ -601,7 +601,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2018-02-06T20:45:00+0000",
         "launchVehicle" : "Falcon Heavy",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 3",
         "missionOutcome" : "Success",
     },
     {
@@ -612,7 +612,7 @@
         "alternativeAbbreviatedLaunchName" : "SEOSAR",
         "liftOffTime" : "2018-02-22T14:17:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 3",
         "missionOutcome" : "Success",
     },
     {
@@ -623,7 +623,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2018-03-06T05:33:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 4",
         "missionOutcome" : "Success",
     },
     {
@@ -634,7 +634,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2018-03-30T14:14:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 4",
         "missionOutcome" : "Success",
     },
     {
@@ -645,7 +645,7 @@
         "alternativeAbbreviatedLaunchName" : "SpX-14",
         "liftOffTime" : "2018-04-02T20:30:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 4",
         "missionOutcome" : "Success",
     },
     {
@@ -656,7 +656,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2018-04-18T22:51:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 4",
         "missionOutcome" : "Success",
     },
     {
@@ -667,7 +667,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2018-05-11T20:14:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -678,7 +678,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2018-05-22T19:47:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 4",
         "missionOutcome" : "Success",
     },
     {
@@ -689,7 +689,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2018-06-04T04:45:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 4",
         "missionOutcome" : "Success",
     },
     {
@@ -700,7 +700,7 @@
         "alternativeAbbreviatedLaunchName" : "SpX-15",
         "liftOffTime" : "2018-06-29T09:42:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 4",
         "missionOutcome" : "Success",
     },
     {
@@ -711,7 +711,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2018-07-22T05:50:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -722,7 +722,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2018-07-25T11:39:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -733,7 +733,7 @@
         "alternativeAbbreviatedLaunchName" : "Telkom-4",
         "liftOffTime" : "2018-08-07T05:18:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -744,7 +744,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2018-09-10T04:45:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -755,7 +755,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2018-10-08T02:22:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -766,7 +766,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2018-11-05T20:46:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -777,7 +777,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2018-12-03T18:34:05+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -788,7 +788,7 @@
         "alternativeAbbreviatedLaunchName" : "SpX-16",
         "liftOffTime" : "2018-12-05T18:16:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -799,7 +799,7 @@
         "alternativeAbbreviatedLaunchName" : "Vespucci",
         "liftOffTime" : "2018-12-23T13:51:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -810,7 +810,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2019-01-11T15:31:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -821,7 +821,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2019-02-22T01:45:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -832,7 +832,7 @@
         "alternativeAbbreviatedLaunchName" : "Demo-1",
         "liftOffTime" : "2019-03-02T07:49:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -843,7 +843,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2019-04-11T22:35:00+0000",
         "launchVehicle" : "Falcon Heavy",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -854,7 +854,7 @@
         "alternativeAbbreviatedLaunchName" : "SpX-16",
         "liftOffTime" : "2019-05-04T06:48:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -865,7 +865,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2019-05-24T02:30:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -876,7 +876,7 @@
         "alternativeAbbreviatedLaunchName" : "RCM",
         "liftOffTime" : "2019-06-12T14:17:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -887,7 +887,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2019-06-25T06:30:00+0000",
         "launchVehicle" : "Falcon Heavy",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -898,7 +898,7 @@
         "alternativeAbbreviatedLaunchName" : "SpX-18",
         "liftOffTime" : "2019-07-25T22:01:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -909,7 +909,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2019-08-06T23:23:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -920,7 +920,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2019-11-11T14:56:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -931,7 +931,7 @@
         "alternativeAbbreviatedLaunchName" : "SpX-19",
         "liftOffTime" : "2019-12-05T17:29:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -942,7 +942,7 @@
         "alternativeAbbreviatedLaunchName" : "JCSAT-18",
         "liftOffTime" : "2019-12-17T00:10:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -953,7 +953,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2020-01-07T02:19:21+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -964,7 +964,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2020-01-19T15:30:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -975,7 +975,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2020-01-29T14:07:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -986,7 +986,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2020-02-17T15:05:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -997,7 +997,7 @@
         "alternativeAbbreviatedLaunchName" : "SpX-20",
         "liftOffTime" : "2020-03-07T04:50:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1008,7 +1008,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2020-03-18T12:16:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1019,7 +1019,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2020-04-22T19:30:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1030,7 +1030,7 @@
         "alternativeAbbreviatedLaunchName" : "Demo-2",
         "liftOffTime" : "2020-05-30T19:22:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1041,7 +1041,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2020-06-04T01:25:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1052,7 +1052,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2020-06-13T09:21:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1063,7 +1063,7 @@
         "alternativeAbbreviatedLaunchName" : "Matthew Henson",
         "liftOffTime" : "2020-06-30T20:10:46+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1074,7 +1074,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2020-07-20T21:30:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1085,7 +1085,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2020-08-07T05:12:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1096,7 +1096,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2020-08-18T14:31:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1107,7 +1107,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2020-08-30T23:18:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1118,7 +1118,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2020-09-03T12:46:14+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1129,7 +1129,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2020-10-06T11:29:34+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1140,7 +1140,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2020-10-18T12:25:57+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1151,7 +1151,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2020-10-24T15:31:34+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1162,7 +1162,7 @@
         "alternativeAbbreviatedLaunchName" : "Sacagawea",
         "liftOffTime" : "2020-11-05T23:24:23+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1173,7 +1173,7 @@
         "alternativeAbbreviatedLaunchName" : "USCV-1",
         "liftOffTime" : "2020-11-16T00:27:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1184,7 +1184,7 @@
         "alternativeAbbreviatedLaunchName" : "Jason-CS A",
         "liftOffTime" : "2020-11-21T17:17:08+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1195,7 +1195,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2020-11-25T02:13:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1206,7 +1206,7 @@
         "alternativeAbbreviatedLaunchName" : "SpX-21",
         "liftOffTime" : "2020-12-06T16:17:08+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1217,7 +1217,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2020-12-13T17:30:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1228,7 +1228,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2020-12-19T14:00:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1239,7 +1239,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2021-01-08T02:15:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1250,7 +1250,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2021-01-20T13:02:22+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1261,7 +1261,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2021-01-24T15:00:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1272,7 +1272,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2021-02-04T06:19:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1283,7 +1283,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2021-02-16T03:59:37+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1294,7 +1294,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2021-03-04T08:24:54+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1305,7 +1305,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2021-03-11T08:13:29+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1316,7 +1316,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2021-03-14T10:01:26+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1327,7 +1327,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2021-03-24T08:28:024+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1338,7 +1338,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2021-04-07T16:34:18+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1349,7 +1349,7 @@
         "alternativeAbbreviatedLaunchName" : "USCV-2",
         "liftOffTime" : "2021-04-23T09:49:02+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1360,7 +1360,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2021-04-29T03:44:30+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1371,7 +1371,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2021-05-04T19:01:07+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1382,7 +1382,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2021-05-09T06:42:45+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1393,7 +1393,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2021-05-15T22:56:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1404,7 +1404,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2021-05-26T18:59:35+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1415,7 +1415,7 @@
         "alternativeAbbreviatedLaunchName" : "SpX-22",
         "liftOffTime" : "2021-06-03T17:29:17+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1426,7 +1426,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2021-06-06T04:26:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1437,7 +1437,7 @@
         "alternativeAbbreviatedLaunchName" : "Neil Armstrong",
         "liftOffTime" : "2021-06-17T16:09:35+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1448,7 +1448,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2021-06-30T19:31:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1459,7 +1459,7 @@
         "alternativeAbbreviatedLaunchName" : "SpX-23",
         "liftOffTime" : "2021-08-29T07:14:49+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1470,7 +1470,7 @@
         "alternativeAbbreviatedLaunchName" : "Starlink Group 2-1",
         "liftOffTime" : "2021-09-14T03:55:50+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1481,7 +1481,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2021-09-16T00:02:56+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1492,7 +1492,7 @@
         "alternativeAbbreviatedLaunchName" : "USSCV-3",
         "liftOffTime" : "2021-11-11T02:03:31+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1503,7 +1503,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2021-11-13T12:19:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1514,7 +1514,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2021-11-24T06:21:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1525,7 +1525,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2021-12-02T23:12:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1536,7 +1536,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2021-12-09T06:00:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1547,7 +1547,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2021-12-18T12:41:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1558,7 +1558,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2021-12-19T03:58:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1569,7 +1569,7 @@
         "alternativeAbbreviatedLaunchName" : "SpX-24",
         "liftOffTime" : "2021-12-21T10:06:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1580,7 +1580,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-01-06T21:49:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1591,7 +1591,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-01-13T15:25:38+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1602,7 +1602,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-01-19T02:02:40+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1613,7 +1613,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-01-31T23:11:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1624,7 +1624,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-02-02T20:27:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1635,7 +1635,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-02-03T18:13:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1646,7 +1646,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-02-21T14:44:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1657,7 +1657,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-02-25T17:12:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1668,7 +1668,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-03-03T14:25:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1679,7 +1679,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-03-09T13:45:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1690,7 +1690,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-03-19T04:42:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1701,7 +1701,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-04-01T16:24:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1712,7 +1712,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-04-08T15:17:52+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1723,7 +1723,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-04-17T13:13:12+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1733,6 +1733,8 @@
         "abbreviatedLaunchName" : "Starlink G4-14",
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-04-21T17:51:00+0000",
+        "launchVehicle" : "Falcon 9",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1743,7 +1745,7 @@
         "alternativeAbbreviatedLaunchName" : "USCV-4",
         "liftOffTime" : "2022-04-27T07:52:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1754,7 +1756,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-04-29T21:27:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1765,7 +1767,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-05-06T09:46:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1776,7 +1778,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-05-13T22:07:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1787,7 +1789,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-05-14T20:40:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1798,7 +1800,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-05-18T10:59:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1809,7 +1811,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-05-25T18:35:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1820,7 +1822,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-06-08T21:03:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1831,7 +1833,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-06-17T16:09:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1842,7 +1844,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-06-18T14:19:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1853,7 +1855,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-06-19T04:27:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1864,7 +1866,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-06-29T21:04:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1875,7 +1877,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-07-07T13:11:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1886,7 +1888,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-07-11T01:39:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1897,7 +1899,7 @@
         "alternativeAbbreviatedLaunchName" : "SpX-25",
         "liftOffTime" : "2022-07-15T00:44:22+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1908,7 +1910,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-07-17T14:20:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1919,7 +1921,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-07-22T17:39:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1930,7 +1932,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-07-24T13:38:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1941,7 +1943,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-08-04T23:08:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1952,7 +1954,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-08-10T02:14:00+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
     {
@@ -1963,7 +1965,7 @@
         "alternativeAbbreviatedLaunchName" : "",
         "liftOffTime" : "2022-08-12T21:40:20+0000",
         "launchVehicle" : "Falcon 9",
-        "launchVehicleVariant" : "",
+        "launchVehicleVariant" : "Block 5",
         "missionOutcome" : "Success",
     },
 ]

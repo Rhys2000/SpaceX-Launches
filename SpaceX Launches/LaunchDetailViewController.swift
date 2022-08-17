@@ -9,7 +9,7 @@ import UIKit
 
 class LaunchDetailViewController: UIViewController {
     
-    var currentLaunch = Launch(launchID: 0, launchName: "", alternativeLaunchName: "", abbreviatedLaunchName: "", alternativeAbbreviatedLaunchName: "", liftOffTime: "", missionOutcome: .upcoming)
+    var currentLaunch = Launch(launchID: 0, launchName: "", alternativeLaunchName: "", abbreviatedLaunchName: "", alternativeAbbreviatedLaunchName: "", liftOffTime: "", launchVehicle: .falcon1, launchVehicleVariant: .block1, missionOutcome: .unknown)
     
     override func viewDidLoad() {
         super.viewDidLoad()
