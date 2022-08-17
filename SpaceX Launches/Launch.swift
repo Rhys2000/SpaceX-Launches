@@ -10,6 +10,7 @@ import UIKit
 
 enum Outcome: String, Codable {
     case success = "Success"
+    case partialSuccess = "Partial Success"
     case failure = "Failure"
     case upcoming = "Upcoming"
     case unknown = "Unknown"
@@ -30,6 +31,14 @@ enum RocketVariant: String, Codable {
     case noVariant = "NA"
 }
 
+enum RecoveryMethod: String, Codable {
+    case parachute = "Parachute"
+    case controlledSplashdown = "Splashdown"
+    case propulsive = "Propulsive"
+    case waterRecovery = "Soft Water Touchdown"
+    case catchingNet = "Caught in Net"
+}
+
 struct Customer: Codable {
     let customerName: String
     let customerAbbreviation: String
@@ -48,6 +57,13 @@ struct Launch: Codable {
     let launchVehicleVariant: RocketVariant
     //let customerArray: [String] figure out next important for rideshare missions
     let boosterRecoveryAttempted: Bool
+    let boosterRecoveryMethod: RecoveryMethod
+    let boosterRecoveryOutcome: Outcome
+    //let boosterRecoveryLocations: [String]
+    let fairingRecoveryAttempted: Bool
+    let fairingRecoveryMethod: RecoveryMethod
+    let fairingRecoveryOutcome: Outcome
+    //let fairingRecoveryLocations: [String]
     let missionOutcome: Outcome
 }
 
