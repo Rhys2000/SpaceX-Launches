@@ -41,7 +41,7 @@ class LaunchCollectionViewCell: UICollectionViewCell {
         }
         
         //missionName
-        missionName.text = currentLaunch.launchName + " "
+        missionName.text = currentLaunch.abbreviatedLaunchName + " "
         missionName.textColor = .darkText
         missionName.font = UIFont.boldSystemFont(ofSize: 22)
         missionName.adjustsFontSizeToFitWidth = true
