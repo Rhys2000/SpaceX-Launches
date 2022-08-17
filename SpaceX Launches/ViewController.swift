@@ -77,6 +77,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         var launch = SpaceXLaunch()
         launch.launchName = "KPLO"
         launch.alternativeLaunchName = "Korean Pathfinder Lunar Orbiter"
@@ -106,8 +107,6 @@ class ViewController: UIViewController {
         
         let now = Date()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-        print(dateFormatter.string(from: tempDate))
-        print(dateFormatter.string(from: now))
         
         let rocketProvider = launch.launchProvider + " (" + launch.launchProviderAbbreviation + ")"
         Actual.text = rocketProvider

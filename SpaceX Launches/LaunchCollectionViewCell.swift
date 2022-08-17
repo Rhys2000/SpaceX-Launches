@@ -37,6 +37,8 @@ class LaunchCollectionViewCell: UICollectionViewCell {
                 return UIColor.yellow.cgColor
             case .unknown:
                 return UIColor.orange.cgColor
+            case .partialSuccess, .noOutcomeToDiscern:
+                return UIColor.blue.cgColor
             }
         }
         

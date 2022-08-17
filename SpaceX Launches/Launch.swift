@@ -14,6 +14,7 @@ enum Outcome: String, Codable {
     case failure = "Failure"
     case upcoming = "Upcoming"
     case unknown = "Unknown"
+    case noOutcomeToDiscern = "NA"
 }
 
 enum Rocket: String, Codable {
@@ -28,15 +29,17 @@ enum RocketVariant: String, Codable {
     case block3 = "Block 3"
     case block4 = "Block 4"
     case block5 = "Block 5"
-    case noVariant = "NA"
+    case noApplicableVariant = "NA"
 }
 
 enum RecoveryMethod: String, Codable {
     case parachute = "Parachute"
-    case controlledSplashdown = "Splashdown"
-    case propulsive = "Propulsive"
-    case waterRecovery = "Soft Water Touchdown"
-    case catchingNet = "Caught in Net"
+    case controlledSplashdown = "Controlled Splashdown"
+    case propulsiveLanding = "Propulsive Landing"
+    case catchingNet = "Catch in Net"
+    case catchingNetControlledSplashdown = "Catch in Net/Controlled Splashdown"
+    case doubleCatch = "Double Catch"
+    case noAttemptMade = "NA"
 }
 
 struct Customer: Codable {
@@ -61,7 +64,8 @@ struct Launch: Codable {
     let boosterRecoveryOutcome: Outcome
     //let boosterRecoveryLocations: [String]
     let fairingRecoveryAttempted: Bool
-    let fairingRecoveryMethod: RecoveryMethod
+    let plannedFairingRecoveryMethod: RecoveryMethod
+    let actualFairingRecoveryMethod: RecoveryMethod
     let fairingRecoveryOutcome: Outcome
     //let fairingRecoveryLocations: [String]
     let missionOutcome: Outcome
