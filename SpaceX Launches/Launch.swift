@@ -42,11 +42,33 @@ enum RecoveryMethod: String, Codable {
     case noAttemptMade = "NA"
 }
 
+enum LaunchLocation: Int, Codable {
+    case kwajaleinAtoll = 0
+    case vandenbergAirForceBase = 1
+    case vandenberrgSpaceForceBase = 2
+    case capeCanaveralAirForceStation = 3
+    case capeCanaveralSpaceForceStation = 4
+    case kennedy = 5
+}
+
 struct Customer: Codable {
     let customerName: String
     let customerAbbreviation: String
     let customerWikipediaPageLink: String
     let customerWebsiteLink: String
+}
+
+struct LaunchSite: Codable {
+    let launchSiteShortName: String
+    let launchsiteFullName: String
+    let launchSiteAbbreviation: String
+    let launchSiteLatitude: Double
+    let launchSiteLongitude: Double
+    let launchPadName: String
+    let launchPadAbbreviation: String
+    let launchPadLatitude: Double
+    let launchPadLongitude: Double
+    let siteStatus: Bool
 }
 
 struct Launch: Codable {
@@ -56,6 +78,7 @@ struct Launch: Codable {
     let abbreviatedLaunchName: String
     let alternativeAbbreviatedLaunchName: String
     let liftOffTime: String
+    let launchLocation: LaunchLocation
     let launchVehicle: Rocket
     let launchVehicleVariant: RocketVariant
     //let customerArray: [String] figure out next important for rideshare missions
