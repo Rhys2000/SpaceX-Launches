@@ -105,7 +105,6 @@ class ViewController: UIViewController {
         ExpectedLocal.text = launchDate
         ExpectedLocal.adjustsFontSizeToFitWidth = true
         
-        let now = Date()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
         
         let rocketProvider = launch.launchProvider + " (" + launch.launchProviderAbbreviation + ")"
