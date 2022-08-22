@@ -36,19 +36,18 @@ class LaunchCollectionViewCell: UICollectionViewCell {
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
         dateFormatter.locale = Locale(identifier: "en-US")
         let userTimezoneLaunchTime = dateFormatter.date(from: currentLaunch.liftOffTime)!
-        let userTimezoneCurrentTime = Date()
+        var userTimezoneCurrentTime = Date()
         refreshCountdownClock()
         if(userTimezoneCurrentTime > userTimezoneLaunchTime) {
             dateFormatter.dateFormat = "MM/dd/yy hh:mm:ss a "
             launchCountdown.text = dateFormatter.string(from: userTimezoneLaunchTime)
-            //launchPreviewImage
             launchPreviewImage.image = UIImage(named: "SpaceXLaunch\(currentLaunch.launchID)")
         } else {
             self.countdownTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { _ in refreshCountdownClock() })
-            //launchPreviewImage
-            launchPreviewImage.image = UIImage(named: "SpaceXLaunch\(currentLaunch.launchID)")
+            launchPreviewImage.image = UIImage(named: "UpcomingSpaceXLaunch\(Int.random(in: 1...10))")
         }
         
+        //launchPreviewImage
         launchPreviewImage.layer.cornerRadius = 10.0
         launchPreviewImage.contentMode = UIView.ContentMode.scaleAspectFill
         launchPreviewImage.layer.borderColor = getLaunchPreviewImageBorderColor(using: currentLaunch.missionOutcome)
@@ -70,6 +69,7 @@ class LaunchCollectionViewCell: UICollectionViewCell {
         }
 
         func refreshCountdownClock() {
+            userTimezoneCurrentTime = Date()
             var totalSecondsUntilLaunch = Int(userTimezoneLaunchTime - userTimezoneCurrentTime)
             let daysUntilLaunch = totalSecondsUntilLaunch / numberOfSecondsInADay
             totalSecondsUntilLaunch = Int(totalSecondsUntilLaunch % numberOfSecondsInADay)
