@@ -20,8 +20,35 @@ class LaunchCollectionViewCell: UICollectionViewCell {
     let numberOfSecondsInAMinute = 60
     
     func createLaunchPreview(with currentLaunch: Launch) {
-        //launchPreviewImage
-        launchPreviewImage.image = UIImage(named: "SpaceXLaunch\(currentLaunch.launchID)")
+        
+        //missionName
+        missionName.text = currentLaunch.abbreviatedLaunchName + " "
+        missionName.textColor = .darkText
+        missionName.font = UIFont.boldSystemFont(ofSize: 22)
+        missionName.adjustsFontSizeToFitWidth = true
+        missionName.backgroundColor = .white
+        missionName.layer.cornerRadius = 5
+        missionName.layer.masksToBounds = true
+        missionName.textAlignment = .center
+        missionName.layer.opacity = 0.6
+        
+        //launchCountdown
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        dateFormatter.locale = Locale(identifier: "en-US")
+        let userTimezoneLaunchTime = dateFormatter.date(from: currentLaunch.liftOffTime)!
+        let userTimezoneCurrentTime = Date()
+        refreshCountdownClock()
+        if(userTimezoneCurrentTime > userTimezoneLaunchTime) {
+            dateFormatter.dateFormat = "MM/dd/yy hh:mm:ss a "
+            launchCountdown.text = dateFormatter.string(from: userTimezoneLaunchTime)
+            //launchPreviewImage
+            launchPreviewImage.image = UIImage(named: "SpaceXLaunch\(currentLaunch.launchID)")
+        } else {
+            self.countdownTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { _ in refreshCountdownClock() })
+            //launchPreviewImage
+            launchPreviewImage.image = UIImage(named: "SpaceXLaunch\(currentLaunch.launchID)")
+        }
+        
         launchPreviewImage.layer.cornerRadius = 10.0
         launchPreviewImage.contentMode = UIView.ContentMode.scaleAspectFill
         launchPreviewImage.layer.borderColor = getLaunchPreviewImageBorderColor(using: currentLaunch.missionOutcome)
@@ -41,50 +68,26 @@ class LaunchCollectionViewCell: UICollectionViewCell {
                 return UIColor.blue.cgColor
             }
         }
-        
-        //missionName
-        missionName.text = currentLaunch.abbreviatedLaunchName + " "
-        missionName.textColor = .darkText
-        missionName.font = UIFont.boldSystemFont(ofSize: 22)
-        missionName.adjustsFontSizeToFitWidth = true
-        missionName.backgroundColor = .white
-        missionName.layer.cornerRadius = 5
-        missionName.layer.masksToBounds = true
-        missionName.textAlignment = .center
-        missionName.layer.opacity = 0.6
-        
-        //launchCountdown
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-        dateFormatter.locale = Locale(identifier: "en-US")
-        let userTimezoneLaunchTime = dateFormatter.date(from: currentLaunch.liftOffTime)!
-        refreshCountdownClock()
-        self.countdownTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { _ in refreshCountdownClock() })
 
         func refreshCountdownClock() {
-            let userTimezoneCurrentTime = Date()
             var totalSecondsUntilLaunch = Int(userTimezoneLaunchTime - userTimezoneCurrentTime)
-            if(totalSecondsUntilLaunch < 0) {
-                dateFormatter.dateFormat = "MM/dd/yy hh:mm:ss a "
-                launchCountdown.text = dateFormatter.string(from: userTimezoneLaunchTime)
-            } else {
-                let daysUntilLaunch = totalSecondsUntilLaunch / numberOfSecondsInADay
-                totalSecondsUntilLaunch = Int(totalSecondsUntilLaunch % numberOfSecondsInADay)
-                let hoursUntilLaunch = totalSecondsUntilLaunch / numberOfSecondsInAnHour
-                totalSecondsUntilLaunch = Int(totalSecondsUntilLaunch % numberOfSecondsInAnHour)
-                let minutesUntilLaunch = totalSecondsUntilLaunch / numberOfSecondsInAMinute
-                totalSecondsUntilLaunch = Int(totalSecondsUntilLaunch % numberOfSecondsInAMinute)
-                let secondsUntilLaunch = totalSecondsUntilLaunch
-                if(daysUntilLaunch > 0) {
-                    var dayFormat = ""
-                    if(daysUntilLaunch == 1) {
-                        dayFormat = "day"
-                    } else {
-                        dayFormat = "days"
-                    }
-                    launchCountdown.text = "T - \(daysUntilLaunch) \(dayFormat) " + String(format: "%02d:%02d:%02d", hoursUntilLaunch, minutesUntilLaunch, secondsUntilLaunch) + " "
+            let daysUntilLaunch = totalSecondsUntilLaunch / numberOfSecondsInADay
+            totalSecondsUntilLaunch = Int(totalSecondsUntilLaunch % numberOfSecondsInADay)
+            let hoursUntilLaunch = totalSecondsUntilLaunch / numberOfSecondsInAnHour
+            totalSecondsUntilLaunch = Int(totalSecondsUntilLaunch % numberOfSecondsInAnHour)
+            let minutesUntilLaunch = totalSecondsUntilLaunch / numberOfSecondsInAMinute
+            totalSecondsUntilLaunch = Int(totalSecondsUntilLaunch % numberOfSecondsInAMinute)
+            let secondsUntilLaunch = totalSecondsUntilLaunch
+            if(daysUntilLaunch > 0) {
+                var dayFormat = ""
+                if(daysUntilLaunch == 1) {
+                    dayFormat = "day"
                 } else {
-                    launchCountdown.text = "T - " + String(format: "%02d:%02d:%02d", hoursUntilLaunch, minutesUntilLaunch, secondsUntilLaunch) + " "
+                    dayFormat = "days"
                 }
+                launchCountdown.text = "T - \(daysUntilLaunch) \(dayFormat) " + String(format: "%02d:%02d:%02d", hoursUntilLaunch, minutesUntilLaunch, secondsUntilLaunch) + " "
+            } else {
+                launchCountdown.text = "T - " + String(format: "%02d:%02d:%02d", hoursUntilLaunch, minutesUntilLaunch, secondsUntilLaunch) + " "
             }
         }
         launchCountdown.backgroundColor = .white
