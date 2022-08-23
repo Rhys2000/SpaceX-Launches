@@ -1609,7 +1609,7 @@
         "launchLocation" : "KSC",
         "launchVehicle" : "Falcon Heavy",
         "launchVehicleVariant" : "Block 5",
-        "orbitalDestination" : "LEO/MEO",
+        "orbitalDestination" : "LEO",
         "boosterRecoveryAttempted" : true,
         "boosterRecoveryMethod" : "Propulsive Landing",
         "boosterRecoveryOutcome" : "Partial Success",

@@ -71,7 +71,6 @@ enum LaunchLocation: String, Codable {
 enum OrbitalLocation: String, Codable {
     case leo = "LEO"
     case sso = "SSO"
-    case geo = "GEO"
     case gto = "GTO"
     case meo = "MEO"
     case heo = "HEO"
@@ -81,6 +80,33 @@ enum OrbitalLocation: String, Codable {
     case sub = "SUB"
     case helio = "HELIO"
     case lto = "LTO"
+    
+    func returnOrbitalLocationFullName() -> String {
+        switch self {
+        case .leo:
+            return "Low Earth Orbit"
+        case .sso:
+            return "Sun-Synchronous Orbit"
+        case .gto:
+            return "Geostationary Transfer Orbit"
+        case .meo:
+            return "Medium Earth Orbit"
+        case .heo:
+            return "High Earth Orbit"
+        case .iss:
+            return "Low Earth Orbit (ISS)"
+        case .pleo:
+            return "Polar Low Earth Orbit"
+        case .sel1:
+            return "Sun Earth L1 Largrange Point"
+        case .sub:
+            return "Suborbital"
+        case .helio:
+            return "Heliocentric Orbit"
+        case .lto:
+            return "Lunar Transfer Orbit"
+        }
+    }
 }
 
 struct Customer: Codable {
