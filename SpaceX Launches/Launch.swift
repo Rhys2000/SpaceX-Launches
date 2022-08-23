@@ -42,13 +42,30 @@ enum RecoveryMethod: String, Codable {
     case noAttemptMade = "NA"
 }
 
-enum LaunchLocation: Int, Codable {
-    case kwajaleinAtoll = 0
-    case vandenbergAirForceBase = 1
-    case vandenberrgSpaceForceBase = 2
-    case capeCanaveralAirForceStation = 3
-    case capeCanaveralSpaceForceStation = 4
-    case kennedy = 5
+enum LaunchLocation: String, Codable {
+    case kwajaleinAtoll = "KWA"
+    case vandenbergAirForceBase = "VAFB"
+    case vandenberrgSpaceForceBase = "VSFB"
+    case capeCanaveralAirForceStation = "CCAFS"
+    case capeCanaveralSpaceForceStation = "CCSFS"
+    case kennedy = "KSC"
+    
+    func getFullName() -> String {
+        switch self {
+        case .kwajaleinAtoll:
+            return "Kwajalein Atoll"
+        case .vandenbergAirForceBase:
+            return "Vandenberg Air Force Base"
+        case .vandenberrgSpaceForceBase:
+            return "Vandenberg Air Force Base"
+        case .capeCanaveralAirForceStation:
+            return "Cape Canaveral Air Force Station"
+        case .capeCanaveralSpaceForceStation:
+            return "Cape Canaveral Space Force Station"
+        case .kennedy:
+            return "Kennedy Space Center"
+        }
+    }
 }
 
 struct Customer: Codable {
