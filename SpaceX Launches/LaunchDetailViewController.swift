@@ -17,7 +17,7 @@ class LaunchDetailViewController: UIViewController {
     
     let completeSetOfLaunchData = LaunchLoader().allLaunches
     
-    var currentLaunch = Launch(launchID: 0, launchName: "", alternativeLaunchName: "", abbreviatedLaunchName: "", alternativeAbbreviatedLaunchName: "", liftOffTime: "", launchLocation: .capeCanaveralAirForceStation, launchVehicle: .falcon1, launchVehicleVariant: .block1, boosterRecoveryAttempted: true, boosterRecoveryMethod: .catchingNet, boosterRecoveryOutcome: .unknown, fairingRecoveryAttempted: true, plannedFairingRecoveryMethod: .catchingNet, actualFairingRecoveryMethod: .catchingNet, fairingRecoveryOutcome: .unknown, missionOutcome: .unknown)
+    var currentLaunch = Launch(launchID: 0, launchName: "", alternativeLaunchName: "", abbreviatedLaunchName: "", alternativeAbbreviatedLaunchName: "", liftOffTime: "", launchLocation: .capeCanaveralAirForceStation, launchVehicle: .falcon1, launchVehicleVariant: .block1, orbitalDestination: .geo, boosterRecoveryAttempted: true, boosterRecoveryMethod: .catchingNet, boosterRecoveryOutcome: .unknown, fairingRecoveryAttempted: true, plannedFairingRecoveryMethod: .catchingNet, actualFairingRecoveryMethod: .catchingNet, fairingRecoveryOutcome: .unknown, missionOutcome: .unknown)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,6 +82,7 @@ class LaunchDetailViewController: UIViewController {
         print(fourthLabel.text!)
         
         fifthLabel.text = String(launchNumberThisYear) + attachSuffixToNumber(currentValue: launchNumberThisYear) + " SpaceX launch attempted this year"
+        print(fifthLabel.text!)
         
         func attachSuffixToNumber(currentValue: Int) -> String {
             if(currentValue == 11 || currentValue == 12 || currentValue == 13) {

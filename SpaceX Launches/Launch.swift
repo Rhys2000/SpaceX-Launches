@@ -68,6 +68,21 @@ enum LaunchLocation: String, Codable {
     }
 }
 
+enum OrbitalLocation: String, Codable {
+    case leo = "LEO"
+    case sso = "SSO"
+    case geo = "GEO"
+    case gto = "GTO"
+    case meo = "MEO"
+    case heo = "HEO"
+    case iss = "ISS"
+    case pleo = "PLEO"
+    case sel1 = "SEL1"
+    case sub = "SUB"
+    case helio = "HELIO"
+    case lto = "LTO"
+}
+
 struct Customer: Codable {
     let customerName: String
     let customerAbbreviation: String
@@ -98,6 +113,7 @@ struct Launch: Codable {
     let launchLocation: LaunchLocation
     let launchVehicle: Rocket
     let launchVehicleVariant: RocketVariant
+    let orbitalDestination: OrbitalLocation
     //let customerArray: [String] figure out next important for rideshare missions
     let boosterRecoveryAttempted: Bool
     let boosterRecoveryMethod: RecoveryMethod
