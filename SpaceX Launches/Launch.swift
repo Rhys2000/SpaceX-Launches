@@ -81,6 +81,21 @@ enum LaunchLocation: String, Codable {
     }
 }
 
+enum LandingLocation: String, Codable {
+    case lz1 = "LZ-1"
+    case lz2 = "LZ-2"
+    case lz4 = "LZ-4"
+    case asog = "ASOG"
+    case jrti = "JRTI"
+    case ocisly = "OCISLY"
+    case atlantic = "ATL"
+    case pacific = "PAC"
+    case noLandingAttempt = "NA"
+    case mrSteven = "MRSTEVEN"
+    case msCheif = "MSCHEIF"
+    case msTree = "MSTREE"
+}
+
 enum OrbitalLocation: String, Codable {
     case leo = "LEO"
     case sso = "SSO"
@@ -153,16 +168,16 @@ struct Launch: Codable {
     let launchVehicle: Rocket
     let launchVehicleVariant: RocketVariant
     let orbitalDestination: OrbitalLocation
-    let customerArray: [String] //figure out next important for rideshare missions
+    let customerArray: [String]
     let boosterRecoveryAttempted: Bool
     let boosterRecoveryMethod: RecoveryMethod
     let boosterRecoveryOutcome: Outcome
-    //let boosterRecoveryLocations: [String]
+    let boosterRecoveryLocations: [LandingLocation]
     let fairingRecoveryAttempted: Bool
     let plannedFairingRecoveryMethod: RecoveryMethod
     let actualFairingRecoveryMethod: RecoveryMethod
     let fairingRecoveryOutcome: Outcome
-    //let fairingRecoveryLocations: [String]
+    let fairingRecoveryLocations: [LandingLocation]
     let missionOutcome: Outcome
 }
 
