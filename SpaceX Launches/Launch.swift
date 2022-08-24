@@ -153,7 +153,7 @@ struct Launch: Codable {
     let launchVehicle: Rocket
     let launchVehicleVariant: RocketVariant
     let orbitalDestination: OrbitalLocation
-    //let customerArray: [String] figure out next important for rideshare missions
+    let customerArray: [String] //figure out next important for rideshare missions
     let boosterRecoveryAttempted: Bool
     let boosterRecoveryMethod: RecoveryMethod
     let boosterRecoveryOutcome: Outcome
