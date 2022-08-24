@@ -45,7 +45,7 @@ enum RecoveryMethod: String, Codable {
 enum LaunchLocation: String, Codable {
     case kwajaleinAtoll = "KWA"
     case vandenbergAirForceBase = "VAFB"
-    case vandenberrgSpaceForceBase = "VSFB"
+    case vandenbergSpaceForceBase = "VSFB"
     case capeCanaveralAirForceStation = "CCAFS"
     case capeCanaveralSpaceForceStation = "CCSFS"
     case kennedy = "KSC"
@@ -56,7 +56,7 @@ enum LaunchLocation: String, Codable {
             return "Kwajalein Atoll"
         case .vandenbergAirForceBase:
             return "Vandenberg Air Force Base"
-        case .vandenberrgSpaceForceBase:
+        case .vandenbergSpaceForceBase:
             return "Vandenberg Air Force Base"
         case .capeCanaveralAirForceStation:
             return "Cape Canaveral Air Force Station"
@@ -64,6 +64,19 @@ enum LaunchLocation: String, Codable {
             return "Cape Canaveral Space Force Station"
         case .kennedy:
             return "Kennedy Space Center"
+        }
+    }
+    
+    func getShortName() -> String {
+        switch self {
+        case .kwajaleinAtoll:
+            return "Kwajalein"
+        case .vandenbergAirForceBase, .vandenbergSpaceForceBase:
+            return "Vandenberg"
+        case .capeCanaveralAirForceStation, .capeCanaveralSpaceForceStation:
+            return "Cape Canaveral"
+        case .kennedy:
+            return "Kennedy"
         }
     }
 }
