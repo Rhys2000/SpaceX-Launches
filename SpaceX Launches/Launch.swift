@@ -39,6 +39,7 @@ enum RecoveryMethod: String, Codable {
     case catchingNet = "Catch in Net"
     case catchingNetControlledSplashdown = "Catch in Net/Controlled Splashdown"
     case doubleCatch = "Double Catch"
+    case abandoned = "Abandoned"
     case noAttemptMade = "NA"
 }
 
@@ -178,6 +179,7 @@ struct Launch: Codable {
     let actualFairingRecoveryMethod: RecoveryMethod
     let fairingRecoveryOutcome: Outcome
     let fairingRecoveryLocations: [LandingLocation]
+    let supportShips: [String]
     let missionOutcome: Outcome
 }
 
