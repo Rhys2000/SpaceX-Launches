@@ -26,7 +26,7 @@ class LaunchDetailViewController: UIViewController {
     
     let completeSetOfLaunchData = LaunchLoader().allLaunches
     
-    var currentLaunch = Launch(launchID: 0, launchName: "", alternativeLaunchName: "", abbreviatedLaunchName: "", alternativeAbbreviatedLaunchName: "", liftOffTime: "", launchLocation: .capeCanaveralAirForceStation, launchVehicle: .falcon1, launchVehicleVariant: .block1, orbitalDestination: .gto, customerArray: [""], boosterRecoveryAttempted: true, boosterRecoveryMethod: .catchingNet, boosterRecoveryOutcome: .unknown, boosterRecoveryLocations: [.asog], fairingRecoveryAttempted: true, plannedFairingRecoveryMethod: .catchingNet, actualFairingRecoveryMethod: .catchingNet, fairingRecoveryOutcome: .unknown, missionOutcome: .unknown)
+    var currentLaunch = Launch(launchID: 0, launchName: "", alternativeLaunchName: "", abbreviatedLaunchName: "", alternativeAbbreviatedLaunchName: "", liftOffTime: "", launchLocation: .capeCanaveralAirForceStation, launchVehicle: .falcon1, launchVehicleVariant: .block1, orbitalDestination: .gto, customerArray: [""], boosterRecoveryAttempted: true, boosterRecoveryMethod: .catchingNet, boosterRecoveryOutcome: .unknown, boosterRecoveryLocations: [.atlantic], fairingRecoveryAttempted: true, plannedFairingRecoveryMethod: .catchingNet, actualFairingRecoveryMethod: .catchingNet, fairingRecoveryOutcome: .unknown, fairingRecoveryLocations: [.atlantic], supportShips: [""], missionOutcome: .unknown)
     
     override func viewDidLoad() {
         super.viewDidLoad()

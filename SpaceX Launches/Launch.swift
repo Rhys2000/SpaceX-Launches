@@ -23,7 +23,7 @@ enum Rocket: String, Codable {
     case falconHeavy = "Falcon Heavy"
 }
 
-enum RocketVariant: String, Codable {
+enum BoosterVariant: String, Codable {
     case block1 = "Block 1"
     case block2 = "Block 2"
     case block3 = "Block 3"
@@ -32,6 +32,7 @@ enum RocketVariant: String, Codable {
     case noApplicableVariant = "NA"
 }
 
+//Add another case called destroyed
 enum RecoveryMethod: String, Codable {
     case parachute = "Parachute"
     case controlledSplashdown = "Controlled Splashdown"
@@ -86,15 +87,11 @@ enum LandingLocation: String, Codable {
     case lz1 = "LZ-1"
     case lz2 = "LZ-2"
     case lz4 = "LZ-4"
-    case asog = "ASOG"
-    case jrti = "JRTI"
-    case ocisly = "OCISLY"
+    case droneship = "ASDS"
+    case fairingNet = "NET"
     case atlantic = "ATL"
     case pacific = "PAC"
     case noLandingAttempt = "NA"
-    case mrSteven = "MRSTEVEN"
-    case msCheif = "MSCHEIF"
-    case msTree = "MSTREE"
 }
 
 enum OrbitalLocation: String, Codable {
@@ -108,7 +105,7 @@ enum OrbitalLocation: String, Codable {
     case sel1 = "SEL1"
     case sub = "SUB"
     case helio = "HELIO"
-    case lto = "LTO"
+    case tli = "TLI"
     
     func returnOrbitalLocationFullName() -> String {
         switch self {
@@ -132,8 +129,8 @@ enum OrbitalLocation: String, Codable {
             return "Suborbital"
         case .helio:
             return "Heliocentric Orbit"
-        case .lto:
-            return "Lunar Transfer Orbit"
+        case .tli:
+            return "Trans Lunar Injection Orbit"
         }
     }
 }
@@ -158,7 +155,7 @@ struct LaunchSite: Codable {
     let siteStatus: Bool
 }
 
-struct Launch: Codable {
+struct Launch: Codable { //All NAs need to be changed to be better understood for person writing json data. Need to redo RecoveryMethod, LandingLocation, and Outcome to be better understood
     let launchID: Int
     let launchName: String
     let alternativeLaunchName: String
@@ -167,20 +164,29 @@ struct Launch: Codable {
     let liftOffTime: String
     let launchLocation: LaunchLocation
     let launchVehicle: Rocket
-    let launchVehicleVariant: RocketVariant
     let orbitalDestination: OrbitalLocation
-    let customerArray: [String]
+    let customerArray: [String] //Need to update data in .json file becausee may rideshare missions are missing customers such as starlink and others
+    let boosterNumbers: [Double]
+    let boosterVariant: [BoosterVariant]
+    let boosterReuse: Bool
     let boosterRecoveryAttempted: Bool
-    let boosterRecoveryMethod: RecoveryMethod
-    let boosterRecoveryOutcome: Outcome
+    let plannedBoosterRecoveryMethod: [RecoveryMethod]
+    let actualBoosterRecoveryMethod: [RecoveryMethod]
+    let boosterReecoveryDistance: Int //In kilometers
     let boosterRecoveryLocations: [LandingLocation]
+    let boosterRecoveryOutcome: [Outcome]
+    let fairingVariant: Double
+    let fairingFlights: [Int]
+    let fairingReuse: Bool
     let fairingRecoveryAttempted: Bool
-    let plannedFairingRecoveryMethod: RecoveryMethod
-    let actualFairingRecoveryMethod: RecoveryMethod
-    let fairingRecoveryOutcome: Outcome
-    let fairingRecoveryLocations: [LandingLocation]
-    let supportShips: [String]
+    let plannedFairingRecoveryMethod: [RecoveryMethod]
+    let actualFairingRecoveryMethod: [RecoveryMethod]
+    let fairingRecoveryDistance: Int //In kilometers
+    let fairingRecoveryLocations: [LandingLocation] //Need to go over how I am planning to handle the different types of fairing recovery
+    let fairingRecoveryOutcome: [Outcome]
+    let missionSupportShips: [String] //Might want to try and make this a dictionary to distinguish between the jobs of certain vessels associated with a launch
     let missionOutcome: Outcome
+    //let webcastLink: String
 }
 
 public class LaunchLoader {
