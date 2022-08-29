@@ -34,14 +34,10 @@ enum BoosterVariant: String, Codable {
 
 //Add another case called destroyed
 enum RecoveryMethod: String, Codable {
+    case noRecoveryMethod = "No Recovery Method"
     case parachute = "Parachute"
-    case controlledSplashdown = "Controlled Splashdown"
-    case propulsiveLanding = "Propulsive Landing"
-    case catchingNet = "Catch in Net"
-    case catchingNetControlledSplashdown = "Catch in Net/Controlled Splashdown"
-    case doubleCatch = "Double Catch"
-    case abandoned = "Abandoned"
-    case noAttemptMade = "NA"
+    case splashdown = "Controlled Splashdown"
+    case landing = "Propulsive Landing"
 }
 
 enum LaunchLocation: String, Codable {
@@ -169,9 +165,8 @@ struct Launch: Codable { //All NAs need to be changed to be better understood fo
     let boosterNumbers: [Double] //If booster number is a 0 we do not know what booster number was used on this launch
     let boosterVariant: BoosterVariant
     let boosterRecoveryAttempted: Bool
-    let plannedBoosterRecoveryMethod: [RecoveryMethod] //Planned vs Actual booster recovery methods are not really needed
-    let actualBoosterRecoveryMethod: [RecoveryMethod]
-    let boosterRecoveryDistance: [Int] //In kilometers
+    let boosterRecoveryMethod: RecoveryMethod
+    let boosterLandingDistance: [Int] //In kilometers if zero booster was not attempted to be recovered
     let boosterRecoveryLocations: [LandingLocation]
     let boosterRecoveryOutcome: [Outcome]
     let fairingVariant: Double
@@ -180,7 +175,7 @@ struct Launch: Codable { //All NAs need to be changed to be better understood fo
     let fairingRecoveryAttempted: Bool
     let plannedFairingRecoveryMethod: [RecoveryMethod]
     let actualFairingRecoveryMethod: [RecoveryMethod]
-    let fairingRecoveryDistance: Int //In kilometers
+    let fairingLandingDistance: Int //In kilometers
     let fairingRecoveryLocations: [LandingLocation] //Need to go over how I am planning to handle the different types of fairing recovery
     let fairingRecoveryOutcome: [Outcome]
     let missionSupportShips: [String] //Might want to try and make this a dictionary to distinguish between the jobs of certain vessels associated with a launch
