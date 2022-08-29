@@ -29,7 +29,7 @@ enum BoosterVariant: String, Codable {
     case block3 = "Block 3"
     case block4 = "Block 4"
     case block5 = "Block 5"
-    case noApplicableVariant = "NA"
+    case noVariant = "No Variant"
 }
 
 //Add another case called destroyed
@@ -164,20 +164,19 @@ struct Launch: Codable { //All NAs need to be changed to be better understood fo
     let liftOffTime: String
     let launchLocation: LaunchLocation
     let launchVehicle: Rocket
-    let orbitalDestination: OrbitalLocation
+    let orbitalDestination: OrbitalLocation //Also could be redone
     let customerArray: [String] //Need to update data in .json file becausee may rideshare missions are missing customers such as starlink and others
-    let boosterNumbers: [Double]
-    let boosterVariant: [BoosterVariant]
-    let boosterReuse: Bool
+    let boosterNumbers: [Double] //If booster number is a 0 we do not know what booster number was used on this launch
+    let boosterVariant: BoosterVariant
     let boosterRecoveryAttempted: Bool
-    let plannedBoosterRecoveryMethod: [RecoveryMethod]
+    let plannedBoosterRecoveryMethod: [RecoveryMethod] //Planned vs Actual booster recovery methods are not really needed
     let actualBoosterRecoveryMethod: [RecoveryMethod]
-    let boosterReecoveryDistance: Int //In kilometers
+    let boosterRecoveryDistance: [Int] //In kilometers
     let boosterRecoveryLocations: [LandingLocation]
     let boosterRecoveryOutcome: [Outcome]
     let fairingVariant: Double
     let fairingFlights: [Int]
-    let fairingReuse: Bool
+    let fairingReuse: [Bool]
     let fairingRecoveryAttempted: Bool
     let plannedFairingRecoveryMethod: [RecoveryMethod]
     let actualFairingRecoveryMethod: [RecoveryMethod]
