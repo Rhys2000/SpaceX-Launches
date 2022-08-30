@@ -165,9 +165,8 @@ struct Launch: Codable { //All NAs need to be changed to be better understood fo
     let boosterLandingDistance: [Double]
     let boosterRecoveryLocations: [LandingLocation]
     let boosterRecoveryOutcome: [Outcome]
-    let fairingVariant: Double
+    let fairingVersion: Double
     let fairingFlights: [Int]
-    let fairingReuse: [Bool]
     let fairingRecoveryAttempted: Bool
     let plannedFairingRecoveryMethod: [RecoveryMethod]
     let actualFairingRecoveryMethod: [RecoveryMethod]
