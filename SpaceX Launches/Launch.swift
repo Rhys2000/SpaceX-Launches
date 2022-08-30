@@ -9,12 +9,9 @@ import Foundation
 import UIKit
 
 enum Outcome: String, Codable {
+    case noOutcomeToReport = "No Outcome to Report"
     case success = "Success"
-    case partialSuccess = "Partial Success"
     case failure = "Failure"
-    case upcoming = "Upcoming"
-    case unknown = "Unknown"
-    case noOutcomeToDiscern = "NA"
 }
 
 enum Rocket: String, Codable {
@@ -80,14 +77,13 @@ enum LaunchLocation: String, Codable {
 }
 
 enum LandingLocation: String, Codable {
-    case lz1 = "LZ-1"
-    case lz2 = "LZ-2"
-    case lz4 = "LZ-4"
-    case droneship = "ASDS"
-    case fairingNet = "NET"
-    case atlantic = "ATL"
-    case pacific = "PAC"
-    case noLandingAttempt = "NA"
+    case noLandingLocation = "No Landing Location"
+    case atlanticOcean = "ATL"
+    case pacificOcean = "PAC"
+    case droneShip = "ASDS"
+    case landingZone1 = "LZ-1"
+    case landingZone2 = "LZ-2"
+    case landingZone4 = "LZ-4"
 }
 
 enum OrbitalLocation: String, Codable {
@@ -166,7 +162,7 @@ struct Launch: Codable { //All NAs need to be changed to be better understood fo
     let boosterVariant: BoosterVariant
     let boosterRecoveryAttempted: Bool
     let boosterRecoveryMethod: RecoveryMethod
-    let boosterLandingDistance: [Int] //In kilometers if zero booster was not attempted to be recovered
+    let boosterLandingDistance: [Double]
     let boosterRecoveryLocations: [LandingLocation]
     let boosterRecoveryOutcome: [Outcome]
     let fairingVariant: Double
@@ -175,7 +171,7 @@ struct Launch: Codable { //All NAs need to be changed to be better understood fo
     let fairingRecoveryAttempted: Bool
     let plannedFairingRecoveryMethod: [RecoveryMethod]
     let actualFairingRecoveryMethod: [RecoveryMethod]
-    let fairingLandingDistance: Int //In kilometers
+    let fairingLandingDistance: Int
     let fairingRecoveryLocations: [LandingLocation] //Need to go over how I am planning to handle the different types of fairing recovery
     let fairingRecoveryOutcome: [Outcome]
     let missionSupportShips: [String] //Might want to try and make this a dictionary to distinguish between the jobs of certain vessels associated with a launch
