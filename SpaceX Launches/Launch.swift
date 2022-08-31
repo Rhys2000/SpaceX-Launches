@@ -12,6 +12,8 @@ enum Outcome: String, Codable {
     case noOutcomeToReport = "No Outcome to Report"
     case success = "Success"
     case failure = "Failure"
+    case partialSuccess = "Partial Success"
+    case unknown = "Unknown"
 }
 
 enum Rocket: String, Codable {
@@ -21,20 +23,21 @@ enum Rocket: String, Codable {
 }
 
 enum BoosterVariant: String, Codable {
+    case noVariant = "No Variant"
     case block1 = "Block 1"
     case block2 = "Block 2"
     case block3 = "Block 3"
     case block4 = "Block 4"
     case block5 = "Block 5"
-    case noVariant = "No Variant"
 }
 
-//Add another case called destroyed
 enum RecoveryMethod: String, Codable {
     case noRecoveryMethod = "No Recovery Method"
     case parachute = "Parachute"
     case splashdown = "Controlled Splashdown"
     case landing = "Propulsive Landing"
+    case catchingNet = "Net Catch"
+    case aborted = "Aborted"
 }
 
 enum LaunchLocation: String, Codable {
@@ -81,6 +84,7 @@ enum LandingLocation: String, Codable {
     case atlanticOcean = "ATL"
     case pacificOcean = "PAC"
     case droneShip = "ASDS"
+    case fairingCatcher = "NET"
     case landingZone1 = "LZ-1"
     case landingZone2 = "LZ-2"
     case landingZone4 = "LZ-4"
@@ -168,8 +172,8 @@ struct Launch: Codable { //All NAs need to be changed to be better understood fo
     let fairingVersion: Double
     let fairingFlights: [Int]
     let fairingRecoveryAttempted: Bool
-    let plannedFairingRecoveryMethod: [RecoveryMethod]
-    let actualFairingRecoveryMethod: [RecoveryMethod]
+    let fairingPlannedRecoveryMethod: [RecoveryMethod]
+    let fairingActualRecoveryMethod: [RecoveryMethod]
     let fairingLandingDistance: Int
     let fairingRecoveryLocations: [LandingLocation] //Need to go over how I am planning to handle the different types of fairing recovery
     let fairingRecoveryOutcome: [Outcome]
