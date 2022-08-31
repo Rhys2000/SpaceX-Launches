@@ -25,7 +25,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["None"],
         "missionOutcome" : "Failure",
     },
     {
@@ -54,7 +54,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["None"],
         "missionOutcome" : "Failure",
     },
     {
@@ -83,7 +83,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["None"],
         "missionOutcome" : "Failure",
     },
     {
@@ -112,7 +112,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["None"],
         "missionOutcome" : "Success",
     },
     {
@@ -141,7 +141,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["None"],
         "missionOutcome" : "Success",
     },
     {
@@ -170,7 +170,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["None"],
         "missionOutcome" : "Success",
     },
     {
@@ -199,7 +199,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["American Champion", "Barge"],
         "missionOutcome" : "Success",
     },
     {
@@ -228,7 +228,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["American Champion", "Barge"],
         "missionOutcome" : "Success",
     },
     {
@@ -257,7 +257,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["American Islander"],
         "missionOutcome" : "Partial Success",
     },
     {
@@ -286,7 +286,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["American Islander"],
         "missionOutcome" : "Success",
     },
     {
@@ -315,7 +315,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["None"],
         "missionOutcome" : "Success",
     },
     {
@@ -344,7 +344,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["None"],
         "missionOutcome" : "Success",
     },
     {
@@ -373,7 +373,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["None"],
         "missionOutcome" : "Success",
     },
     {
@@ -402,7 +402,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["American Islander"],
         "missionOutcome" : "Success",
     },
     {
@@ -431,7 +431,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["None"],
         "missionOutcome" : "Success",
     },
     {
@@ -460,7 +460,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["None"],
         "missionOutcome" : "Success",
     },
     {
@@ -489,7 +489,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["None"],
         "missionOutcome" : "Success",
     },
     {
@@ -518,7 +518,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["American Islander"],
         "missionOutcome" : "Success",
     },
     {
@@ -547,7 +547,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "Go Quest", "Elsbeth III", "NRC Quest"],
         "missionOutcome" : "Success",
     },
     {
@@ -576,7 +576,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "Go Quest", "Elsbeth III"],
         "missionOutcome" : "Success",
     },
     {
@@ -605,7 +605,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["None"],
         "missionOutcome" : "Success",
     },
     {
@@ -634,7 +634,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "Go Quest", "Elsbeth III", "NRC Quest"],
         "missionOutcome" : "Success",
     },
     {
@@ -663,7 +663,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["None"],
         "missionOutcome" : "Success",
     },
     {
@@ -692,7 +692,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Elsbeth III", "NRC Quest"],
         "missionOutcome" : "Failure",
     },
     {
@@ -721,7 +721,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["None"],
         "missionOutcome" : "Success",
     },
     {
@@ -750,7 +750,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "NRC Quest", "Pacific Freedom"],
         "missionOutcome" : "Success",
     },
     {
@@ -779,7 +779,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Elsbeth III"],
         "missionOutcome" : "Success",
     },
     {
@@ -808,7 +808,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Elsbeth III", "NRC Quest"],
         "missionOutcome" : "Success",
     },
     {
@@ -837,7 +837,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Elsbeth III"],
         "missionOutcome" : "Success",
     },
     {
@@ -866,7 +866,7 @@
         "fairingRecoveryDistance" : 834,
         "fairingRecoveryLocations" : ["ATL", "No Landing Location"],
         "fairingRecoveryOutcome" : ["Unknown", "No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Elsbeth III"],
         "missionOutcome" : "Success",
     },
     {
@@ -895,7 +895,7 @@
         "fairingRecoveryDistance" : 636,
         "fairingRecoveryLocations" : ["ATL", "No Landing Location"],
         "fairingRecoveryOutcome" : ["Unknown", "No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Elsbeth III"],
         "missionOutcome" : "Success",
     },
     {
@@ -924,7 +924,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["NRC Quest"],
         "missionOutcome" : "Success",
     },
     {
@@ -953,7 +953,7 @@
         "fairingRecoveryDistance" : 884,
         "fairingRecoveryLocations" : ["ATL", "No Landing Location"],
         "fairingRecoveryOutcome" : ["Unknown", "No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Elsbeth III"],
         "missionOutcome" : "Success",
     },
     {
@@ -982,7 +982,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Elsbeth III"],
         "missionOutcome" : "Failure",
     },
     {
@@ -1011,7 +1011,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "NRC Quest", "Pacific Warrior"],
         "missionOutcome" : "Success",
     },
     {
@@ -1040,7 +1040,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["NRC Quest"],
         "missionOutcome" : "Success",
     },
     {
@@ -1069,7 +1069,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["None"],
         "missionOutcome" : "Success",
     },
     {
@@ -1098,7 +1098,7 @@
         "fairingRecoveryDistance" : 927,
         "fairingRecoveryLocations" : ["ATL", "No Landing Location"],
         "fairingRecoveryOutcome" : ["Failure", "No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Elsbeth III", "Go Searcher"],
         "missionOutcome" : "Success",
     },
     {
@@ -1127,7 +1127,7 @@
         "fairingRecoveryDistance" : 782,
         "fairingRecoveryLocations" : ["ATL", "No Landing Location"],
         "fairingRecoveryOutcome" : ["Success", "No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["Go Searcher"],
         "missionOutcome" : "Success",
     },
     {
@@ -1156,7 +1156,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["None"],
         "missionOutcome" : "Success",
     },
     {
@@ -1185,7 +1185,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["NRC Quest"],
         "missionOutcome" : "Success",
     },
     {
@@ -1214,7 +1214,7 @@
         "fairingRecoveryDistance" : 790,
         "fairingRecoveryLocations" : ["ATL", "No Landing Location"],
         "fairingRecoveryOutcome" : ["Failure", "No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Elsbeth III", "Go Searcher"],
         "missionOutcome" : "Success",
     },
     {
@@ -1243,7 +1243,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "NRC Quest", "Kelly C"],
         "missionOutcome" : "Success",
     },
     {
@@ -1272,7 +1272,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["None"],
         "missionOutcome" : "Success",
     },
     {
@@ -1301,7 +1301,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["NRC Quest"],
         "missionOutcome" : "Success",
     },
     {
@@ -1330,7 +1330,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "NRC Quest", "Betty R Gambarella"],
         "missionOutcome" : "Success",
     },
     {
@@ -1359,7 +1359,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["None"],
         "missionOutcome" : "Success",
     },
     {
@@ -1388,7 +1388,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "NRC Quest", "Betty R Gambarella"],
         "missionOutcome" : "Success",
     },
     {
@@ -1417,7 +1417,7 @@
         "fairingRecoveryDistance" : 765,
         "fairingRecoveryLocations" : ["ATL", "No Landing Location"],
         "fairingRecoveryOutcome" : ["Failure", "No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "Go Searcher"],
         "missionOutcome" : "Success",
     },
     {
@@ -1446,7 +1446,7 @@
         "fairingRecoveryDistance" : 794,
         "fairingRecoveryLocations" : ["ATL", "No Landing Location"],
         "fairingRecoveryOutcome" : ["Failure", "No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "Mr Steven"],
         "missionOutcome" : "Success",
     },
     {
@@ -1475,7 +1475,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["NRC Quest"],
         "missionOutcome" : "Success",
     },
     {
@@ -1504,7 +1504,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["NRC Quest"],
         "missionOutcome" : "Success",
     },
     {
@@ -1533,7 +1533,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["None"],
         "missionOutcome" : "Success",
     },
     {
@@ -1562,7 +1562,7 @@
         "fairingRecoveryDistance" : 799,
         "fairingRecoveryLocations" : ["ATL", "No Landing Location"],
         "fairingRecoveryOutcome" : ["Failure", "No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["Go Searcher"],
         "missionOutcome" : "Success",
     },
     {
@@ -1591,7 +1591,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk"],
         "missionOutcome" : "Success",
     },
     {
@@ -1620,7 +1620,7 @@
         "fairingRecoveryDistance" : 486,
         "fairingRecoveryLocations" : ["PAC"],
         "fairingRecoveryOutcome" : ["Failure", "Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["Mr Steven"],
         "missionOutcome" : "Success",
     },
     {
@@ -1649,7 +1649,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["None"],
         "missionOutcome" : "Success",
     },
     {
@@ -1678,7 +1678,7 @@
         "fairingRecoveryDistance" : 673,
         "fairingRecoveryLocations" : ["PAC", "No Landing Location"],
         "fairingRecoveryOutcome" : ["Partial Success", "No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["NRC Quest", "Mr Steven"],
         "missionOutcome" : "Success",
     },
     {
@@ -1707,7 +1707,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["NRC Quest"],
         "missionOutcome" : "Success",
     },
     {
@@ -1736,7 +1736,7 @@
         "fairingRecoveryDistance" : 585,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Failure"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "Go Pursuit"],
         "missionOutcome" : "Success",
     },
     {
@@ -1765,7 +1765,7 @@
         "fairingRecoveryDistance" : 927,
         "fairingRecoveryLocations" : ["ATL", "No Landing Location"],
         "fairingRecoveryOutcome" : ["Unknown", "No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Rachel", "Go Pursuit"],
         "missionOutcome" : "Success",
     },
     {
@@ -1794,7 +1794,7 @@
         "fairingRecoveryDistance" : 887,
         "fairingRecoveryLocations" : ["PAC"],
         "fairingRecoveryOutcome" : ["Partial Success", "Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["Mr Steven"],
         "missionOutcome" : "Success",
     },
     {
@@ -1823,7 +1823,7 @@
         "fairingRecoveryDistance" : 927,
         "fairingRecoveryLocations" : ["PAC", "No Landing Location"],
         "fairingRecoveryOutcome" : ["Success", "No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["Go Pursuit"],
         "missionOutcome" : "Success",
     },
     {
@@ -1852,7 +1852,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["NRC Quest"],
         "missionOutcome" : "Success",
     },
     {
@@ -1881,7 +1881,7 @@
         "fairingRecoveryDistance" : 773,
         "fairingRecoveryLocations" : ["PAC", "No Landing Location"],
         "fairingRecoveryOutcome" : ["Failure", "No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "Go Pursuit"],
         "missionOutcome" : "Success",
     },
     {
@@ -1910,7 +1910,7 @@
         "fairingRecoveryDistance" : 593,
         "fairingRecoveryLocations" : ["PAC"],
         "fairingRecoveryOutcome" : ["Success", "Failure"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "NRC Quest", "Pacific Freedom", "Mr Steven"],
         "missionOutcome" : "Success",
     },
     {
@@ -1939,7 +1939,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk"],
         "missionOutcome" : "Success",
     },
     {
@@ -1968,7 +1968,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk"],
         "missionOutcome" : "Success",
     },
     {
@@ -1997,7 +1997,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["None"],
         "missionOutcome" : "Success",
     },
     {
@@ -2026,7 +2026,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk"],
         "missionOutcome" : "Success",
     },
     {
@@ -2055,7 +2055,7 @@
         "fairingRecoveryDistance" : 344,
         "fairingRecoveryLocations" : ["PAC"],
         "fairingRecoveryOutcome" : ["Partial Success", "Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "NRC Quest", "Pacific Freedom", "Mr Steven"],
         "missionOutcome" : "Success",
     },
     {
@@ -2084,7 +2084,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["Go Quest", "Eagle", "NRC Quest"],
         "missionOutcome" : "Success",
     },
     {
@@ -2113,7 +2113,7 @@
         "fairingRecoveryDistance" : 934,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Failure"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["Go Pursuit"],
         "missionOutcome" : "Success",
     },
     {
@@ -2142,7 +2142,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "NRC Quest", "Pacific Freedom"],
         "missionOutcome" : "Success",
     },
     {
@@ -2171,7 +2171,7 @@
         "fairingRecoveryDistance" : 663,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Signet Warhorse III", "Mr Steven"],
         "missionOutcome" : "Success",
     },
     {
@@ -2200,7 +2200,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Hollywood", "Go Searcher", "Go Navigator"],
         "missionOutcome" : "Success",
     },
     {
@@ -2229,7 +2229,7 @@
         "fairingRecoveryDistance" : 1029,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Hollywood", "Go Searcher", "Go Navigator"],
         "missionOutcome" : "Success",
     },
     {
@@ -2258,7 +2258,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Hollywood", "NRC Quest"],
         "missionOutcome" : "Success",
     },
     {
@@ -2287,7 +2287,7 @@
         "fairingRecoveryDistance" : 724,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Hollywood", "Go Searcher", "Go Navigator"],
         "missionOutcome" : "Success",
     },
     {
@@ -2316,7 +2316,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["None"],
         "missionOutcome" : "Success",
     },
     {
@@ -2345,7 +2345,7 @@
         "fairingRecoveryDistance" : 1346,
         "fairingRecoveryLocations" : ["NET", "ATL"],
         "fairingRecoveryOutcome" : ["Success", "Failure"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Hollywood", "Ms Tree", "Go Navigator"],
         "missionOutcome" : "Success",
     },
     {
@@ -2374,7 +2374,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["NRC Quest"],
         "missionOutcome" : "Success",
     },
     {
@@ -2403,7 +2403,7 @@
         "fairingRecoveryDistance" : 923,
         "fairingRecoveryLocations" : ["NET", "ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["Ms Tree", "Go Navigator"],
         "missionOutcome" : "Success",
     },
     {
@@ -2432,7 +2432,7 @@
         "fairingRecoveryDistance" : 730,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "Ms Tree", "Ms Chief"],
         "missionOutcome" : "Success",
     },
     {
@@ -2461,7 +2461,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "NRC Quest"],
         "missionOutcome" : "Success",
     },
     {
@@ -2490,7 +2490,7 @@
         "fairingRecoveryDistance" : 790,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Partial Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "Ms Tree", "Ms Chief"],
         "missionOutcome" : "Success",
     },
     {
@@ -2519,7 +2519,7 @@
         "fairingRecoveryDistance" : 741,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Failure", "Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "Ms Tree", "Go Navigator"],
         "missionOutcome" : "Success",
     },
     {
@@ -2548,7 +2548,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["Go Searcher", "Go Navigator"],
         "missionOutcome" : "Success",
     },
     {
@@ -2577,7 +2577,7 @@
         "fairingRecoveryDistance" : 741,
         "fairingRecoveryLocations" : ["NET", "ATL"],
         "fairingRecoveryOutcome" : ["Success", "Partial Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "Ms Tree", "Ms Chief"],
         "missionOutcome" : "Success",
     },
     {
@@ -2606,7 +2606,7 @@
         "fairingRecoveryDistance" : 700,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Failure"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "Ms Tree", "Ms Chief"],
         "missionOutcome" : "Success",
     },
     {
@@ -2635,7 +2635,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["NRC Quest"],
         "missionOutcome" : "Success",
     },
     {
@@ -2664,7 +2664,7 @@
         "fairingRecoveryDistance" : 704,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success", "Failure"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "Ms Tree", "Ms Cheif"],
         "missionOutcome" : "Success",
     },
     {
@@ -2693,7 +2693,7 @@
         "fairingRecoveryDistance" : 711,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success", "Partial Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Finn Falgout", "Ms Tree", "Ms Cheif"],
         "missionOutcome" : "Success",
     },
     {
@@ -2722,7 +2722,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "Go Navigator"],
         "missionOutcome" : "Success",
     },
     {
@@ -2751,7 +2751,7 @@
         "fairingRecoveryDistance" : 697,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success", "Failure"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "Go Quest", "Finn Falgout", "Ms Tree", "Ms Chief"],
         "missionOutcome" : "Success",
     },
     {
@@ -2780,7 +2780,7 @@
         "fairingRecoveryDistance" : 697,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Partial Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Finn Falgout", "Ms Tree", "Ms Chief"],
         "missionOutcome" : "Success",
     },
     {
@@ -2809,7 +2809,7 @@
         "fairingRecoveryDistance" : 634,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Partial Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "Go Quest", "Lauren Foss", "Ms Tree", "Ms Chief"],
         "missionOutcome" : "Success",
     },
     {
@@ -2838,7 +2838,7 @@
         "fairingRecoveryDistance" : 778,
         "fairingRecoveryLocations" : ["NET"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "Go Quest", "Lauren Foss", "Ms Tree", "Ms Chief"],
         "missionOutcome" : "Success",
     },
     {
@@ -2867,7 +2867,7 @@
         "fairingRecoveryDistance" : 695,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Partial Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Finn Falgout", "Ms Tree", "Ms Chief"],
         "missionOutcome" : "Success",
     },
     {
@@ -2896,7 +2896,7 @@
         "fairingRecoveryDistance" : 717,
         "fairingRecoveryLocations" : ["NET", "ATL"],
         "fairingRecoveryOutcome" : ["Success", "Partial Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Finn Falgout", "Ms Tree", "Ms Chief"],
         "missionOutcome" : "Success",
     },
     {
@@ -2925,7 +2925,7 @@
         "fairingRecoveryDistance" : 541,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["Ms Chief"],
         "missionOutcome" : "Success",
     },
     {
@@ -2954,7 +2954,7 @@
         "fairingRecoveryDistance" : 705,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Failure"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Finn Falgout", "Ms Tree", "Ms Chief"],
         "missionOutcome" : "Success",
     },
     {
@@ -2983,7 +2983,7 @@
         "fairingRecoveryDistance" : 715,
         "fairingRecoveryLocations" : ["NET", "ATL"],
         "fairingRecoveryOutcome" : ["Success", "Partial Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Finn Falgout", "Ms Tree", "Ms Chief"],
         "missionOutcome" : "Success",
     },
     {
@@ -3012,7 +3012,7 @@
         "fairingRecoveryDistance" : 725,
         "fairingRecoveryLocations" : ["NET"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Finn Falgout", "Ms Tree", "Ms Chief"],
         "missionOutcome" : "Success",
     },
     {
@@ -3041,7 +3041,7 @@
         "fairingRecoveryDistance" : 725,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Partial Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "Go Quest", "Lauren Foss", "Ms Cheif", "Big Stone Leader"],
         "missionOutcome" : "Success",
     },
     {
@@ -3070,7 +3070,7 @@
         "fairingRecoveryDistance" : 725,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Partial Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Finn Falgout", "Ms Chief", "Big Stone Leader"],
         "missionOutcome" : "Success",
     },
     {
@@ -3099,7 +3099,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "Go Quest", "Finn Falgout", "Go Navigator"],
         "missionOutcome" : "Success",
     },
     {
@@ -3128,7 +3128,7 @@
         "fairingRecoveryDistance" : 445,
         "fairingRecoveryLocations" : ["PAC"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["NRC Quest"],
         "missionOutcome" : "Success",
     },
     {
@@ -3157,7 +3157,7 @@
         "fairingRecoveryDistance" : 709,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "Ms Chief", "Go Searcher"],
         "missionOutcome" : "Success",
     },
     {
@@ -3186,7 +3186,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "Go Navigator"],
         "missionOutcome" : "Success",
     },
     {
@@ -3215,7 +3215,7 @@
         "fairingRecoveryDistance" : 780,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Partial Success", "Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "Go Quest", "Finn Falgout", "Ms Tree", "Go Searcher"],
         "missionOutcome" : "Success",
     },
     {
@@ -3244,7 +3244,7 @@
         "fairingRecoveryDistance" : 328,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["Ms Tree", "Go Searcher"],
         "missionOutcome" : "Success",
     },
     {
@@ -3273,7 +3273,7 @@
         "fairingRecoveryDistance" : 673,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Failure", "Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "Go Quest", "Finn Falgout", "Ms Tree", "Ms Chief"],
         "missionOutcome" : "Success",
     },
     {
@@ -3302,7 +3302,7 @@
         "fairingRecoveryDistance" : 707,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Failure"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "Go Quest", "Hawk", "Ms Tree", "Ms Chief"],
         "missionOutcome" : "Success",
     },
     {
@@ -3331,7 +3331,7 @@
         "fairingRecoveryDistance" : 606,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Searcher", "Finn Falgout", "Ms Tree", "Ms Chief"],
         "missionOutcome" : "Success",
     },
     {
@@ -3360,7 +3360,7 @@
         "fairingRecoveryDistance" : 709,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success", "Partial Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Lauren Foss", "Ms Tree", "Ms Chief"],
         "missionOutcome" : "Success",
     },
     {
@@ -3389,7 +3389,7 @@
         "fairingRecoveryDistance" : 709,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success", "Failure"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "Ms Tree", "Ms Chief"],
         "missionOutcome" : "Success",
     },
     {
@@ -3418,7 +3418,7 @@
         "fairingRecoveryDistance" : 665,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "Go Searcher", "Go Navigator"],
         "missionOutcome" : "Success",
     },
     {
@@ -3447,7 +3447,7 @@
         "fairingRecoveryDistance" : 709,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "Go Quest", "Finn Falgout", "Go Searcher", "Go Navigator"],
         "missionOutcome" : "Success",
     },
     {
@@ -3476,7 +3476,7 @@
         "fairingRecoveryDistance" : 707,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "Go Searcher", "Go Navigator"],
         "missionOutcome" : "Success",
     },
     {
@@ -3505,7 +3505,7 @@
         "fairingRecoveryDistance" : 667,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Finn Falgout", "Shelia Bordelon"],
         "missionOutcome" : "Success",
     },
     {
@@ -3534,7 +3534,7 @@
         "fairingRecoveryDistance" : 667,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success", "Failure"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Finn Falgout", "Shelia Bordelon"],
         "missionOutcome" : "Success",
     },
     {
@@ -3563,7 +3563,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Finn Falgout", "Go Navigator"],
         "missionOutcome" : "Success",
     },
     {
@@ -3592,7 +3592,7 @@
         "fairingRecoveryDistance" : 667,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "Go Quest", "Finn Falgout", "Shelia Bordelon"],
         "missionOutcome" : "Success",
     },
     {
@@ -3621,7 +3621,7 @@
         "fairingRecoveryDistance" : 665,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success", "Failure"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Mr Jonah", "Shelia Bordelon", "Go Searcher"],
         "missionOutcome" : "Success",
     },
     {
@@ -3650,7 +3650,7 @@
         "fairingRecoveryDistance" : 665,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "Go Quest", "Finn Falgout", "Shelia Bordelon"],
         "missionOutcome" : "Success",
     },
     {
@@ -3679,7 +3679,7 @@
         "fairingRecoveryDistance" : 707,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success", "Failure"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Mr Jonah", "Shelia Bordelon"],
         "missionOutcome" : "Success",
     },
     {
@@ -3708,7 +3708,7 @@
         "fairingRecoveryDistance" : 682,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "Go Quest", "Finn Falgout", "Go Searcher", "Go Navigator"],
         "missionOutcome" : "Success",
     },
     {
@@ -3737,7 +3737,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Mr Jonah", "Go Navigator"],
         "missionOutcome" : "Success",
     },
     {
@@ -3766,7 +3766,7 @@
         "fairingRecoveryDistance" : 792,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "Go Quest", "Finn Falgout", "Go Searcher", "Go Navigator"],
         "missionOutcome" : "Success",
     },
     {
@@ -3795,7 +3795,7 @@
         "fairingRecoveryDistance" : 758,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "Go Quest", "Finn Falgout", "HOS Briarwood"],
         "missionOutcome" : "Success",
     },
     {
@@ -3824,7 +3824,7 @@
         "fairingRecoveryDistance" : 605,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["HOS Briarwood"],
         "missionOutcome" : "Success",
     },
     {
@@ -3853,7 +3853,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["ASOG", "Go Quest", "Finn Falgout", "Go Searcher"],
         "missionOutcome" : "Success",
     },
     {
@@ -3882,7 +3882,7 @@
         "fairingRecoveryDistance" : 688,
         "fairingRecoveryLocations" : ["PAC"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Adele Elise", "Scorpius", "NRC Quest"],
         "missionOutcome" : "Success",
     },
     {
@@ -3911,7 +3911,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "Go Quest", "Finn Falgout", "Go Searcher"],
         "missionOutcome" : "Success",
     },
     {
@@ -3940,7 +3940,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["ASOG", "Doug", "Go Navigator", "Go Searcher"],
         "missionOutcome" : "Success",
     },
     {
@@ -3969,7 +3969,7 @@
         "fairingRecoveryDistance" : 682,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "Bob", "Finn Falgout"],
         "missionOutcome" : "Success",
     },
     {
@@ -3998,7 +3998,7 @@
         "fairingRecoveryDistance" : 740,
         "fairingRecoveryLocations" : ["PAC"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Scorpius", "NRC Quest"],
         "missionOutcome" : "Success",
     },
     {
@@ -4027,7 +4027,7 @@
         "fairingRecoveryDistance" : 668,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["ASOG", "Bob", "Finn Falgout"],
         "missionOutcome" : "Success",
     },
     {
@@ -4056,7 +4056,7 @@
         "fairingRecoveryDistance" : 787,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "Doug", "Bob"],
         "missionOutcome" : "Success",
     },
     {
@@ -4085,7 +4085,7 @@
         "fairingRecoveryDistance" : 646,
         "fairingRecoveryLocations" : ["PAC"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Adele Elise", "Scorpius", "NRC Quest"],
         "missionOutcome" : "Success",
     },
     {
@@ -4114,7 +4114,7 @@
         "fairingRecoveryDistance" : 797,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["ASOG", "Bob", "Finn Falgout"],
         "missionOutcome" : "Success",
     },
     {
@@ -4143,7 +4143,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "Doug", "Go Navigator", "Go Searcher"],
         "missionOutcome" : "Success",
     },
     {
@@ -4172,7 +4172,7 @@
         "fairingRecoveryDistance" : 673,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["ASOG", "Doug", "Zion M Falgout"],
         "missionOutcome" : "Success",
     },
     {
@@ -4201,7 +4201,7 @@
         "fairingRecoveryDistance" : 606,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["Bob"],
         "missionOutcome" : "Success",
     },
     {
@@ -4230,7 +4230,7 @@
         "fairingRecoveryDistance" : 664,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["ASOG", "Doug", "Zion M Falgout"],
         "missionOutcome" : "Success",
     },
     {
@@ -4259,7 +4259,7 @@
         "fairingRecoveryDistance" : 596,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["Bob"],
         "missionOutcome" : "Success",
     },
     {
@@ -4288,7 +4288,7 @@
         "fairingRecoveryDistance" : 362,
         "fairingRecoveryLocations" : ["PAC"],
         "fairingRecoveryOutcome" : ["Unknown"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["NRC Quest"],
         "missionOutcome" : "Success",
     },
     {
@@ -4317,7 +4317,7 @@
         "fairingRecoveryDistance" : 647,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["ASOG", "Doug", "Zion M Falgout"],
         "missionOutcome" : "Success",
     },
     {
@@ -4346,7 +4346,7 @@
         "fairingRecoveryDistance" : 642,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["ASOG", "Doug", "Zion M Falgout"],
         "missionOutcome" : "Success",
     },
     {
@@ -4375,7 +4375,7 @@
         "fairingRecoveryDistance" : 657,
         "fairingRecoveryLocations" : ["PAC"],
         "fairingRecoveryOutcome" : ["Unknown"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Scorpius", "NRC Quest"],
         "missionOutcome" : "Success",
     },
     {
@@ -4404,7 +4404,7 @@
         "fairingRecoveryDistance" : 648,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "Bob", "Zion M Falgout"],
         "missionOutcome" : "Success",
     },
     {
@@ -4433,7 +4433,7 @@
         "fairingRecoveryDistance" : 642,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["ASOG", "Doug", "Zion M Falgout"],
         "missionOutcome" : "Success",
     },
     {
@@ -4462,7 +4462,7 @@
         "fairingRecoveryDistance" : 641,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "Doug", "Zion M Falgout"],
         "missionOutcome" : "Success",
     },
     {
@@ -4491,7 +4491,7 @@
         "fairingRecoveryDistance" : 604,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "Bob", "Finn Falgout"],
         "missionOutcome" : "Success",
     },
     {
@@ -4520,7 +4520,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["ASOG", "Doug", "Bob", "Megan", "Shannon"],
         "missionOutcome" : "Success",
     },
     {
@@ -4549,7 +4549,7 @@
         "fairingRecoveryDistance" : 430,
         "fairingRecoveryLocations" : ["PAC"],
         "fairingRecoveryOutcome" : ["Unknown"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["NRC Quest"],
         "missionOutcome" : "Success",
     },
     {
@@ -4578,7 +4578,7 @@
         "fairingRecoveryDistance" : 648,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "Bob", "Finn Falgout"],
         "missionOutcome" : "Success",
     },
     {
@@ -4607,7 +4607,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["ASOG", "Doug"],
         "missionOutcome" : "Success",
     },
     {
@@ -4636,7 +4636,7 @@
         "fairingRecoveryDistance" : 644,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "Bob", "Finn Falgout"],
         "missionOutcome" : "Success",
     },
     {
@@ -4665,7 +4665,7 @@
         "fairingRecoveryDistance" : 643,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["ASOG", "Doug"],
         "missionOutcome" : "Success",
     },
     {
@@ -4694,7 +4694,7 @@
         "fairingRecoveryDistance" : 654,
         "fairingRecoveryLocations" : ["PAC"],
         "fairingRecoveryOutcome" : ["Unknown"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Debra C", "NRC Quest"],
         "missionOutcome" : "Success",
     },
     {
@@ -4723,7 +4723,7 @@
         "fairingRecoveryDistance" : 626,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "Bob", "Finn Falgout"],
         "missionOutcome" : "Success",
     },
     {
@@ -4752,7 +4752,7 @@
         "fairingRecoveryDistance" : 645,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["ASOG", "Doug"],
         "missionOutcome" : "Success",
     },
     {
@@ -4781,7 +4781,7 @@
         "fairingRecoveryDistance" : 600,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["Bob"],
         "missionOutcome" : "Success",
     },
     {
@@ -4810,7 +4810,7 @@
         "fairingRecoveryDistance" : 822,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "Bob", "Finn Falgout"],
         "missionOutcome" : "Success",
     },
     {
@@ -4839,7 +4839,7 @@
         "fairingRecoveryDistance" : 650,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["ASOG", "Doug", "Bob"],
         "missionOutcome" : "Success",
     },
     {
@@ -4868,7 +4868,7 @@
         "fairingRecoveryDistance" : 391,
         "fairingRecoveryLocations" : ["PAC"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["NRC Quest"],
         "missionOutcome" : "Success",
     },
     {
@@ -4897,7 +4897,7 @@
         "fairingRecoveryDistance" : 655,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "Bob", "Finn Falgout"],
         "missionOutcome" : "Success",
     },
     {
@@ -4926,7 +4926,7 @@
         "fairingRecoveryDistance" : 782,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["ASOG", "Doug", "Finn Falgout"],
         "missionOutcome" : "Success",
     },
     {
@@ -4955,7 +4955,7 @@
         "fairingRecoveryDistance" : 664,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success", "Failure"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "Bob", "Kurt J Crosby"],
         "missionOutcome" : "Success",
     },
     {
@@ -4984,7 +4984,7 @@
         "fairingRecoveryDistance" : 654,
         "fairingRecoveryLocations" : ["PAC"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Scorpius", "NRC Quest"],
         "missionOutcome" : "Success",
     },
     {
@@ -5013,7 +5013,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["ASOG", "Doug", "Megan", "Shannon"],
         "missionOutcome" : "Success",
     },
     {
@@ -5042,7 +5042,7 @@
         "fairingRecoveryDistance" : 668,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "Bob", "Kurt J Crosby"],
         "missionOutcome" : "Success",
     },
     {
@@ -5071,7 +5071,7 @@
         "fairingRecoveryDistance" : 635,
         "fairingRecoveryLocations" : ["PAC"],
         "fairingRecoveryOutcome" : ["Unknown"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Scorpius", "NRC Quest"],
         "missionOutcome" : "Success",
     },
     {
@@ -5100,7 +5100,7 @@
         "fairingRecoveryDistance" : 0,
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["ASOG", "Doug"],
         "missionOutcome" : "Success",
     },
     {
@@ -5129,7 +5129,7 @@
         "fairingRecoveryDistance" : 730,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["JRTI", "Bob", "Kurt J Crosby"],
         "missionOutcome" : "Success",
     },
     {
@@ -5158,7 +5158,7 @@
         "fairingRecoveryDistance" : 656,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["ASOG", "Doug", "Kurt J Crosby", "Crosby Skipper"],
         "missionOutcome" : "Success",
     },
     {
@@ -5187,7 +5187,7 @@
         "fairingRecoveryDistance" : 636,
         "fairingRecoveryLocations" : ["PAC"],
         "fairingRecoveryOutcome" : ["Unknown"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Scorpius", "NRC Quest"],
         "missionOutcome" : "Success",
     },
     {
@@ -5216,7 +5216,7 @@
         "fairingRecoveryDistance" : 656,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["ASOG", "Doug", "Crosby Skipper"],
         "missionOutcome" : "Success",
     },
     {
@@ -5245,7 +5245,36 @@
         "fairingRecoveryDistance" : 654,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
-        "missionSupportShips" : [""],
+        "missionSupportShips" : ["ASOG", "Doug", "Kurt J Crosby"],
+        "missionOutcome" : "Success",
+    },
+    {
+        "launchID" : 182,
+        "launchName" : "Starlink",
+        "alternativeLaunchName" : "Starlink Group 3-4",
+        "abbreviatedLaunchName" : "Starlink G3-4",
+        "alternativeAbbreviatedLaunchName" : "",
+        "liftOffTime" : "2022-08-31T05:40:45+0000",
+        "launchLocation" : "VSFB",
+        "launchVehicle" : "Falcon 9",
+        "orbitalDestination" : "LEO",
+        "customerArray" : ["SpaceX"],
+        "boosterNumbers" : ["1063.7"],
+        "boosterVariant" : "Block 5",
+        "boosterRecoveryAttempted" : true,
+        "boosterRecoveryMethod" : "Propulsive Landing",
+        "boosterRecoveryDistance" : [640],
+        "boosterRecoveryLocations" : ["ASDS"],
+        "boosterRecoveryOutcome" : ["Success"],
+        "fairingVersion" : 2.5,
+        "fairingFlights" : [3],
+        "fairingRecoveryAttempted" : true,
+        "fairingPlannedRecoveryMethod" : ["Controlled Splashdown"],
+        "fairingActualRecoveryMethod" : ["Controlled Splashdown"],
+        "fairingRecoveryDistance" : 640,
+        "fairingRecoveryLocations" : ["PAC"],
+        "fairingRecoveryOutcome" : ["Success"],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Scorpius", "NRC Quest"],
         "missionOutcome" : "Success",
     },
 ]

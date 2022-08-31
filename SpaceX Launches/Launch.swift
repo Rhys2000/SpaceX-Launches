@@ -184,7 +184,9 @@ struct Launch: Codable {
     //If damaged = Failure, uncovered = Partial Success
     let fairingRecoveryOutcome: [Outcome]
     
-    let missionSupportShips: [String] //Might want to try and make this a dictionary to distinguish between the jobs of certain vessels associated with a launch
+    let missionSupportShips: [String]
+    //let missionSupportShipRoles: [Int]
+    
     let missionOutcome: Outcome
     //let webcastLink: String
 }
