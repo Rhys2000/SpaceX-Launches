@@ -151,7 +151,7 @@ struct LaunchSite: Codable {
     let siteStatus: Bool
 }
 
-struct Launch: Codable { //All NAs need to be changed to be better understood for person writing json data. Need to redo RecoveryMethod, LandingLocation, and Outcome to be better understood
+struct Launch: Codable {
     let launchID: Int
     let launchName: String
     let alternativeLaunchName: String
@@ -162,11 +162,13 @@ struct Launch: Codable { //All NAs need to be changed to be better understood fo
     let launchVehicle: Rocket
     let orbitalDestination: OrbitalLocation //Also could be redone
     let customerArray: [String] //Need to update data in .json file becausee may rideshare missions are missing customers such as starlink and others
-    let boosterNumbers: [Double] //If booster number is a 0 we do not know what booster number was used on this launch
+    
+    //If booster number is a 0 we do not know what booster number was used on this launch
+    let boosterNumbers: [String]
     let boosterVariant: BoosterVariant
     let boosterRecoveryAttempted: Bool
     let boosterRecoveryMethod: RecoveryMethod
-    let boosterLandingDistance: [Double]
+    let boosterRecoveryDistance: [Double]
     let boosterRecoveryLocations: [LandingLocation]
     let boosterRecoveryOutcome: [Outcome]
     let fairingVersion: Double
@@ -174,9 +176,14 @@ struct Launch: Codable { //All NAs need to be changed to be better understood fo
     let fairingRecoveryAttempted: Bool
     let fairingPlannedRecoveryMethod: [RecoveryMethod]
     let fairingActualRecoveryMethod: [RecoveryMethod]
-    let fairingLandingDistance: Int
-    let fairingRecoveryLocations: [LandingLocation] //Need to go over how I am planning to handle the different types of fairing recovery
+    let fairingRecoveryDistance: Int
+    
+    //Location where the fairing actually landed
+    let fairingRecoveryLocations: [LandingLocation]
+    
+    //If damaged = Failure, uncovered = Partial Success
     let fairingRecoveryOutcome: [Outcome]
+    
     let missionSupportShips: [String] //Might want to try and make this a dictionary to distinguish between the jobs of certain vessels associated with a launch
     let missionOutcome: Outcome
     //let webcastLink: String

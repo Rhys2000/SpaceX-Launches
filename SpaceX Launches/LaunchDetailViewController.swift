@@ -26,7 +26,7 @@ class LaunchDetailViewController: UIViewController {
     
     let completeSetOfLaunchData = LaunchLoader().allLaunches
     
-    var currentLaunch = Launch(launchID: 0, launchName: "", alternativeLaunchName: "", abbreviatedLaunchName: "", alternativeAbbreviatedLaunchName: "", liftOffTime: "", launchLocation: .capeCanaveralAirForceStation, launchVehicle: .falcon1, launchVehicleVariant: .block1, orbitalDestination: .gto, customerArray: [""], boosterRecoveryAttempted: true, boosterRecoveryMethod: .catchingNet, boosterRecoveryOutcome: .unknown, boosterRecoveryLocations: [.atlantic], fairingRecoveryAttempted: true, plannedFairingRecoveryMethod: .catchingNet, actualFairingRecoveryMethod: .catchingNet, fairingRecoveryOutcome: .unknown, fairingRecoveryLocations: [.atlantic], supportShips: [""], missionOutcome: .unknown)
+    var currentLaunch = Launch(launchID: 1, launchName: "", alternativeLaunchName: "", abbreviatedLaunchName: "", alternativeAbbreviatedLaunchName: "", liftOffTime: "", launchLocation: .capeCanaveralSpaceForceStation, launchVehicle: .falcon1, orbitalDestination: .leo, customerArray: [""], boosterNumbers: ["2"], boosterVariant: .block1, boosterRecoveryAttempted: true, boosterRecoveryMethod: .aborted, boosterRecoveryDistance: [1], boosterRecoveryLocations: [.droneShip], boosterRecoveryOutcome: [.failure], fairingVersion: 1, fairingFlights: [4], fairingRecoveryAttempted: true, fairingPlannedRecoveryMethod: [.aborted], fairingActualRecoveryMethod: [.aborted], fairingRecoveryDistance: 1, fairingRecoveryLocations: [.droneShip], fairingRecoveryOutcome: [.failure], missionSupportShips: [""], missionOutcome: .failure)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -140,19 +140,19 @@ class LaunchDetailViewController: UIViewController {
                 overallBoosterRecoveriesNotAttempted += 1
             }
             
-            if(completeSetOfLaunchData[counter].boosterRecoveryOutcome == .success) {
-                overallBoosterRecoverySuccesses += 1
-            } else if(completeSetOfLaunchData[counter].boosterRecoveryOutcome == .partialSuccess) {
-                overallBoosterRecoveryPartialSuccesses += 1
-            } else if(completeSetOfLaunchData[counter].boosterRecoveryOutcome == .failure) {
-                overallBoosterRecoveryFailures += 1
-            } else {
-                overallBoosterRecoveryNoOutcome += 1
-            }
-            
-            if(completeSetOfLaunchData[counter].launchVehicleVariant == currentLaunch.launchVehicleVariant && completeSetOfLaunchData[counter].launchVehicle == currentLaunch.launchVehicle) {
-                overallLaunchNumberForLaunchVehicleVariant += 1
-            }
+//            if(completeSetOfLaunchData[counter].boosterRecoveryOutcome == .success) {
+//                overallBoosterRecoverySuccesses += 1
+//            } else if(completeSetOfLaunchData[counter].boosterRecoveryOutcome == .partialSuccess) {
+//                overallBoosterRecoveryPartialSuccesses += 1
+//            } else if(completeSetOfLaunchData[counter].boosterRecoveryOutcome == .failure) {
+//                overallBoosterRecoveryFailures += 1
+//            } else {
+//                overallBoosterRecoveryNoOutcome += 1
+//            }
+//
+//            if(completeSetOfLaunchData[counter].launchVehicleVariant == currentLaunch.launchVehicleVariant && completeSetOfLaunchData[counter].launchVehicle == currentLaunch.launchVehicle) {
+//                overallLaunchNumberForLaunchVehicleVariant += 1
+//            }
             
             counter += 1
         }
@@ -164,7 +164,7 @@ class LaunchDetailViewController: UIViewController {
         eighthLabel.text = String(vehicleMissionsThisYear) + getSuffixForNumber(currentValue: vehicleMissionsThisYear) + " launch of the \(currentLaunch.launchVehicle.rawValue) this year"
         tenthLabel.text = String(vehicleMissionFromLaunchLocation) + getSuffixForNumber(currentValue: vehicleMissionFromLaunchLocation) + " \(currentLaunch.launchVehicle.rawValue) launch from \(currentLaunch.launchLocation.getShortName())"
         eleventhLabel.text = String(overallMissionsToOrbitalDestination) + getSuffixForNumber(currentValue: overallMissionsToOrbitalDestination) + " mission to " + currentLaunch.orbitalDestination.returnOrbitalLocationFullName() + " for SpaceX"
-        fourteenthLabel.text = String(overallLaunchNumberForLaunchVehicleVariant) + getSuffixForNumber(currentValue: overallLaunchNumberForLaunchVehicleVariant) + " flight of the \(currentLaunch.launchVehicle.rawValue) \(currentLaunch.launchVehicleVariant.rawValue)"
+        fourteenthLabel.text = String(overallLaunchNumberForLaunchVehicleVariant) + getSuffixForNumber(currentValue: overallLaunchNumberForLaunchVehicleVariant) + " flight of the \(currentLaunch.launchVehicle.rawValue) \(currentLaunch.boosterVariant.rawValue)"
         
         //If it was a successful/partially successful mission enter this code block
         if(currentLaunch.missionOutcome == .success || currentLaunch.missionOutcome == .partialSuccess) {
@@ -196,20 +196,20 @@ class LaunchDetailViewController: UIViewController {
             twelthLabel.text = String(overallBoosterRecoveriesNotAttempted) + getSuffixForNumber(currentValue: overallBoosterRecoveriesNotAttempted) + " planned disposal of a booster"
         }
         
-        if(currentLaunch.boosterRecoveryOutcome == .success) {
-            thirteethLabel.text = String(overallBoosterRecoverySuccesses) + getSuffixForNumber(currentValue: overallBoosterRecoverySuccesses) + " successful recovery of a booster"
-        } else if(currentLaunch.boosterRecoveryOutcome == .partialSuccess) {
-            thirteethLabel.text = String(overallBoosterRecoveryPartialSuccesses) + getSuffixForNumber(currentValue: overallBoosterRecoveryPartialSuccesses) + " partial recovery of a booster"
-        } else if(currentLaunch.boosterRecoveryOutcome == .failure) {
-            thirteethLabel.text = String(overallBoosterRecoveryFailures) + getSuffixForNumber(currentValue: overallBoosterRecoveryFailures) + " failure to recover a booster"
-        } else {
-            thirteethLabel.text = String(overallBoosterRecoveryNoOutcome) + getSuffixForNumber(currentValue: overallBoosterRecoveryNoOutcome) + " unattempted recovery of a booster"
-        }
+//        if(currentLaunch.boosterRecoveryOutcome == .success) {
+//            thirteethLabel.text = String(overallBoosterRecoverySuccesses) + getSuffixForNumber(currentValue: overallBoosterRecoverySuccesses) + " successful recovery of a booster"
+//        } else if(currentLaunch.boosterRecoveryOutcome == .partialSuccess) {
+//            thirteethLabel.text = String(overallBoosterRecoveryPartialSuccesses) + getSuffixForNumber(currentValue: overallBoosterRecoveryPartialSuccesses) + " partial recovery of a booster"
+//        } else if(currentLaunch.boosterRecoveryOutcome == .failure) {
+//            thirteethLabel.text = String(overallBoosterRecoveryFailures) + getSuffixForNumber(currentValue: overallBoosterRecoveryFailures) + " failure to recover a booster"
+//        } else {
+//            thirteethLabel.text = String(overallBoosterRecoveryNoOutcome) + getSuffixForNumber(currentValue: overallBoosterRecoveryNoOutcome) + " unattempted recovery of a booster"
+//        }
         
-        if(currentLaunch.launchVehicleVariant == .noApplicableVariant) {
+        if(currentLaunch.boosterVariant == .noVariant) {
             fourteenthLabel.text = "\(currentLaunch.launchVehicle.rawValue) does not have any variants"
         } else {
-            fourteenthLabel.text = String(overallLaunchNumberForLaunchVehicleVariant) + getSuffixForNumber(currentValue: overallLaunchNumberForLaunchVehicleVariant) + " flight of the \(currentLaunch.launchVehicle.rawValue) \(currentLaunch.launchVehicleVariant.rawValue)"
+            fourteenthLabel.text = String(overallLaunchNumberForLaunchVehicleVariant) + getSuffixForNumber(currentValue: overallLaunchNumberForLaunchVehicleVariant) + " flight of the \(currentLaunch.launchVehicle.rawValue) \(currentLaunch.boosterVariant.rawValue)"
         }
         
         func getSuffixForNumber(currentValue: Int) -> String {

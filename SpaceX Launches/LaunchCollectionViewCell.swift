@@ -59,11 +59,11 @@ class LaunchCollectionViewCell: UICollectionViewCell {
                 return UIColor.green.cgColor
             case .failure:
                 return UIColor.red.cgColor
-            case .upcoming:
+            case .partialSuccess:
                 return UIColor.yellow.cgColor
             case .unknown:
                 return UIColor.orange.cgColor
-            case .partialSuccess, .noOutcomeToDiscern:
+            case .noOutcomeToReport:
                 return UIColor.blue.cgColor
             }
         }
