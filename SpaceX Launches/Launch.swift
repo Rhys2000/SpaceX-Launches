@@ -185,7 +185,7 @@ struct Launch: Codable {
     let fairingRecoveryOutcome: [Outcome]
     
     let missionSupportShips: [String]
-    //let missionSupportShipRoles: [Int]
+    let missionSupportShipRoles: [String]
     
     let missionOutcome: Outcome
     //let webcastLink: String

@@ -26,6 +26,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["None"],
+        "missionSupportShipRoles" : [""],
         "missionOutcome" : "Failure",
     },
     {
@@ -55,6 +56,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["None"],
+        "missionSupportShipRoles" : [""],
         "missionOutcome" : "Failure",
     },
     {
@@ -84,6 +86,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["None"],
+        "missionSupportShipRoles" : [""],
         "missionOutcome" : "Failure",
     },
     {
@@ -113,6 +116,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["None"],
+        "missionSupportShipRoles" : [""],
         "missionOutcome" : "Success",
     },
     {
@@ -142,6 +146,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["None"],
+        "missionSupportShipRoles" : [""],
         "missionOutcome" : "Success",
     },
     {
@@ -171,6 +176,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["None"],
+        "missionSupportShipRoles" : [""],
         "missionOutcome" : "Success",
     },
     {
@@ -200,6 +206,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["American Champion", "Barge"],
+        "missionSupportShipRoles" : ["Tug", "Dragon Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -229,6 +236,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["American Champion", "Barge"],
+        "missionSupportShipRoles" : ["Tug", "Dragon Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -258,6 +266,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["American Islander"],
+        "missionSupportShipRoles" : ["Dragon Recovery Vessel"],
         "missionOutcome" : "Partial Success",
     },
     {
@@ -287,6 +296,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["American Islander"],
+        "missionSupportShipRoles" : ["Dragon Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -316,6 +326,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["None"],
+        "missionSupportShipRoles" : [""],
         "missionOutcome" : "Success",
     },
     {
@@ -345,6 +356,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["None"],
+        "missionSupportShipRoles" : [""],
         "missionOutcome" : "Success",
     },
     {
@@ -374,6 +386,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["None"],
+        "missionSupportShipRoles" : [""],
         "missionOutcome" : "Success",
     },
     {
@@ -403,6 +416,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["American Islander"],
+        "missionSupportShipRoles" : ["Dragon Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -432,6 +446,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["None"],
+        "missionSupportShipRoles" : [""],
         "missionOutcome" : "Success",
     },
     {
@@ -461,6 +476,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["None"],
+        "missionSupportShipRoles" : [""],
         "missionOutcome" : "Success",
     },
     {
@@ -490,6 +506,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["None"],
+        "missionSupportShipRoles" : [""],
         "missionOutcome" : "Success",
     },
     {
@@ -519,6 +536,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["American Islander"],
+        "missionSupportShipRoles" : ["Dragon Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -548,6 +566,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["JRTI", "Go Quest", "Elsbeth III", "NRC Quest"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Dragon Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -577,6 +596,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["JRTI", "Go Quest", "Elsbeth III"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -606,6 +626,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["None"],
+        "missionSupportShipRoles" : [""],
         "missionOutcome" : "Success",
     },
     {
@@ -635,6 +656,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["JRTI", "Go Quest", "Elsbeth III", "NRC Quest"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Dragon Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -664,6 +686,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["None"],
+        "missionSupportShipRoles" : [""],
         "missionOutcome" : "Success",
     },
     {
@@ -693,6 +716,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Elsbeth III", "NRC Quest"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Dragon Recovery Vessel"],
         "missionOutcome" : "Failure",
     },
     {
@@ -722,6 +746,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["None"],
+        "missionSupportShipRoles" : [""],
         "missionOutcome" : "Success",
     },
     {
@@ -751,6 +776,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["JRTI", "NRC Quest", "Pacific Freedom"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -780,6 +806,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Elsbeth III"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Dronee Ship", "Droneship Support Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -809,6 +836,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Elsbeth III", "NRC Quest"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Dragon Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -838,6 +866,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Elsbeth III"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -867,6 +896,7 @@
         "fairingRecoveryLocations" : ["ATL", "No Landing Location"],
         "fairingRecoveryOutcome" : ["Unknown", "No Outcome to Report"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Elsbeth III"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -896,6 +926,7 @@
         "fairingRecoveryLocations" : ["ATL", "No Landing Location"],
         "fairingRecoveryOutcome" : ["Unknown", "No Outcome to Report"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Elsbeth III"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -925,6 +956,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["NRC Quest"],
+        "missionSupportShipRoles" : ["Dragon Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -954,6 +986,7 @@
         "fairingRecoveryLocations" : ["ATL", "No Landing Location"],
         "fairingRecoveryOutcome" : ["Unknown", "No Outcome to Report"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Elsbeth III"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -983,6 +1016,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Elsbeth III"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug"],
         "missionOutcome" : "Failure",
     },
     {
@@ -1012,6 +1046,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["JRTI", "NRC Quest", "Pacific Warrior"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -1041,6 +1076,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["NRC Quest"],
+        "missionSupportShipRoles" : ["Dragon Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -1070,6 +1106,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["None"],
+        "missionSupportShipRoles" : [""],
         "missionOutcome" : "Success",
     },
     {
@@ -1099,6 +1136,7 @@
         "fairingRecoveryLocations" : ["ATL", "No Landing Location"],
         "fairingRecoveryOutcome" : ["Failure", "No Outcome to Report"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Elsbeth III", "Go Searcher"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -1128,6 +1166,7 @@
         "fairingRecoveryLocations" : ["ATL", "No Landing Location"],
         "fairingRecoveryOutcome" : ["Success", "No Outcome to Report"],
         "missionSupportShips" : ["Go Searcher"],
+        "missionSupportShipRoles" : ["Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -1157,6 +1196,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["None"],
+        "missionSupportShipRoles" : [""],
         "missionOutcome" : "Success",
     },
     {
@@ -1186,6 +1226,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["NRC Quest"],
+        "missionSupportShipRoles" : ["Dragon Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -1215,6 +1256,7 @@
         "fairingRecoveryLocations" : ["ATL", "No Landing Location"],
         "fairingRecoveryOutcome" : ["Failure", "No Outcome to Report"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Elsbeth III", "Go Searcher"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -1244,6 +1286,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["JRTI", "NRC Quest", "Kelly C"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Dronesship Support Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -1273,6 +1316,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["None"],
+        "missionSupportShipRoles" : [""],
         "missionOutcome" : "Success",
     },
     {
@@ -1302,6 +1346,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["NRC Quest"],
+        "missionSupportShipRoles" : ["Dragon Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -1331,6 +1376,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["JRTI", "NRC Quest", "Betty R Gambarella"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -1360,6 +1406,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["None"],
+        "missionSupportShipRoles" : [""],
         "missionOutcome" : "Success",
     },
     {
@@ -1389,6 +1436,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["JRTI", "NRC Quest", "Betty R Gambarella"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -1418,6 +1466,7 @@
         "fairingRecoveryLocations" : ["ATL", "No Landing Location"],
         "fairingRecoveryOutcome" : ["Failure", "No Outcome to Report"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "Go Searcher"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -1447,6 +1496,7 @@
         "fairingRecoveryLocations" : ["ATL", "No Landing Location"],
         "fairingRecoveryOutcome" : ["Failure", "No Outcome to Report"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "Mr Steven"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -1476,6 +1526,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["NRC Quest"],
+        "missionSupportShipRoles" : ["Dragon Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -1505,6 +1556,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["NRC Quest"],
+        "missionSupportShipRoles" : ["Booster Splashdown Telemetry Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -1534,6 +1586,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["None"],
+        "missionSupportShipRoles" : [""],
         "missionOutcome" : "Success",
     },
     {
@@ -1563,6 +1616,7 @@
         "fairingRecoveryLocations" : ["ATL", "No Landing Location"],
         "fairingRecoveryOutcome" : ["Failure", "No Outcome to Report"],
         "missionSupportShips" : ["Go Searcher"],
+        "missionSupportShipRoles" : ["Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -1592,6 +1646,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -1621,6 +1676,7 @@
         "fairingRecoveryLocations" : ["PAC"],
         "fairingRecoveryOutcome" : ["Failure", "Success"],
         "missionSupportShips" : ["Mr Steven"],
+        "missionSupportShipRoles" : ["Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -1650,6 +1706,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["None"],
+        "missionSupportShipRoles" : [""],
         "missionOutcome" : "Success",
     },
     {
@@ -1679,6 +1736,7 @@
         "fairingRecoveryLocations" : ["PAC", "No Landing Location"],
         "fairingRecoveryOutcome" : ["Partial Success", "No Outcome to Report"],
         "missionSupportShips" : ["NRC Quest", "Mr Steven"],
+        "missionSupportShipRoles" : ["Booster Splashdown Telemetry Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -1708,6 +1766,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["NRC Quest"],
+        "missionSupportShipRoles" : ["Dragon Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -1737,6 +1796,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Failure"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "Go Pursuit"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -1766,6 +1826,7 @@
         "fairingRecoveryLocations" : ["ATL", "No Landing Location"],
         "fairingRecoveryOutcome" : ["Unknown", "No Outcome to Report"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Rachel", "Go Pursuit"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -1795,6 +1856,7 @@
         "fairingRecoveryLocations" : ["PAC"],
         "fairingRecoveryOutcome" : ["Partial Success", "Success"],
         "missionSupportShips" : ["Mr Steven"],
+        "missionSupportShipRoles" : ["Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -1824,6 +1886,7 @@
         "fairingRecoveryLocations" : ["PAC", "No Landing Location"],
         "fairingRecoveryOutcome" : ["Success", "No Outcome to Report"],
         "missionSupportShips" : ["Go Pursuit"],
+        "missionSupportShipRoles" : ["Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -1853,6 +1916,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["NRC Quest"],
+        "missionSupportShipRoles" : ["Dragon Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -1882,6 +1946,7 @@
         "fairingRecoveryLocations" : ["PAC", "No Landing Location"],
         "fairingRecoveryOutcome" : ["Failure", "No Outcome to Report"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "Go Pursuit"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -1911,6 +1976,7 @@
         "fairingRecoveryLocations" : ["PAC"],
         "fairingRecoveryOutcome" : ["Success", "Failure"],
         "missionSupportShips" : ["JRTI", "NRC Quest", "Pacific Freedom", "Mr Steven"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -1940,6 +2006,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -1969,6 +2036,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -1998,6 +2066,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["None"],
+        "missionSupportShipRoles" : [""],
         "missionOutcome" : "Success",
     },
     {
@@ -2027,6 +2096,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -2056,6 +2126,7 @@
         "fairingRecoveryLocations" : ["PAC"],
         "fairingRecoveryOutcome" : ["Partial Success", "Success"],
         "missionSupportShips" : ["JRTI", "NRC Quest", "Pacific Freedom", "Mr Steven"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -2085,6 +2156,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["Go Quest", "Eagle", "NRC Quest"],
+        "missionSupportShipRoles" : ["Booster Recovery Vessel", "Booster Recovery Vessel", "Dragon Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -2114,6 +2186,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Failure"],
         "missionSupportShips" : ["Go Pursuit"],
+        "missionSupportShipRoles" : ["Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -2143,6 +2216,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["JRTI", "NRC Quest", "Pacific Freedom"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -2172,6 +2246,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Signet Warhorse III", "Mr Steven"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -2201,6 +2276,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Hollywood", "Go Searcher", "Go Navigator"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Dragon Recovery Vessel", "Dragon Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -2230,6 +2306,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Hollywood", "Go Searcher", "Go Navigator"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -2259,6 +2336,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Hollywood", "NRC Quest"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Dragon Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -2288,6 +2366,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Hollywood", "Go Searcher", "Go Navigator"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -2317,6 +2396,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["None"],
+        "missionSupportShipRoles" : [""],
         "missionOutcome" : "Success",
     },
     {
@@ -2346,6 +2426,7 @@
         "fairingRecoveryLocations" : ["NET", "ATL"],
         "fairingRecoveryOutcome" : ["Success", "Failure"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Hollywood", "Ms Tree", "Go Navigator"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -2375,6 +2456,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["NRC Quest"],
+        "missionSupportShipRoles" : ["Dragon Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -2404,6 +2486,7 @@
         "fairingRecoveryLocations" : ["NET", "ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["Ms Tree", "Go Navigator"],
+        "missionSupportShipRoles" : ["Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -2433,6 +2516,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "Ms Tree", "Ms Chief"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -2462,6 +2546,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "NRC Quest"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Dronsship Support Vessel", "Tug", "Dragon Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -2491,6 +2576,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Partial Success"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "Ms Tree", "Ms Chief"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -2520,6 +2606,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Failure", "Success"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "Ms Tree", "Go Navigator"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -2549,6 +2636,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["Go Searcher", "Go Navigator"],
+        "missionSupportShipRoles" : ["Dragon Recovery Vessel", "Trunk Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -2578,6 +2666,7 @@
         "fairingRecoveryLocations" : ["NET", "ATL"],
         "fairingRecoveryOutcome" : ["Success", "Partial Success"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "Ms Tree", "Ms Chief"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -2607,6 +2696,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Failure"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "Ms Tree", "Ms Chief"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recobvery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -2636,6 +2726,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["NRC Quest"],
+        "missionSupportShipRoles" : ["Dragon Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -2665,6 +2756,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success", "Failure"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "Ms Tree", "Ms Cheif"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -2693,7 +2785,8 @@
         "fairingRecoveryDistance" : 711,
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success", "Partial Success"],
-        "missionSupportShips" : ["OCISLY", "Go Quest", "Finn Falgout", "Ms Tree", "Ms Cheif"],
+        "missionSupportShips" : ["OCISLY", "Go Quest", "Finn Falgout", "Ms Tree", "Ms Chief"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -2723,6 +2816,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "Go Navigator"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Dragon Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -2752,6 +2846,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success", "Failure"],
         "missionSupportShips" : ["JRTI", "Go Quest", "Finn Falgout", "Ms Tree", "Ms Chief"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -2781,6 +2876,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Partial Success"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Finn Falgout", "Ms Tree", "Ms Chief"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship" "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -2810,6 +2906,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Partial Success"],
         "missionSupportShips" : ["JRTI", "Go Quest", "Lauren Foss", "Ms Tree", "Ms Chief"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -2839,6 +2936,7 @@
         "fairingRecoveryLocations" : ["NET"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["JRTI", "Go Quest", "Lauren Foss", "Ms Tree", "Ms Chief"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Dronesship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -2868,6 +2966,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Partial Success"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Finn Falgout", "Ms Tree", "Ms Chief"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -2897,6 +2996,7 @@
         "fairingRecoveryLocations" : ["NET", "ATL"],
         "fairingRecoveryOutcome" : ["Success", "Partial Success"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Finn Falgout", "Ms Tree", "Ms Chief"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -2926,6 +3026,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["Ms Chief"],
+        "missionSupportShipRoles" : ["Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -2955,6 +3056,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Failure"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Finn Falgout", "Ms Tree", "Ms Chief"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -2984,6 +3086,7 @@
         "fairingRecoveryLocations" : ["NET", "ATL"],
         "fairingRecoveryOutcome" : ["Success", "Partial Success"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Finn Falgout", "Ms Tree", "Ms Chief"],
+        "missionSupportShipRoles" : ["Autonomouss Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3013,6 +3116,7 @@
         "fairingRecoveryLocations" : ["NET"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Finn Falgout", "Ms Tree", "Ms Chief"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3042,6 +3146,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Partial Success"],
         "missionSupportShips" : ["JRTI", "Go Quest", "Lauren Foss", "Ms Cheif", "Big Stone Leader"],
+        "missionSupportShipRoles" : ["Autonomous Spaceeport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3071,6 +3176,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Partial Success"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Finn Falgout", "Ms Chief", "Big Stone Leader"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3100,6 +3206,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["JRTI", "Go Quest", "Finn Falgout", "Go Navigator"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Dragon Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3129,6 +3236,7 @@
         "fairingRecoveryLocations" : ["PAC"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["NRC Quest"],
+        "missionSupportShipRoles" : ["Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3158,6 +3266,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "Ms Chief", "Go Searcher"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3187,6 +3296,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "Go Navigator"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Dragon Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3216,6 +3326,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Partial Success", "Success"],
         "missionSupportShips" : ["JRTI", "Go Quest", "Finn Falgout", "Ms Tree", "Go Searcher"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3245,6 +3356,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["Ms Tree", "Go Searcher"],
+        "missionSupportShipRoles" : ["Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3274,6 +3386,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Failure", "Success"],
         "missionSupportShips" : ["JRTI", "Go Quest", "Finn Falgout", "Ms Tree", "Ms Chief"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3303,6 +3416,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Failure"],
         "missionSupportShips" : ["JRTI", "Go Quest", "Hawk", "Ms Tree", "Ms Chief"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3332,6 +3446,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["OCISLY", "Go Searcher", "Finn Falgout", "Ms Tree", "Ms Chief"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3361,6 +3476,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success", "Partial Success"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Lauren Foss", "Ms Tree", "Ms Chief"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3390,6 +3506,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success", "Failure"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "Ms Tree", "Ms Chief"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3419,6 +3536,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "Go Searcher", "Go Navigator"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3448,6 +3566,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["JRTI", "Go Quest", "Finn Falgout", "Go Searcher", "Go Navigator"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3477,6 +3596,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Hawk", "Go Searcher", "Go Navigator"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3506,6 +3626,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Finn Falgout", "Shelia Bordelon"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3535,6 +3656,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success", "Failure"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Finn Falgout", "Shelia Bordelon"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3564,6 +3686,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Finn Falgout", "Go Navigator"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Dragon Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3593,6 +3716,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["JRTI", "Go Quest", "Finn Falgout", "Shelia Bordelon"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3622,6 +3746,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success", "Failure"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Mr Jonah", "Shelia Bordelon", "Go Searcher"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3651,6 +3776,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["JRTI", "Go Quest", "Finn Falgout", "Shelia Bordelon"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairined Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3680,6 +3806,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success", "Failure"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Mr Jonah", "Shelia Bordelon"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3709,6 +3836,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["JRTI", "Go Quest", "Finn Falgout", "Go Searcher", "Go Navigator"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Recovery Vessel", "Tug", "Fairing Recovery Vessel", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3738,6 +3866,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Mr Jonah", "Go Navigator"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Dragon Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3767,6 +3896,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["JRTI", "Go Quest", "Finn Falgout", "Go Searcher", "Go Navigator"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Recovery Vessel", "Tug", "Fairing Recovery Vessel", "Fairing recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3796,6 +3926,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["JRTI", "Go Quest", "Finn Falgout", "HOS Briarwood"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3825,6 +3956,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["HOS Briarwood"],
+        "missionSupportShipRoles" : ["Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3854,6 +3986,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["ASOG", "Go Quest", "Finn Falgout", "Go Searcher"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Dragon Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3883,6 +4016,7 @@
         "fairingRecoveryLocations" : ["PAC"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["OCISLY", "Adele Elise", "Scorpius", "NRC Quest"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3912,6 +4046,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["JRTI", "Go Quest", "Finn Falgout", "Go Searcher"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Dragon Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3941,6 +4076,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["ASOG", "Doug", "Go Navigator", "Go Searcher"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Dragon Recovery Vessel", "Dragon Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -3970,6 +4106,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["JRTI", "Bob", "Finn Falgout"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneeship", "Droneship Support Vessel/Fairing Recovery Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -3999,6 +4136,7 @@
         "fairingRecoveryLocations" : ["PAC"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Scorpius", "NRC Quest"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -4028,6 +4166,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["ASOG", "Bob", "Finn Falgout"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Suppoort Vessel/Fairing Recovery Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -4057,6 +4196,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["JRTI", "Doug", "Bob"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel/Tug", "Fairing Recoovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -4086,6 +4226,7 @@
         "fairingRecoveryLocations" : ["PAC"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["OCISLY", "Adele Elise", "Scorpius", "NRC Quest"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -4115,6 +4256,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["ASOG", "Bob", "Finn Falgout"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel/Faiing Recovery Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -4144,6 +4286,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["JRTI", "Doug", "Go Navigator", "Go Searcher"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel/Tug", "Droneship Support Vessel", "Dragon Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -4173,6 +4316,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["ASOG", "Doug", "Zion M Falgout"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel/Fairing Recovery Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -4202,6 +4346,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["Bob"],
+        "missionSupportShipRoles" : ["Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -4231,6 +4376,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["ASOG", "Doug", "Zion M Falgout"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel/Fairing Recovery Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -4260,6 +4406,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["Bob"],
+        "missionSupportShipRoles" : ["Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -4289,6 +4436,7 @@
         "fairingRecoveryLocations" : ["PAC"],
         "fairingRecoveryOutcome" : ["Unknown"],
         "missionSupportShips" : ["NRC Quest"],
+        "missionSupportShipRoles" : ["Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -4318,6 +4466,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["ASOG", "Doug", "Zion M Falgout"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel/Fairing Recovery Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -4347,6 +4496,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["ASOG", "Doug", "Zion M Falgout"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel/Fairing Recovery Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -4376,6 +4526,7 @@
         "fairingRecoveryLocations" : ["PAC"],
         "fairingRecoveryOutcome" : ["Unknown"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Scorpius", "NRC Quest"],
+        "missionSupportShipRoles" : ["Autonomous Spacepport Droneship", "Dronehsip Support Vessel", "Tug", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -4405,6 +4556,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["JRTI", "Bob", "Zion M Falgout"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel/Fairing Recovery Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -4434,6 +4586,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["ASOG", "Doug", "Zion M Falgout"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel/Fairing Recovery Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -4463,6 +4616,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["JRTI", "Doug", "Zion M Falgout"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel/Fairing Recovery Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -4492,6 +4646,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["JRTI", "Bob", "Finn Falgout"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel/Fairing Recovery Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -4521,6 +4676,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["ASOG", "Doug", "Bob", "Megan", "Shannon"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel/Tug", "Droneship Support Vessel", "Dragon Recovery Vessel", "Dragon Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -4550,6 +4706,7 @@
         "fairingRecoveryLocations" : ["PAC"],
         "fairingRecoveryOutcome" : ["Unknown"],
         "missionSupportShips" : ["NRC Quest"],
+        "missionSupportShipRoles" : ["Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -4579,6 +4736,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["JRTI", "Bob", "Finn Falgout"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel/Fairing Recovery Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -4608,6 +4766,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["ASOG", "Doug"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel/Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -4637,6 +4796,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["JRTI", "Bob", "Finn Falgout"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel/Fairing Recovery Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -4666,6 +4826,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["ASOG", "Doug"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel/Fairing Recovery Vessel/Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -4695,6 +4856,7 @@
         "fairingRecoveryLocations" : ["PAC"],
         "fairingRecoveryOutcome" : ["Unknown"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Debra C", "NRC Quest"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -4724,6 +4886,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["JRTI", "Bob", "Finn Falgout"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel/Fairing Recovery Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -4753,6 +4916,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["ASOG", "Doug"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel/Fairing Recovery Vessel/Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -4782,6 +4946,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["Bob"],
+        "missionSupportShipRoles" : ["Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -4811,6 +4976,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["JRTI", "Bob", "Finn Falgout"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel/Fairing Recovery Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -4840,6 +5006,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["ASOG", "Doug", "Bob"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel/Fairing Recovery Vessel/Tug", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -4869,6 +5036,7 @@
         "fairingRecoveryLocations" : ["PAC"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["NRC Quest"],
+        "missionSupportShipRoles" : ["Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -4898,6 +5066,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["JRTI", "Bob", "Finn Falgout"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel/Fairing Recovery Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -4927,6 +5096,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["ASOG", "Doug", "Finn Falgout"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel/Fairing Recovery Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -4956,6 +5126,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success", "Failure"],
         "missionSupportShips" : ["JRTI", "Bob", "Kurt J Crosby"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel/Fairing Recovery Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -4985,6 +5156,7 @@
         "fairingRecoveryLocations" : ["PAC"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Scorpius", "NRC Quest"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -5014,6 +5186,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["ASOG", "Doug", "Megan", "Shannon"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel/Tug", "Dragon Recovery Vessel", "Dragon Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -5043,6 +5216,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["JRTI", "Bob", "Kurt J Crosby"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel/Fairing Recovery Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -5072,6 +5246,7 @@
         "fairingRecoveryLocations" : ["PAC"],
         "fairingRecoveryOutcome" : ["Unknown"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Scorpius", "NRC Quest"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -5101,6 +5276,7 @@
         "fairingRecoveryLocations" : ["No Landing Location"],
         "fairingRecoveryOutcome" : ["No Outcome to Report"],
         "missionSupportShips" : ["ASOG", "Doug"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel/Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -5130,6 +5306,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["JRTI", "Bob", "Kurt J Crosby"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel/Fairing Recovery Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -5159,6 +5336,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["ASOG", "Doug", "Kurt J Crosby", "Crosby Skipper"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel/Fairing Recovery Vessel/Tug", "Tug", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -5188,6 +5366,7 @@
         "fairingRecoveryLocations" : ["PAC"],
         "fairingRecoveryOutcome" : ["Unknown"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Scorpius", "NRC Quest"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
     {
@@ -5217,6 +5396,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["ASOG", "Doug", "Crosby Skipper"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel/Fairing Recovery Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -5246,6 +5426,7 @@
         "fairingRecoveryLocations" : ["ATL"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["ASOG", "Doug", "Kurt J Crosby"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel/Fairing Recovery Vessel", "Tug"],
         "missionOutcome" : "Success",
     },
     {
@@ -5275,6 +5456,7 @@
         "fairingRecoveryLocations" : ["PAC"],
         "fairingRecoveryOutcome" : ["Success"],
         "missionSupportShips" : ["OCISLY", "Go Quest", "Scorpius", "NRC Quest"],
+        "missionSupportShipRoles" : ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Tug", "Fairing Recovery Vessel"],
         "missionOutcome" : "Success",
     },
 ]
