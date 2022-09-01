@@ -75,8 +75,45 @@ class ViewController: UIViewController {
     var timer = Timer()
     var tempDate = Date()
     
+    //Array containing all the SpaceX launches
+    let launchData = LaunchLoader().allLaunches
+    
+    //Array with the names of every vessel that we know of that have supported a SpaceX mission in one way or another up to this point
+    let recoveryVesselNames: [String] = ["JRTI", "OCISLY", "ASOG", "Go Quest", "Go Searcher", "Go Navigator", "Go Pursuit", "NRC Quest", "Adele Elise", "Megan", "Shannon", "Mr Steven", "Ms Tree", "Ms Chief", "Big Stone Leader", "Shelia Bordelon", "HOS Briarwood", "Bob", "Doug", "American Islander", "American Champion", "Elsbeth III", "Pacific Freedom", "Pacific Warrior", "Kelly C", "Betty R Gambarella", "Hawk", "Rachel", "Eagle", "Signet Warhorse III", "Hollywood", "Finn Falgout", "Lauren Foss", "Mr Jonah", "Scorpius", "Zion M Falgout", "Debra C", "Kurt J Crosby", "Crosby Skipper", "Barge", "No Support Vessels"]
+    
+    //Array with all the roles recovery vessels have played while being apart of the SpaceX fleet
+    let recoveryVesselRoles: [String] = ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Fairing Recovery Vessel", "Dragon Recovery Vessel", "Booster Splashdown Telemetry Vessel", "Booster Recovery Vessel", "Trunk Recovery Vessel", "Tug", "Droneship Support Vessel/Fairing Recovery Vessel", "Droneship Support Vessel/Tug", "Droneship Support Vessel/Fairing Recovery Vessel/Tug", "No Vessel Roles"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Access each launch in the array containing all the SpaceX launches
+        for launch in launchData {
+            
+            //If the number of elements in the missionSupportShips array is not the same as the number of elements in the missionSupportShipRoles array throw an error statement into the console
+            if(launch.missionSupportShips.count != launch.missionSupportShipRoles.count) {
+                print("ERROR \(launch.launchID)")
+            }
+            
+            //Access each element in the array containing all the ships invloved with a particular launch
+            for element in launch.missionSupportShips {
+                
+                //If the name of the vessel is not contained in the recoveryVesselNames array throw an error statement into the console
+                if(!recoveryVesselNames.contains(element)) {
+                    print("ERROR \(launch.launchID)")
+                }
+            }
+            
+            //Accesss each element in the array containing all the roles ships involved with a particular launch played
+            for element in launch.missionSupportShipRoles {
+                
+                //If the role is not contained in the recoveryVesselRoles array throw an error statement into the console
+                if(!recoveryVesselRoles.contains(element)) {
+                    print("ERROR \(launch.launchID)")
+                }
+            }
+        }
+        
         
         var launch = SpaceXLaunch()
         launch.launchName = "KPLO"
@@ -158,10 +195,4 @@ extension UILabel {
         }
     }
 }
-
-//extension Date {
-//    static func - (lhs: Date, rhs: Date) -> TimeInterval {
-//        return lhs.timeIntervalSinceReferenceDate - rhs.timeIntervalSinceReferenceDate
-//    }
-//}
 
