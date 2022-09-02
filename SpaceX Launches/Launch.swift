@@ -138,6 +138,20 @@ struct Customer: Codable {
     let customerWebsiteLink: String
 }
 
+struct SupportVessel: Codable {
+    let supportVesselName: String
+    let supportVesselFullName: String
+    let internationalMaritimeOrganizationNumber: Int
+    let supportVesselOwner: String
+    let supportVesselOperator: String
+    let yearBuilt: Int
+    let hullLength: Double
+    let hullWidth: Double
+    let yearJoinedSupportFleet: Int
+    let yearLeftSupportFleet: Int
+    let fullSpecificationSheet: String
+}
+
 struct LaunchSiteOrLandingZone: Codable {
     let launchSiteShortName: String
     let launchsiteFullName: String

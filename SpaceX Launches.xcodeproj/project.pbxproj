@@ -24,6 +24,7 @@
 		904079D128A2040600D967F9 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904079D028A2040600D967F9 /* LaunchViewController.swift */; };
 		904079D328A4363800D967F9 /* LaunchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904079D228A4363800D967F9 /* LaunchDetailViewController.swift */; };
 		9070517B28AC506500D51EB5 /* customer.json in Resources */ = {isa = PBXBuildFile; fileRef = 9070517A28AC506500D51EB5 /* customer.json */; };
+		90B25CA228C1999700559433 /* supportvessel.json in Resources */ = {isa = PBXBuildFile; fileRef = 90B25CA128C1999700559433 /* supportvessel.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		904079D028A2040600D967F9 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		904079D228A4363800D967F9 /* LaunchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailViewController.swift; sourceTree = "<group>"; };
 		9070517A28AC506500D51EB5 /* customer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = customer.json; sourceTree = "<group>"; };
+		90B25CA128C1999700559433 /* supportvessel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = supportvessel.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				904079CE28A2039700D967F9 /* LaunchCollectionViewCell.swift */,
 				904079C428A045E400D967F9 /* launch.json */,
 				9070517A28AC506500D51EB5 /* customer.json */,
+				90B25CA128C1999700559433 /* supportvessel.json */,
 				900924DA28B41E3B009C4692 /* launchsiteandlandingzone.json */,
 				90407997289C49D100D967F9 /* Main.storyboard */,
 				9040799D289C49D300D967F9 /* Assets.xcassets */,
@@ -259,6 +262,7 @@
 				9070517B28AC506500D51EB5 /* customer.json in Resources */,
 				904079A1289C49D300D967F9 /* LaunchScreen.storyboard in Resources */,
 				9040799E289C49D300D967F9 /* Assets.xcassets in Resources */,
+				90B25CA228C1999700559433 /* supportvessel.json in Resources */,
 				90407999289C49D100D967F9 /* Main.storyboard in Resources */,
 				900924DB28B41E3B009C4692 /* launchsiteandlandingzone.json in Resources */,
 			);

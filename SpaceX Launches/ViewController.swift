@@ -79,13 +79,15 @@ class ViewController: UIViewController {
     let launchData = LaunchLoader().allLaunches
     
     //Array with the names of every vessel that we know of that have supported a SpaceX mission in one way or another up to this point
-    let recoveryVesselNames: [String] = ["JRTI", "OCISLY", "ASOG", "Go Quest", "Go Searcher", "Go Navigator", "Go Pursuit", "NRC Quest", "Adele Elise", "Megan", "Shannon", "Mr Steven", "Ms Tree", "Ms Chief", "Big Stone Leader", "Shelia Bordelon", "HOS Briarwood", "Bob", "Doug", "American Islander", "American Champion", "Elsbeth III", "Pacific Freedom", "Pacific Warrior", "Kelly C", "Betty R Gambarella", "Hawk", "Rachel", "Eagle", "Signet Warhorse III", "Hollywood", "Finn Falgout", "Lauren Foss", "Mr Jonah", "Scorpius", "Zion M Falgout", "Debra C", "Kurt J Crosby", "Crosby Skipper", "Barge", "No Support Vessels"]
+    let supportVesselNames: [String] = ["JRTI", "OCISLY", "ASOG", "Go Quest", "Go Searcher", "Go Navigator", "Go Pursuit", "NRC Quest", "Adele Elise", "Megan", "Shannon", "Mr Steven", "Ms Tree", "Ms Chief", "Big Stone Leader", "Shelia Bordelon", "HOS Briarwood", "Bob", "Doug", "American Islander", "American Champion", "Elsbeth III", "Pacific Freedom", "Pacific Warrior", "Kelly C", "Betty R Gambarella", "Hawk", "Rachel", "Eagle", "Signet Warhorse III", "Hollywood", "Finn Falgout", "Lauren Foss", "Mr Jonah", "Scorpius", "Zion M Falgout", "Debra C", "Kurt J Crosby", "Crosby Skipper", "Barge", "No Support Vessels"]
     
     //Array with all the roles recovery vessels have played while being apart of the SpaceX fleet
-    let recoveryVesselRoles: [String] = ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Fairing Recovery Vessel", "Dragon Recovery Vessel", "Booster Splashdown Telemetry Vessel", "Booster Recovery Vessel", "Trunk Recovery Vessel", "Tug", "Droneship Support Vessel/Fairing Recovery Vessel", "Droneship Support Vessel/Tug", "Droneship Support Vessel/Fairing Recovery Vessel/Tug", "No Vessel Roles"]
+    let supportVesselRoles: [String] = ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Fairing Recovery Vessel", "Dragon Recovery Vessel", "Booster Splashdown Telemetry Vessel", "Booster Recovery Vessel", "Trunk Recovery Vessel", "Tug", "Droneship Support Vessel/Fairing Recovery Vessel", "Droneship Support Vessel/Tug", "Droneship Support Vessel/Fairing Recovery Vessel/Tug", "No Vessel Roles"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print(supportVesselNames.count)
         
         //Access each launch in the array containing all the SpaceX launches
         for launch in launchData {
@@ -99,7 +101,7 @@ class ViewController: UIViewController {
             for element in launch.missionSupportShips {
                 
                 //If the name of the vessel is not contained in the recoveryVesselNames array throw an error statement into the console
-                if(!recoveryVesselNames.contains(element)) {
+                if(!supportVesselNames.contains(element)) {
                     print("ERROR \(launch.launchID)")
                 }
             }
@@ -108,7 +110,7 @@ class ViewController: UIViewController {
             for element in launch.missionSupportShipRoles {
                 
                 //If the role is not contained in the recoveryVesselRoles array throw an error statement into the console
-                if(!recoveryVesselRoles.contains(element)) {
+                if(!supportVesselRoles.contains(element)) {
                     print("ERROR \(launch.launchID)")
                 }
             }
