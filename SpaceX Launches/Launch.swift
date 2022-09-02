@@ -163,7 +163,9 @@ struct Launch: Codable {
     let orbitalDestination: OrbitalLocation //Also could be redone
     let customerArray: [String] //Need to update data in .json file becausee may rideshare missions are missing customers such as starlink and others
     
-    //If booster number is a 0 we do not know what booster number was used on this launch
+    let staticFirePerformed: Bool
+    let staticFireToLaunchGap: Int
+    
     let boosterNumbers: [String]
     let boosterVariant: BoosterVariant
     let boosterRecoveryAttempted: Bool
