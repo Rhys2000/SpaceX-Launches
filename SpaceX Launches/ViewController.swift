@@ -77,17 +77,16 @@ class ViewController: UIViewController {
     
     //Array containing all the SpaceX launches
     let launchData = LaunchLoader().allLaunches
+    let supportVesselData = SupportVesselLoader().allSupportVessels
     
     //Array with the names of every vessel that we know of that have supported a SpaceX mission in one way or another up to this point
-    let supportVesselNames: [String] = ["JRTI", "OCISLY", "ASOG", "Go Quest", "Go Searcher", "Go Navigator", "Go Pursuit", "NRC Quest", "Adele Elise", "Megan", "Shannon", "Mr Steven", "Ms Tree", "Ms Chief", "Big Stone Leader", "Shelia Bordelon", "HOS Briarwood", "Bob", "Doug", "American Islander", "American Champion", "Elsbeth III", "Pacific Freedom", "Pacific Warrior", "Kelly C", "Betty R Gambarella", "Hawk", "Rachel", "Eagle", "Signet Warhorse III", "Hollywood", "Finn Falgout", "Lauren Foss", "Mr Jonah", "Scorpius", "Zion M Falgout", "Debra C", "Kurt J Crosby", "Crosby Skipper", "Barge", "No Support Vessels"]
+    let supportVesselNames: [String] = ["Just Read the Instructions", "Of Course I Still Love You", "A Shortfall of Gravitas", "Go Quest", "Go Searcher", "Go Navigator", "Go Pursuit", "NRC Quest", "Adele Elise", "Megan", "Shannon", "Mr Steven", "Ms Tree", "Ms Chief", "Big Stone Leader", "Shelia Bordelon", "HOS Briarwood", "Bob", "Doug", "American Islander", "American Champion", "Elsbeth III", "Pacific Freedom", "Pacific Warrior", "Kelly C", "Betty R Gambarella", "Hawk", "Rachel", "Eagle", "Signet Warhorse III", "Hollywood", "Finn Falgout", "Lauren Foss", "Mr Jonah", "Scorpius", "Zion M Falgout", "Debra C", "Kurt J Crosby", "Crosby Skipper", "No Support Vessels"]
     
     //Array with all the roles recovery vessels have played while being apart of the SpaceX fleet
     let supportVesselRoles: [String] = ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Fairing Recovery Vessel", "Dragon Recovery Vessel", "Booster Splashdown Telemetry Vessel", "Booster Recovery Vessel", "Trunk Recovery Vessel", "Tug", "Droneship Support Vessel/Fairing Recovery Vessel", "Droneship Support Vessel/Tug", "Droneship Support Vessel/Fairing Recovery Vessel/Tug", "No Vessel Roles"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print(supportVesselNames.count)
         
         //Access each launch in the array containing all the SpaceX launches
         for launch in launchData {
@@ -116,7 +115,38 @@ class ViewController: UIViewController {
             }
         }
         
-        
+        for vessel in supportVesselData {
+            if(vessel.supportVesselName == "") {
+                print("Support Vessel Name Error")
+            }
+            if(vessel.supportVesselFullName == "") {
+                print("Support Vessel Full Name Error")
+            }
+            if(String(vessel.internationalMaritimeOrganizationNumber) == "") {
+                print("IMO Error")
+            }
+            if(vessel.supportVesselOwner == "") {
+                print("Support Vessel Owner Error")
+            }
+            if(vessel.supportVesselOperator == "") {
+                print("Support Vessel Operator Error")
+            }
+            if(String(vessel.yearBuilt) == "") {
+                print("Year Built Error")
+            }
+            if(String(vessel.hullLength) == "") {
+                print("Hull Length Error")
+            }
+            if(String(vessel.hullWidth) == "") {
+                print("Hull Width Error")
+            }
+            if(String(vessel.yearJoinedSupportFleet) == "") {
+                print("Year Joined Error")
+            }
+            if(String(vessel.yearLeftSupportFleet) == "") {
+                print("Year Left Error")
+            }
+        }
         
         
         

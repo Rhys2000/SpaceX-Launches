@@ -140,7 +140,7 @@ struct Customer: Codable {
 
 struct SupportVessel: Codable {
     let supportVesselName: String
-    let supportVesselFullName: String
+    let supportVesselFormerNames: [String]
     let internationalMaritimeOrganizationNumber: Int
     let supportVesselOwner: String
     let supportVesselOperator: String
@@ -210,10 +210,6 @@ public class LaunchLoader {
     @Published var allLaunches = [Launch]()
     
     init() {
-        loadLaunches()
-    }
-    
-    func loadLaunches() {
         if let fileLocation = Bundle.main.url(forResource: "launch", withExtension: "json") {
             do {
                 let data = try Data(contentsOf: fileLocation)
@@ -221,6 +217,25 @@ public class LaunchLoader {
                 let dataFromJson = try jsonDecoder.decode([Launch].self, from: data)
                 
                 self.allLaunches = dataFromJson
+                
+            } catch {
+                print(error)
+            }
+        }
+    }
+}
+
+public class SupportVesselLoader {
+    @Published var allSupportVessels = [SupportVessel]()
+    
+    init() {
+        if let fileLocation = Bundle.main.url(forResource: "supportvessel", withExtension: "json") {
+            do {
+                let data = try Data(contentsOf: fileLocation)
+                let jsonDecoder = JSONDecoder()
+                let dataFromJson = try jsonDecoder.decode([SupportVessel].self, from: data)
+                
+                self.allSupportVessels = dataFromJson
                 
             } catch {
                 print(error)
