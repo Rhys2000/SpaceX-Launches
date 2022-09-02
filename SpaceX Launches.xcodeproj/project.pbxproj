@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		900924DB28B41E3B009C4692 /* launchsite.json in Resources */ = {isa = PBXBuildFile; fileRef = 900924DA28B41E3B009C4692 /* launchsite.json */; };
+		900924DB28B41E3B009C4692 /* launchsiteandlandingzone.json in Resources */ = {isa = PBXBuildFile; fileRef = 900924DA28B41E3B009C4692 /* launchsiteandlandingzone.json */; };
 		90407992289C49D100D967F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90407991289C49D100D967F9 /* AppDelegate.swift */; };
 		90407994289C49D100D967F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90407993289C49D100D967F9 /* SceneDelegate.swift */; };
 		90407996289C49D100D967F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90407995289C49D100D967F9 /* ViewController.swift */; };
@@ -44,7 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		900924DA28B41E3B009C4692 /* launchsite.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = launchsite.json; sourceTree = "<group>"; };
+		900924DA28B41E3B009C4692 /* launchsiteandlandingzone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = launchsiteandlandingzone.json; sourceTree = "<group>"; };
 		9040798E289C49D100D967F9 /* SpaceX Launches.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpaceX Launches.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90407991289C49D100D967F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90407993289C49D100D967F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 				904079CE28A2039700D967F9 /* LaunchCollectionViewCell.swift */,
 				904079C428A045E400D967F9 /* launch.json */,
 				9070517A28AC506500D51EB5 /* customer.json */,
-				900924DA28B41E3B009C4692 /* launchsite.json */,
+				900924DA28B41E3B009C4692 /* launchsiteandlandingzone.json */,
 				90407997289C49D100D967F9 /* Main.storyboard */,
 				9040799D289C49D300D967F9 /* Assets.xcassets */,
 				9040799F289C49D300D967F9 /* LaunchScreen.storyboard */,
@@ -260,7 +260,7 @@
 				904079A1289C49D300D967F9 /* LaunchScreen.storyboard in Resources */,
 				9040799E289C49D300D967F9 /* Assets.xcassets in Resources */,
 				90407999289C49D100D967F9 /* Main.storyboard in Resources */,
-				900924DB28B41E3B009C4692 /* launchsite.json in Resources */,
+				900924DB28B41E3B009C4692 /* launchsiteandlandingzone.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

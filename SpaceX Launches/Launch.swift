@@ -138,7 +138,7 @@ struct Customer: Codable {
     let customerWebsiteLink: String
 }
 
-struct LaunchSite: Codable {
+struct LaunchSiteOrLandingZone: Codable {
     let launchSiteShortName: String
     let launchsiteFullName: String
     let launchSiteAbbreviation: String
@@ -148,7 +148,6 @@ struct LaunchSite: Codable {
     let launchPadAbbreviation: String
     let launchPadLatitude: Double
     let launchPadLongitude: Double
-    let siteStatus: Bool
 }
 
 struct Launch: Codable {

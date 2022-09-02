@@ -33,10 +33,6 @@ class LaunchDetailViewController: UIViewController {
         title = currentLaunch.launchName
         var counter = 0
         
-//        for customer in currentLaunch.customerArray {
-//            print(customer)
-//        }
-        
         //Components to retrieve the year a launch occured in
         let dateFormatter = DateFormatter(), calendar = Calendar.current
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
