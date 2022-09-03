@@ -144,12 +144,14 @@ struct SupportVessel: Codable {
     let internationalMaritimeOrganizationNumber: Int
     let supportVesselOwner: String
     let supportVesselOperator: String
+    let supportVesselType: String
+    let countryOfRegistration: String
+    let portOfCalling: String
     let yearBuilt: Int
     let hullLength: Double
     let hullWidth: Double
     let yearJoinedSupportFleet: Int
     let yearLeftSupportFleet: Int
-    let fullSpecificationSheet: String
 }
 
 struct LaunchSiteOrLandingZone: Codable {

@@ -119,9 +119,6 @@ class ViewController: UIViewController {
             if(vessel.supportVesselName == "") {
                 print("Support Vessel Name Error")
             }
-            if(vessel.supportVesselFullName == "") {
-                print("Support Vessel Full Name Error")
-            }
             if(String(vessel.internationalMaritimeOrganizationNumber) == "") {
                 print("IMO Error")
             }
