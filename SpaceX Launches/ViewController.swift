@@ -27,7 +27,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         searchController.searchResultsUpdater = self
         searchController.searchBar.scopeButtonTitles = ["All", "Active", "Retired"]
         searchController.searchBar.returnKeyType = UIReturnKeyType.done
-        searchController.searchBar.enablesReturnKeyAutomatically = true
+        searchController.searchBar.enablesReturnKeyAutomatically = false
         
         //TableView
         view.addSubview(supportVesselTableView)
@@ -54,10 +54,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = supportVesselTableView.dequeueReusableCell(withIdentifier: SupportVesselTableViewCell.identifier, for: indexPath) as? SupportVesselTableViewCell else { return UITableViewCell() }
         if(searchController.isActive) {
-            cell.textLabel?.text = filteredSupportVesselData[indexPath.row].supportVesselName
             cell.createSupportVesselPreview(with: filteredSupportVesselData[indexPath.row])
         } else {
-            cell.textLabel?.text = supportVesselData[indexPath.row].supportVesselName
             cell.createSupportVesselPreview(with: supportVesselData[indexPath.row])
         }
         return cell

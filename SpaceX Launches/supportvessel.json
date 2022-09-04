@@ -14,6 +14,7 @@
         "yearJoinedSupportFleet" : 2015,
         "yearLeftSupportFleet" : 0,
         "isActive" : "Active",
+        "photographerCredit" : "Julia Bergeron",
     },
     {
         "supportVesselName" : "Of Course I Still Love You",
@@ -30,6 +31,7 @@
         "yearJoinedSupportFleet" : 2015,
         "yearLeftSupportFleet" : 0,
         "isActive" : "Active",
+        "photographerCredit" : "Bob Montanaro",
     },
     {
         "supportVesselName" : "A Shortfall of Gravitas",
@@ -46,6 +48,7 @@
         "yearJoinedSupportFleet" : 2021,
         "yearLeftSupportFleet" : 0,
         "isActive" : "Active",
+        "photographerCredit" : "John Kraus",
     },
     {
         "supportVesselName" : "Go Quest",
@@ -62,6 +65,7 @@
         "yearJoinedSupportFleet" : 2014,
         "yearLeftSupportFleet" : 0,
         "isActive" : "Active",
+        "photographerCredit" : "Julia Bergeron",
     },
     {
         "supportVesselName" : "Go Searcher",
@@ -78,6 +82,7 @@
         "yearJoinedSupportFleet" : 2016,
         "yearLeftSupportFleet" : 2022,
         "isActive" : "Retired",
+        "photographerCredit" : "Julia Bergeron",
         
     },
     {
@@ -95,6 +100,7 @@
         "yearJoinedSupportFleet" : 2018,
         "yearLeftSupportFleet" : 2022,
         "isActive" : "Retired",
+        "photographerCredit" : "Rachel Moore",
     },
     {
         "supportVesselName" : "Go Pursuit",
@@ -111,6 +117,7 @@
         "yearJoinedSupportFleet" : 2018,
         "yearLeftSupportFleet" : 2018,
         "isActive" : "Retired",
+        "photographerCredit" : "Julia Bergeron",
     },
     {
         "supportVesselName" : "NRC Quest",
@@ -127,6 +134,7 @@
         "yearJoinedSupportFleet" : 2015,
         "yearLeftSupportFleet" : 0,
         "isActive" : "Active",
+        "photographerCredit" : "Richard Perkins",
     },
     {
         "supportVesselName" : "Adele Elise",
@@ -143,6 +151,7 @@
         "yearJoinedSupportFleet" : 2021,
         "yearLeftSupportFleet" : 2021,
         "isActive" : "Retired",
+        "photographerCredit" : "Jordan Doose",
     },
     {
         "supportVesselName" : "Megan",
@@ -159,6 +168,7 @@
         "yearJoinedSupportFleet" : 2022,
         "yearLeftSupportFleet" : 0,
         "isActive" : "Active",
+        "photographerCredit" : "Bethany Schurman",
     },
     {
         "supportVesselName" : "Shannon",
@@ -175,6 +185,7 @@
         "yearJoinedSupportFleet" : 2022,
         "yearLeftSupportFleet" : 0,
         "isActive" : "Active",
+        "photographerCredit" : "Greg Scott",
     },
     {
         "supportVesselName" : "Mr Steven",
@@ -191,6 +202,7 @@
         "yearJoinedSupportFleet" : 2017,
         "yearLeftSupportFleet" : 2019,
         "isActive" : "Retired",
+        "photographerCredit" : "Susan Allison",
     },
     {
         "supportVesselName" : "Ms Tree",
@@ -207,6 +219,7 @@
         "yearJoinedSupportFleet" : 2019,
         "yearLeftSupportFleet" : 2021,
         "isActive" : "Retired",
+        "photographerCredit" : "Julia Bergeron",
     },
     {
         "supportVesselName" : "Ms Chief",
@@ -223,6 +236,7 @@
         "yearJoinedSupportFleet" : 2019,
         "yearLeftSupportFleet" : 2021,
         "isActive" : "Retired",
+        "photographerCredit" : "Kyle Montgomery",
     },
     {
         "supportVesselName" : "Big Stone Leader",
@@ -239,6 +253,7 @@
         "yearJoinedSupportFleet" : 2020,
         "yearLeftSupportFleet" : 2020,
         "isActive" : "Retired",
+        "photographerCredit" : "David Brown",
     },
     {
         "supportVesselName" : "Shelia Bordelon",
@@ -255,6 +270,7 @@
         "yearJoinedSupportFleet" : 2021,
         "yearLeftSupportFleet" : 2021,
         "isActive" : "Retired",
+        "photographerCredit" : "Jenny Hautmann",
     },
     {
         "supportVesselName" : "HOS Briarwood",
@@ -271,6 +287,7 @@
         "yearJoinedSupportFleet" : 2021,
         "yearLeftSupportFleet" : 2021,
         "isActive" : "Retired",
+        "photographerCredit" : "Scott Galliers",
     },
     {
         "supportVesselName" : "Bob",
@@ -287,6 +304,7 @@
         "yearJoinedSupportFleet" : 2021,
         "yearLeftSupportFleet" : 0,
         "isActive" : "Active",
+        "photographerCredit" : "Derek Wise",
     },
     {
         "supportVesselName" : "Doug",
@@ -303,6 +321,7 @@
         "yearJoinedSupportFleet" : 2021,
         "yearLeftSupportFleet" : 0,
         "isActive" : "Active",
+        "photographerCredit" : "Kyle Montgomery",
     },
     {
         "supportVesselName" : "American Islander",
@@ -319,6 +338,7 @@
         "yearJoinedSupportFleet" : 2012,
         "yearLeftSupportFleet" : 2014,
         "isActive" : "Retired",
+        "photographerCredit" : "Kim Bridges",
     },
     {
         "supportVesselName" : "American Champion",
@@ -335,6 +355,7 @@
         "yearJoinedSupportFleet" : 2010,
         "yearLeftSupportFleet" : 2012,
         "isActive" : "Retired",
+        "photographerCredit" : "Gary Worrell",
     },
     {
         "supportVesselName" : "Elsbeth III",
@@ -351,6 +372,7 @@
         "yearJoinedSupportFleet" : 2015,
         "yearLeftSupportFleet" : 2017,
         "isActive" : "Retired",
+        "photographerCredit" : "Bob Remmer",
     },
     {
         "supportVesselName" : "Pacific Freedom",
@@ -367,6 +389,7 @@
         "yearJoinedSupportFleet" : 2016,
         "yearLeftSupportFleet" : 2019,
         "isActive" : "Retired",
+        "photographerCredit" : "Eric Sorenson",
     },
     {
         "supportVesselName" : "Pacific Warrior",
@@ -383,6 +406,7 @@
         "yearJoinedSupportFleet" : 2017,
         "yearLeftSupportFleet" : 2017,
         "isActive" : "Retired",
+        "photographerCredit" : "Geoff Pratt",
     },
     {
         "supportVesselName" : "Kelly C",
@@ -399,6 +423,7 @@
         "yearJoinedSupportFleet" : 2017,
         "yearLeftSupportFleet" : 2017,
         "isActive" : "Retired",
+        "photographerCredit" : "Christopher Scott",
     },
     {
         "supportVesselName" : "Betty R Gambarella",
@@ -415,6 +440,7 @@
         "yearJoinedSupportFleet" : 2017,
         "yearLeftSupportFleet" : 2017,
         "isActive" : "Retired",
+        "photographerCredit" : "",
     },
     {
         "supportVesselName" : "Hawk",
@@ -431,6 +457,7 @@
         "yearJoinedSupportFleet" : 2017,
         "yearLeftSupportFleet" : 2021,
         "isActive" : "Retired",
+        "photographerCredit" : "",
     },
     {
         "supportVesselName" : "Rachel",
@@ -447,6 +474,7 @@
         "yearJoinedSupportFleet" : 2018,
         "yearLeftSupportFleet" : 2018,
         "isActive" : "Retired",
+        "photographerCredit" : "Michael Farrell",
     },
     {
         "supportVesselName" : "Eagle",
@@ -463,6 +491,7 @@
         "yearJoinedSupportFleet" : 2018,
         "yearLeftSupportFleet" : 2018,
         "isActive" : "Retired",
+        "photographerCredit" : "Kyle Montgomery",
     },
     {
         "supportVesselName" : "Signet Warhorse III",
@@ -479,6 +508,7 @@
         "yearJoinedSupportFleet" : 2019,
         "yearLeftSupportFleet" : 2019,
         "isActive" : "Retired",
+        "photographerCredit" : "Julia Bergeron",
     },
     {
         "supportVesselName" : "Hollywood",
@@ -495,6 +525,7 @@
         "yearJoinedSupportFleet" : 2019,
         "yearLeftSupportFleet" : 2019,
         "isActive" : "Retired",
+        "photographerCredit" : "Michael Farrell",
     },
     {
         "supportVesselName" : "Finn Falgout",
@@ -511,6 +542,7 @@
         "yearJoinedSupportFleet" : 2020,
         "yearLeftSupportFleet" : 2022,
         "isActive" : "Retired",
+        "photographerCredit" : "Kyle Montgomery",
     },
     {
         "supportVesselName" : "Lauren Foss",
@@ -527,6 +559,7 @@
         "yearJoinedSupportFleet" : 2020,
         "yearLeftSupportFleet" : 2021,
         "isActive" : "Retired",
+        "photographerCredit" : "Joel Kifer",
     },
     {
         "supportVesselName" : "Mr Jonah",
@@ -543,6 +576,7 @@
         "yearJoinedSupportFleet" : 2021,
         "yearLeftSupportFleet" : 2021,
         "isActive" : "Retired",
+        "photographerCredit" : "Michael Farrell",
     },
     {
         "supportVesselName" : "Scorpius",
@@ -559,6 +593,7 @@
         "yearJoinedSupportFleet" : 2021,
         "yearLeftSupportFleet" : 0,
         "isActive" : "Active",
+        "photographerCredit" : "Charlie Allen",
     },
     {
         "supportVesselName" : "Zion M Falgout",
@@ -575,6 +610,7 @@
         "yearJoinedSupportFleet" : 2022,
         "yearLeftSupportFleet" : 2022,
         "isActive" : "Retired",
+        "photographerCredit" : "Josh Loewen",
     },
     {
         "supportVesselName" : "Debra C",
@@ -591,6 +627,7 @@
         "yearJoinedSupportFleet" : 2022,
         "yearLeftSupportFleet" : 2022,
         "isActive" : "Retired",
+        "photographerCredit" : "Ralph Botticelli",
     },
     {
         "supportVesselName" : "Kurt J Crosby",
@@ -607,6 +644,7 @@
         "yearJoinedSupportFleet" : 2022,
         "yearLeftSupportFleet" : 0,
         "isActive" : "Active",
+        "photographerCredit" : "Glen Cdag",
     },
     {
         "supportVesselName" : "Crosby Skipper",
@@ -623,5 +661,6 @@
         "yearJoinedSupportFleet" : 2022,
         "yearLeftSupportFleet" : 0,
         "isActive" : "Active",
+        "photographerCredit" : "Glen Cdag",
     },
 ]

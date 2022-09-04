@@ -153,6 +153,7 @@ struct SupportVessel: Codable {
     let yearJoinedSupportFleet: Int
     let yearLeftSupportFleet: Int
     let isActive: String
+    let photographerCredit: String
 }
 
 struct LaunchSiteOrLandingZone: Codable {
