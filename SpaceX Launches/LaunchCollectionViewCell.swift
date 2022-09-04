@@ -49,7 +49,7 @@ class LaunchCollectionViewCell: UICollectionViewCell {
         
         //launchPreviewImage
         launchPreviewImage.layer.cornerRadius = 10.0
-        launchPreviewImage.contentMode = UIView.ContentMode.scaleAspectFill
+        launchPreviewImage.contentMode = .scaleAspectFill
         launchPreviewImage.layer.borderColor = getLaunchPreviewImageBorderColor(using: currentLaunch.missionOutcome)
         launchPreviewImage.layer.borderWidth = 3.0
         

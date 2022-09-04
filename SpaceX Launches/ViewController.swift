@@ -7,239 +7,95 @@
 
 import UIKit
 
-struct Payload {
-    var payloadName: String = ""
-    var payloadAbbreviation: String = ""
-    var payloadDescription: String = ""
-    var payloadWeight: Int = 0 //Written in kilograms
-    var numberOfPayloads: Int = 0
-    var payloadInstruments: [ScientificInstrument] = []
-}
-
-struct ScientificInstrument {
-    var instrumentName: String = ""
-    var instrumentAbbreviation: String = ""
-    var instrumentDescription: String = ""
-}
-
-struct OrbitalParameters {
-    var perigee: Int = 0
-    var apogee: Int = 0
-    var inclination: Double = 0.0
-}
-
-struct SpaceXLaunch {
-    var launchNumber: Int = 0
-    var launchName: String = ""
-    var alternativeLaunchName: String = ""
-    var launchDateAndTime: String = "" //Written in ISO8601 format (2022-08-04T23:08:00+0000)
-    var launchProvider: String = "Space Exploration Technologies Corporation"
-    var launchProviderAbbreviation: String = "SpaceX"
-    var launchCustomers: [Customer] = []
-    var launchPayloads: [Payload] = []
-    var rocketName: String = ""
-    var rocketVariant: String = ""
-    var boosterNumber: String = "" //Cloud or should be turned into a dictionary with variable below
-    var boosterFlightNumber: Int = 0
-    var launchPadName: String = ""
-    var launchPadAbbreviation: String = ""
-    var launchSiteName: String = "" //Should become an enum but works for now
-    var launchSiteAbbreviation: String = ""
-    var stateName: String = ""
-    var countryName: String = ""
-    var orbitalDestination: String = "" //Could also be a enum
-    var orbitalMetrics: OrbitalParameters = OrbitalParameters()
-    var recoveryAttempted: Bool = true
-    var marineAssets: String = "" //Also should be an enum
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating {
     
-    //A calculated variable based on the total weight of all Payloads in the launchPayloads variable.
-    var totalPayloadWeight: Int {
-        var totalWeight: Int = 0
-        for payload in launchPayloads {
-            totalWeight += payload.payloadWeight
-        }
-        return totalWeight
-    }
-}
-
-class ViewController: UIViewController {
+    let supportVesselTableView = UITableView()
+    let searchController = UISearchController()
     
-    @IBOutlet weak var ExpectedUTC: UILabel!
-    @IBOutlet weak var ExpectedLocal: UILabel!
-    @IBOutlet weak var Actual: UILabel!
-    @IBOutlet weak var Customers: UILabel!
-    @IBOutlet weak var Payload: UILabel!
-    @IBOutlet weak var Countdown: UILabel!
-    @IBOutlet weak var Address: UILabel!
-    
-    var timer = Timer()
-    var tempDate = Date()
-    
-    //Array containing all the SpaceX launches
-    let launchData = LaunchLoader().allLaunches
     let supportVesselData = SupportVesselLoader().allSupportVessels
-    
-    //Array with the names of every vessel that we know of that have supported a SpaceX mission in one way or another up to this point
-    let supportVesselNames: [String] = ["Just Read the Instructions", "Of Course I Still Love You", "A Shortfall of Gravitas", "Go Quest", "Go Searcher", "Go Navigator", "Go Pursuit", "NRC Quest", "Adele Elise", "Megan", "Shannon", "Mr Steven", "Ms Tree", "Ms Chief", "Big Stone Leader", "Shelia Bordelon", "HOS Briarwood", "Bob", "Doug", "American Islander", "American Champion", "Elsbeth III", "Pacific Freedom", "Pacific Warrior", "Kelly C", "Betty R Gambarella", "Hawk", "Rachel", "Eagle", "Signet Warhorse III", "Hollywood", "Finn Falgout", "Lauren Foss", "Mr Jonah", "Scorpius", "Zion M Falgout", "Debra C", "Kurt J Crosby", "Crosby Skipper", "No Support Vessels"]
-    
-    //Array with all the roles recovery vessels have played while being apart of the SpaceX fleet
-    let supportVesselRoles: [String] = ["Autonomous Spaceport Droneship", "Droneship Support Vessel", "Fairing Recovery Vessel", "Dragon Recovery Vessel", "Booster Splashdown Telemetry Vessel", "Booster Recovery Vessel", "Trunk Recovery Vessel", "Tug", "Droneship Support Vessel/Fairing Recovery Vessel", "Droneship Support Vessel/Tug", "Droneship Support Vessel/Fairing Recovery Vessel/Tug", "No Vessel Roles"]
+    var filteredSupportVesselData = [SupportVessel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //Access each launch in the array containing all the SpaceX launches
-        for launch in launchData {
-            
-            //If the number of elements in the missionSupportShips array is not the same as the number of elements in the missionSupportShipRoles array throw an error statement into the console
-            if(launch.missionSupportShips.count != launch.missionSupportShipRoles.count) {
-                print("ERROR \(launch.launchID)")
-            }
-            
-            //Access each element in the array containing all the ships invloved with a particular launch
-            for element in launch.missionSupportShips {
-                
-                //If the name of the vessel is not contained in the recoveryVesselNames array throw an error statement into the console
-                if(!supportVesselNames.contains(element)) {
-                    print("ERROR \(launch.launchID)")
-                }
-            }
-            
-            //Accesss each element in the array containing all the roles ships involved with a particular launch played
-            for element in launch.missionSupportShipRoles {
-                
-                //If the role is not contained in the recoveryVesselRoles array throw an error statement into the console
-                if(!supportVesselRoles.contains(element)) {
-                    print("ERROR \(launch.launchID)")
-                }
-            }
-        }
+        //SearchBar
+        title = "Support Vessels"
         
-        for vessel in supportVesselData {
-            if(vessel.supportVesselName == "") {
-                print("Support Vessel Name Error")
-            }
-            if(String(vessel.internationalMaritimeOrganizationNumber) == "") {
-                print("IMO Error")
-            }
-            if(vessel.supportVesselOwner == "") {
-                print("Support Vessel Owner Error")
-            }
-            if(vessel.supportVesselOperator == "") {
-                print("Support Vessel Operator Error")
-            }
-            if(String(vessel.yearBuilt) == "") {
-                print("Year Built Error")
-            }
-            if(String(vessel.hullLength) == "") {
-                print("Hull Length Error")
-            }
-            if(String(vessel.hullWidth) == "") {
-                print("Hull Width Error")
-            }
-            if(String(vessel.yearJoinedSupportFleet) == "") {
-                print("Year Joined Error")
-            }
-            if(String(vessel.yearLeftSupportFleet) == "") {
-                print("Year Left Error")
-            }
-        }
+        navigationItem.searchController = searchController
+        navigationItem.hidesSearchBarWhenScrolling = false
         
+        searchController.searchResultsUpdater = self
+        searchController.searchBar.scopeButtonTitles = ["All", "Active", "Retired"]
+        searchController.searchBar.returnKeyType = UIReturnKeyType.done
+        searchController.searchBar.enablesReturnKeyAutomatically = true
         
+        //TableView
+        view.addSubview(supportVesselTableView)
+        supportVesselTableView.register(SupportVesselTableViewCell.self, forCellReuseIdentifier: SupportVesselTableViewCell.identifier)
+        supportVesselTableView.delegate = self
+        supportVesselTableView.dataSource = self
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-//        var launch = SpaceXLaunch()
-//        launch.launchName = "KPLO"
-//        launch.alternativeLaunchName = "Korean Pathfinder Lunar Orbiter"
-//
-//        let missionName = launch.launchName + " (" + launch.alternativeLaunchName + ")"
-//        ExpectedUTC.text = missionName
-//        ExpectedUTC.adjustsFontSizeToFitWidth = true
-//
-//        let isoDate = "2022-08-07T23:08:00+0000"
-//
-//        let dateFormatter = DateFormatter()
-//        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-//        dateFormatter.locale = Locale(identifier: "en-US")
-//        tempDate = dateFormatter.date(from: isoDate)!
-//
-//        let calendar = Calendar.current
-//        let components = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second], from: tempDate)
-//
-//        let localDate = calendar.date(from: components)!
-//        dateFormatter.dateFormat = "E, MMMM dd, yyyy h:mm:ss a"
-//        var launchDate = dateFormatter.string(from: localDate) + " (" + TimeZone.current.abbreviation()! + ") / "
-//        dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
-//        dateFormatter.dateFormat = "HH:dd:ss"
-//        launchDate += dateFormatter.string(from: localDate) + " (UTC) "
-//        ExpectedLocal.text = launchDate
-//        ExpectedLocal.adjustsFontSizeToFitWidth = true
-//
-//        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-//
-//        let rocketProvider = launch.launchProvider + " (" + launch.launchProviderAbbreviation + ")"
-//        Actual.text = rocketProvider
-//        Actual.adjustsFontSizeToFitWidth = true
-        
-//        var missionCustomers: String = ""
-//        for customer in launch.launchCustomers{
-//            //missionCustomers += customer + ", \n"
-//        }
-//        Customers.text = missionCustomers
-//        let customersHeight = Customers.optimalHeight
-//        Customers.frame = CGRect(x: Customers.frame.origin.x, y: Customers.frame.origin.y, width: Customers.frame.width, height: customersHeight)
-//        Customers.backgroundColor = UIColor.yellow
-//        Customers.numberOfLines = 0
-//        
-//        var missionPayloads: String = ""
-//        for payload in launch.launchPayloads{
-//            //missionPayloads += payload + ", \n"
-//        }
-//        Payload.text = missionPayloads
-//        let payloadsHeight = Customers.optimalHeight
-//        Payload.frame = CGRect(x: Payload.frame.origin.x, y: Payload.frame.origin.y, width: Payload.frame.width, height: payloadsHeight)
-//        Payload.backgroundColor = UIColor.green
-//        Payload.numberOfLines = 0
-        
-//        self.timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { [self] _ in updateTime() })
-    //}
-    
-//    func updateTime() {
-//        let now = Date()
-//        let totalSeconds = Int(tempDate - now)
-//        let hours = Int(totalSeconds / 3600)
-//        var remainingSeconds = totalSeconds % 3600
-//        let minutes = Int(remainingSeconds / 60)
-//        remainingSeconds = remainingSeconds % 60
-//        Countdown.text = "T - " + String(format: "%02d:%02d:%02d", hours, minutes, remainingSeconds)
+        supportVesselTableView.separatorStyle = .none
     }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        supportVesselTableView.frame = view.bounds
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if(searchController.isActive) {
+            return filteredSupportVesselData.count
+        } else {
+            return supportVesselData.count
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = supportVesselTableView.dequeueReusableCell(withIdentifier: SupportVesselTableViewCell.identifier, for: indexPath) as? SupportVesselTableViewCell else { return UITableViewCell() }
+        if(searchController.isActive) {
+            cell.textLabel?.text = filteredSupportVesselData[indexPath.row].supportVesselName
+            cell.createSupportVesselPreview(with: filteredSupportVesselData[indexPath.row])
+        } else {
+            cell.textLabel?.text = supportVesselData[indexPath.row].supportVesselName
+            cell.createSupportVesselPreview(with: supportVesselData[indexPath.row])
+        }
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if(searchController.isActive) {
+            print(filteredSupportVesselData[indexPath.row].yearJoinedSupportFleet)
+        } else {
+            print(supportVesselData[indexPath.row].yearJoinedSupportFleet)
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 275
+    }
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        
+        let scopeButton = searchController.searchBar.scopeButtonTitles![searchController.searchBar.selectedScopeButtonIndex]
+        let searchText = searchController.searchBar.text!
+        
+        filterUsingSearchTextAndScopeButton(searchText: searchText, scopeButton: scopeButton)
+    }
+    
+    func filterUsingSearchTextAndScopeButton(searchText: String, scopeButton: String = "All") {
+        filteredSupportVesselData = supportVesselData.filter {
+            vessel in
+            let scopeMatch = (scopeButton == "All" || vessel.isActive == scopeButton)
+            if(searchController.searchBar.text != "") {
+                let searchTextMatch = vessel.supportVesselName.lowercased().hasPrefix(searchText.lowercased())
+                return scopeMatch && searchTextMatch
+            } else {
+                return scopeMatch
+            }
+        }
+        supportVesselTableView.reloadData()
+    }
+    
 }
-
-//extension UILabel {
-//    var optimalHeight: CGFloat {
-//        get {
-//            let label = UILabel(frame: CGRect(x: 0, y: 0, width: self.bounds.width, height: CGFloat.greatestFiniteMagnitude))
-//            label.numberOfLines = 0
-//            label.lineBreakMode = .byWordWrapping
-//            label.font = self.font
-//            label.text = self.text
-//            label.sizeToFit()
-//            return label.frame.height
-//        }
-//    }
-//}
 
