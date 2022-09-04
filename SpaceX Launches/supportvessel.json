@@ -188,7 +188,7 @@
         "photographerCredit" : "Greg Scott",
     },
     {
-        "supportVesselName" : "Mr Steven",
+        "supportVesselName" : "Mr. Steven",
         "supportVesselFormerNames" : [""],
         "internationalMaritimeOrganizationNumber" : 9744465,
         "supportVesselOwner" : "SEACOR Marine",
@@ -205,7 +205,7 @@
         "photographerCredit" : "Susan Allison",
     },
     {
-        "supportVesselName" : "Ms Tree",
+        "supportVesselName" : "Go Ms. Tree",
         "supportVesselFormerNames" : ["Mr Steven"],
         "internationalMaritimeOrganizationNumber" : 9744465,
         "supportVesselOwner" : "Guice Offshore",
@@ -222,7 +222,7 @@
         "photographerCredit" : "Julia Bergeron",
     },
     {
-        "supportVesselName" : "Ms Chief",
+        "supportVesselName" : "Go Ms. Chief",
         "supportVesselFormerNames" : ["Capt Elliot McCall"],
         "internationalMaritimeOrganizationNumber" : 9744453,
         "supportVesselOwner" : "Guice Offshore",
@@ -406,10 +406,10 @@
         "yearJoinedSupportFleet" : 2017,
         "yearLeftSupportFleet" : 2017,
         "isActive" : "Retired",
-        "photographerCredit" : "Geoff Pratt",
+        "photographerCredit" : "Tom Brady",
     },
     {
-        "supportVesselName" : "Kelly C",
+        "supportVesselName" : "Kelly C.",
         "supportVesselFormerNames" : ["Mi'Oi", "Apollo"],
         "internationalMaritimeOrganizationNumber" : 703,
         "supportVesselOwner" : "Curtin Maritime Company",
@@ -423,10 +423,10 @@
         "yearJoinedSupportFleet" : 2017,
         "yearLeftSupportFleet" : 2017,
         "isActive" : "Retired",
-        "photographerCredit" : "Christopher Scott",
+        "photographerCredit" : "Jackie Pritchard",
     },
     {
-        "supportVesselName" : "Betty R Gambarella",
+        "supportVesselName" : "Betty R. Gambarella",
         "supportVesselFormerNames" : ["American Pride", "Walter J. Oubre", "Kings Charter", "Nan II"],
         "internationalMaritimeOrganizationNumber" : 7517478,
         "supportVesselOwner" : "Curtin Maritime Company",
@@ -440,7 +440,7 @@
         "yearJoinedSupportFleet" : 2017,
         "yearLeftSupportFleet" : 2017,
         "isActive" : "Retired",
-        "photographerCredit" : "",
+        "photographerCredit" : "Charlie Allen",
     },
     {
         "supportVesselName" : "Hawk",
@@ -457,7 +457,7 @@
         "yearJoinedSupportFleet" : 2017,
         "yearLeftSupportFleet" : 2021,
         "isActive" : "Retired",
-        "photographerCredit" : "",
+        "photographerCredit" : "Julia Bergeron",
     },
     {
         "supportVesselName" : "Rachel",
@@ -562,7 +562,7 @@
         "photographerCredit" : "Joel Kifer",
     },
     {
-        "supportVesselName" : "Mr Jonah",
+        "supportVesselName" : "Mr. Jonah",
         "supportVesselFormerNames" : ["LT 454", "Ranger"],
         "internationalMaritimeOrganizationNumber" : 8971841,
         "supportVesselOwner" : "Falgout Brothers",
@@ -576,7 +576,7 @@
         "yearJoinedSupportFleet" : 2021,
         "yearLeftSupportFleet" : 2021,
         "isActive" : "Retired",
-        "photographerCredit" : "Michael Farrell",
+        "photographerCredit" : "Kyle Montgomery",
     },
     {
         "supportVesselName" : "Scorpius",
@@ -593,10 +593,10 @@
         "yearJoinedSupportFleet" : 2021,
         "yearLeftSupportFleet" : 0,
         "isActive" : "Active",
-        "photographerCredit" : "Charlie Allen",
+        "photographerCredit" : "Pascal Bredel",
     },
     {
-        "supportVesselName" : "Zion M Falgout",
+        "supportVesselName" : "Zion M. Falgout",
         "supportVesselFormerNames" : ["Freedom, OSG Freedom"],
         "internationalMaritimeOrganizationNumber" : 7367249,
         "supportVesselOwner" : "Offshore Towing Incorporated",
@@ -613,7 +613,7 @@
         "photographerCredit" : "Josh Loewen",
     },
     {
-        "supportVesselName" : "Debra C",
+        "supportVesselName" : "Debra C.",
         "supportVesselFormerNames" : ["Esteff S. Defelice", "Hunter D.", "Chinook"],
         "internationalMaritimeOrganizationNumber" : 7129817,
         "supportVesselOwner" : "Curtin Maritime Services",
@@ -627,10 +627,10 @@
         "yearJoinedSupportFleet" : 2022,
         "yearLeftSupportFleet" : 2022,
         "isActive" : "Retired",
-        "photographerCredit" : "Ralph Botticelli",
+        "photographerCredit" : "Gary Elkinton",
     },
     {
-        "supportVesselName" : "Kurt J Crosby",
+        "supportVesselName" : "Kurt J. Crosby",
         "supportVesselFormerNames" : ["Sydney Candies"],
         "internationalMaritimeOrganizationNumber" : 9231341,
         "supportVesselOwner" : "Crosby Marine Transportation Company",
@@ -644,7 +644,7 @@
         "yearJoinedSupportFleet" : 2022,
         "yearLeftSupportFleet" : 0,
         "isActive" : "Active",
-        "photographerCredit" : "Glen Cdag",
+        "photographerCredit" : "Michael Farrell",
     },
     {
         "supportVesselName" : "Crosby Skipper",
@@ -661,6 +661,6 @@
         "yearJoinedSupportFleet" : 2022,
         "yearLeftSupportFleet" : 0,
         "isActive" : "Active",
-        "photographerCredit" : "Glen Cdag",
+        "photographerCredit" : "Peter Dieter Jansen",
     },
 ]
