@@ -21,13 +21,14 @@
                     <connections>
                         <segue destination="mwJ-qL-ub6" kind="relationship" relationship="viewControllers" id="MgD-kb-Shj"/>
                         <segue destination="pJB-09-HNV" kind="relationship" relationship="viewControllers" id="9kR-8r-qtB"/>
+                        <segue destination="QWA-tQ-oZY" kind="relationship" relationship="viewControllers" id="Lqs-Jm-W6X"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H5v-sh-5Rs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1119" y="-247"/>
         </scene>
-        <!--View Controller-->
+        <!--Support Vessels-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpaceX_Launches" customModuleProvider="target" sceneMemberID="viewController">
@@ -37,17 +38,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="xoD-Bi-Esn"/>
+                    <navigationItem key="navigationItem" title="Support Vessels" id="xoD-Bi-Esn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2016" y="1193"/>
         </scene>
-        <!--Launches-->
+        <!--Vessels-->
         <scene sceneID="2tG-nS-ipO">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mwJ-qL-ub6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Launches" image="calendar" catalog="system" selectedImage="calendar" id="lna-Vr-SBh"/>
+                    <tabBarItem key="tabBarItem" title="Vessels" image="ferry" catalog="system" selectedImage="ferry" id="lna-Vr-SBh"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="psc-Bt-5bn">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -62,7 +63,7 @@
             </objects>
             <point key="canvasLocation" x="-2016" y="481"/>
         </scene>
-        <!--Upcoming Launches-->
+        <!--SpaceX Launches-->
         <scene sceneID="2Ep-QC-SCy">
             <objects>
                 <viewController id="a2o-8c-X8n" customClass="LaunchViewController" customModule="SpaceX_Launches" customModuleProvider="target" sceneMemberID="viewController">
@@ -132,7 +133,7 @@
                             <constraint firstItem="rxu-Vg-lwM" firstAttribute="leading" secondItem="LSX-w1-iK2" secondAttribute="leading" id="rVN-NW-uG6"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Upcoming Launches" id="Jc0-x8-q36"/>
+                    <navigationItem key="navigationItem" title="SpaceX Launches" id="Jc0-x8-q36"/>
                     <connections>
                         <outlet property="launchCollectionView" destination="rxu-Vg-lwM" id="nCt-8h-fhL"/>
                         <segue destination="wLg-OH-DoM" kind="show" identifier="showDetailLaunchViewController" id="ooV-cC-wwf"/>
@@ -141,6 +142,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5P-BB-C4e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1120.2898550724638" y="1192.6339285714284"/>
+        </scene>
+        <!--Launch Sites-->
+        <scene sceneID="FOg-5g-1Cr">
+            <objects>
+                <viewController id="n1Z-ID-epv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uBn-da-hWJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="n6q-PO-EQb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Launch Sites" id="wpc-D9-nOx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3z3-9a-Sbh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-190" y="1193"/>
         </scene>
         <!--Launch Detail View Controller-->
         <scene sceneID="NIg-we-uvN">
@@ -274,11 +291,11 @@
             </objects>
             <point key="canvasLocation" x="-1120.2898550724638" y="1901.7857142857142"/>
         </scene>
-        <!--CollectionView-->
+        <!--Launches-->
         <scene sceneID="bRd-eF-XOT">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pJB-09-HNV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="CollectionView" image="square.and.arrow.up.fill" catalog="system" id="gcy-tU-yic"/>
+                    <tabBarItem key="tabBarItem" title="Launches" image="airplane.departure" catalog="system" id="gcy-tU-yic"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="hgV-Wx-TuG">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -293,10 +310,30 @@
             </objects>
             <point key="canvasLocation" x="-1120.2898550724638" y="480.80357142857139"/>
         </scene>
+        <!--Sites-->
+        <scene sceneID="t4U-kv-aUK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QWA-tQ-oZY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Sites" image="globe.asia.australia" catalog="system" id="LSo-6h-MrD"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="g1v-cu-99Q">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="n1Z-ID-epv" kind="relationship" relationship="rootViewController" id="Gkj-XP-sFI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TDu-uN-gfz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-190" y="481"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="calendar" catalog="system" width="128" height="106"/>
-        <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
+        <image name="airplane.departure" catalog="system" width="128" height="83"/>
+        <image name="ferry" catalog="system" width="125" height="128"/>
+        <image name="globe.asia.australia" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

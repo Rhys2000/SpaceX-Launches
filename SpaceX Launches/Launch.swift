@@ -138,24 +138,6 @@ struct Customer: Codable {
     let customerWebsiteLink: String
 }
 
-struct SupportVessel: Codable {
-    let supportVesselName: String
-    let supportVesselFormerNames: [String]
-    let internationalMaritimeOrganizationNumber: Int
-    let supportVesselOwner: String
-    let supportVesselOperator: String
-    let supportVesselType: String
-    let countryOfRegistration: String
-    let portOfCalling: String
-    let yearBuilt: Int
-    let hullLength: Double
-    let hullWidth: Double
-    let yearJoinedSupportFleet: Int
-    let yearLeftSupportFleet: Int
-    let isActive: String
-    let photographerCredit: String
-}
-
 struct LaunchSiteOrLandingZone: Codable {
     let launchSiteShortName: String
     let launchsiteFullName: String
@@ -221,25 +203,6 @@ public class LaunchLoader {
                 let dataFromJson = try jsonDecoder.decode([Launch].self, from: data)
                 
                 self.allLaunches = dataFromJson
-                
-            } catch {
-                print(error)
-            }
-        }
-    }
-}
-
-public class SupportVesselLoader {
-    @Published var allSupportVessels = [SupportVessel]()
-    
-    init() {
-        if let fileLocation = Bundle.main.url(forResource: "supportvessel", withExtension: "json") {
-            do {
-                let data = try Data(contentsOf: fileLocation)
-                let jsonDecoder = JSONDecoder()
-                let dataFromJson = try jsonDecoder.decode([SupportVessel].self, from: data)
-                
-                self.allSupportVessels = dataFromJson
                 
             } catch {
                 print(error)

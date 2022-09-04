@@ -19,12 +19,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         
         //SearchBar
-        title = "Support Vessels"
-        
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
-        navigationItem.leftBarButtonItems = [UIBarButtonItem(image: UIImage(systemName: "arrow.up.circle"), style: .plain, target: self, action: #selector(returnToTop(sender:))), UIBarButtonItem(image: UIImage(systemName: "arrow.down.circle"), style: .plain, target: self, action: #selector(returnToBottom(sender:)))]
+        
+        let topButton = UIBarButtonItem(image: UIImage(systemName: "arrow.up.circle"), style: .plain, target: self, action: #selector(returnToTop(sender:)))
+        topButton.tintColor = .white
+        let bottomButton = UIBarButtonItem(image: UIImage(systemName: "arrow.down.circle"), style: .plain, target: self, action: #selector(returnToBottom(sender:)))
+        bottomButton.tintColor = .white
+        navigationItem.leftBarButtonItems = [topButton, bottomButton]
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "arrow.up.arrow.down.circle"), style: .plain, target: self, action: #selector(sortArrayAlphabetically(sender:)))
+        navigationItem.rightBarButtonItem?.tintColor = .white
         
         searchController.searchResultsUpdater = self
         searchController.searchBar.scopeButtonTitles = ["All", "Active", "Retired"]
@@ -36,6 +40,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         supportVesselTableView.register(SupportVesselTableViewCell.self, forCellReuseIdentifier: SupportVesselTableViewCell.identifier)
         supportVesselTableView.delegate = self
         supportVesselTableView.dataSource = self
+        supportVesselTableView.keyboardDismissMode = .onDrag
         
         supportVesselTableView.separatorStyle = .none
     }
@@ -66,7 +71,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     
-    
+    //First step will be adding a new tab into the tab bar controller and placing all of this data onto a new view controller
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

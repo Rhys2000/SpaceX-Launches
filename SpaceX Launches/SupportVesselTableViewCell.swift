@@ -77,9 +77,9 @@ class SupportVesselTableViewCell: UITableViewCell {
         //SupportVesselOperationStatus label settings
         supportVesselOperationStatusLabel.text = " " + currentVessel.isActive + " "
         if(currentVessel.isActive == "Active") {
-            supportVesselOperationStatusLabel.backgroundColor = .green
+            supportVesselOperationStatusLabel.backgroundColor = .systemGreen
         } else {
-            supportVesselOperationStatusLabel.backgroundColor = .red
+            supportVesselOperationStatusLabel.backgroundColor = .systemRed
         }
         supportVesselOperationStatusLabel.sizeToFit()
         supportVesselOperationStatusLabel.layoutIfNeeded()
