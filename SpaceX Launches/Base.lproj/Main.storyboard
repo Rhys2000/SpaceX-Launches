@@ -31,7 +31,7 @@
         <!--Support Vessels-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpaceX_Launches" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SupportVesselViewController" customModule="SpaceX_Launches" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,10 +39,29 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Support Vessels" id="xoD-Bi-Esn"/>
+                    <connections>
+                        <segue destination="jin-2I-aPh" kind="show" id="n0d-QP-I30"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2016" y="1193"/>
+        </scene>
+        <!--Support Vessel Detail View Controller-->
+        <scene sceneID="w1s-it-Hyc">
+            <objects>
+                <viewController storyboardIdentifier="SupportVesselDetailViewController" id="jin-2I-aPh" customClass="SupportVesselDetailViewController" customModule="SpaceX_Launches" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7CO-zd-gjq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4Hk-YW-3QC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BYt-6q-cJ1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xIB-Si-eke" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2017" y="1902"/>
         </scene>
         <!--Vessels-->
         <scene sceneID="2tG-nS-ipO">
