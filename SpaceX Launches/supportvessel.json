@@ -411,7 +411,7 @@
     {
         "supportVesselName" : "Kelly C.",
         "supportVesselFormerNames" : ["Mi'Oi", "Apollo"],
-        "internationalMaritimeOrganizationNumber" : 703,
+        "internationalMaritimeOrganizationNumber" : 367693690,
         "supportVesselOwner" : "Curtin Maritime Company",
         "supportVesselOperator" : "Curtin Maritime",
         "supportVesselType" : "Tug",
@@ -464,7 +464,7 @@
         "supportVesselFormerNames" : ["Challenger", "Kinsman Challenger", "Offshore Endeavor", "Esther St. Philip", "Equator"],
         "internationalMaritimeOrganizationNumber" : 7600378,
         "supportVesselOwner" : "Tradewinds Towing Company",
-        "supportVesselOperator" : "TRadewinds Towing",
+        "supportVesselOperator" : "Tradewinds Towing",
         "supportVesselType" : "Tug",
         "countryOfRegistration" : "USA",
         "portOfCalling" : "St Augustine, FL",

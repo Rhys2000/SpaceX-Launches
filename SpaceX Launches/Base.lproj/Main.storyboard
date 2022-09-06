@@ -165,7 +165,7 @@
         <!--Launch Sites-->
         <scene sceneID="FOg-5g-1Cr">
             <objects>
-                <viewController id="n1Z-ID-epv" sceneMemberID="viewController">
+                <viewController id="n1Z-ID-epv" customClass="ViewController" customModule="SpaceX_Launches" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uBn-da-hWJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
