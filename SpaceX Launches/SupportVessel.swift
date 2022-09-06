@@ -17,6 +17,7 @@ struct SupportVessel: Codable {
     let yearLeftSupportFleet: Int
     let isActive: String
     let photographerCredit: String
+    let marineFleetLink: String
 }
 
 public class SupportVesselLoader {

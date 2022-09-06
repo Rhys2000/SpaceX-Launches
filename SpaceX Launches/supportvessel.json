@@ -15,6 +15,7 @@
         "yearLeftSupportFleet" : 0,
         "isActive" : "Active",
         "photographerCredit" : "Julia Bergeron",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "Of Course I Still Love You",
@@ -32,6 +33,7 @@
         "yearLeftSupportFleet" : 0,
         "isActive" : "Active",
         "photographerCredit" : "Bob Montanaro",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "A Shortfall of Gravitas",
@@ -49,6 +51,7 @@
         "yearLeftSupportFleet" : 0,
         "isActive" : "Active",
         "photographerCredit" : "John Kraus",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "Go Quest",
@@ -66,6 +69,7 @@
         "yearLeftSupportFleet" : 0,
         "isActive" : "Active",
         "photographerCredit" : "Julia Bergeron",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "Go Searcher",
@@ -83,6 +87,7 @@
         "yearLeftSupportFleet" : 2022,
         "isActive" : "Retired",
         "photographerCredit" : "Julia Bergeron",
+        "marineFleetLink" : "",
         
     },
     {
@@ -101,6 +106,7 @@
         "yearLeftSupportFleet" : 2022,
         "isActive" : "Retired",
         "photographerCredit" : "Rachel Moore",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "Go Pursuit",
@@ -118,6 +124,7 @@
         "yearLeftSupportFleet" : 2018,
         "isActive" : "Retired",
         "photographerCredit" : "Julia Bergeron",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "NRC Quest",
@@ -135,6 +142,7 @@
         "yearLeftSupportFleet" : 0,
         "isActive" : "Active",
         "photographerCredit" : "Richard Perkins",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "Adele Elise",
@@ -152,6 +160,7 @@
         "yearLeftSupportFleet" : 2021,
         "isActive" : "Retired",
         "photographerCredit" : "Jordan Doose",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "Megan",
@@ -169,6 +178,7 @@
         "yearLeftSupportFleet" : 0,
         "isActive" : "Active",
         "photographerCredit" : "Bethany Schurman",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "Shannon",
@@ -186,6 +196,7 @@
         "yearLeftSupportFleet" : 0,
         "isActive" : "Active",
         "photographerCredit" : "Greg Scott",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "Mr. Steven",
@@ -203,6 +214,7 @@
         "yearLeftSupportFleet" : 2019,
         "isActive" : "Retired",
         "photographerCredit" : "Susan Allison",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "Go Ms. Tree",
@@ -220,6 +232,7 @@
         "yearLeftSupportFleet" : 2021,
         "isActive" : "Retired",
         "photographerCredit" : "Julia Bergeron",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "Go Ms. Chief",
@@ -237,6 +250,7 @@
         "yearLeftSupportFleet" : 2021,
         "isActive" : "Retired",
         "photographerCredit" : "Kyle Montgomery",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "Big Stone Leader",
@@ -254,6 +268,7 @@
         "yearLeftSupportFleet" : 2020,
         "isActive" : "Retired",
         "photographerCredit" : "David Brown",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "Shelia Bordelon",
@@ -271,6 +286,7 @@
         "yearLeftSupportFleet" : 2021,
         "isActive" : "Retired",
         "photographerCredit" : "Jenny Hautmann",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "HOS Briarwood",
@@ -288,6 +304,7 @@
         "yearLeftSupportFleet" : 2021,
         "isActive" : "Retired",
         "photographerCredit" : "Scott Galliers",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "Bob",
@@ -305,6 +322,7 @@
         "yearLeftSupportFleet" : 0,
         "isActive" : "Active",
         "photographerCredit" : "Derek Wise",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "Doug",
@@ -322,6 +340,7 @@
         "yearLeftSupportFleet" : 0,
         "isActive" : "Active",
         "photographerCredit" : "Kyle Montgomery",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "American Islander",
@@ -339,6 +358,7 @@
         "yearLeftSupportFleet" : 2014,
         "isActive" : "Retired",
         "photographerCredit" : "Kim Bridges",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "American Champion",
@@ -356,6 +376,7 @@
         "yearLeftSupportFleet" : 2012,
         "isActive" : "Retired",
         "photographerCredit" : "Gary Worrell",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "Elsbeth III",
@@ -373,6 +394,7 @@
         "yearLeftSupportFleet" : 2017,
         "isActive" : "Retired",
         "photographerCredit" : "Bob Remmer",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "Pacific Freedom",
@@ -390,6 +412,7 @@
         "yearLeftSupportFleet" : 2019,
         "isActive" : "Retired",
         "photographerCredit" : "Eric Sorenson",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "Pacific Warrior",
@@ -407,6 +430,7 @@
         "yearLeftSupportFleet" : 2017,
         "isActive" : "Retired",
         "photographerCredit" : "Tom Brady",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "Kelly C.",
@@ -424,6 +448,7 @@
         "yearLeftSupportFleet" : 2017,
         "isActive" : "Retired",
         "photographerCredit" : "Jackie Pritchard",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "Betty R. Gambarella",
@@ -441,6 +466,7 @@
         "yearLeftSupportFleet" : 2017,
         "isActive" : "Retired",
         "photographerCredit" : "Charlie Allen",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "Hawk",
@@ -458,6 +484,7 @@
         "yearLeftSupportFleet" : 2021,
         "isActive" : "Retired",
         "photographerCredit" : "Julia Bergeron",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "Rachel",
@@ -475,6 +502,7 @@
         "yearLeftSupportFleet" : 2018,
         "isActive" : "Retired",
         "photographerCredit" : "Michael Farrell",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "Eagle",
@@ -492,6 +520,7 @@
         "yearLeftSupportFleet" : 2018,
         "isActive" : "Retired",
         "photographerCredit" : "Kyle Montgomery",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "Signet Warhorse III",
@@ -509,6 +538,7 @@
         "yearLeftSupportFleet" : 2019,
         "isActive" : "Retired",
         "photographerCredit" : "Julia Bergeron",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "Hollywood",
@@ -526,6 +556,7 @@
         "yearLeftSupportFleet" : 2019,
         "isActive" : "Retired",
         "photographerCredit" : "Michael Farrell",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "Finn Falgout",
@@ -543,6 +574,7 @@
         "yearLeftSupportFleet" : 2022,
         "isActive" : "Retired",
         "photographerCredit" : "Kyle Montgomery",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "Lauren Foss",
@@ -560,6 +592,7 @@
         "yearLeftSupportFleet" : 2021,
         "isActive" : "Retired",
         "photographerCredit" : "Joel Kifer",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "Mr. Jonah",
@@ -577,6 +610,7 @@
         "yearLeftSupportFleet" : 2021,
         "isActive" : "Retired",
         "photographerCredit" : "Kyle Montgomery",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "Scorpius",
@@ -594,6 +628,7 @@
         "yearLeftSupportFleet" : 0,
         "isActive" : "Active",
         "photographerCredit" : "Pascal Bredel",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "Zion M. Falgout",
@@ -611,6 +646,7 @@
         "yearLeftSupportFleet" : 2022,
         "isActive" : "Retired",
         "photographerCredit" : "Josh Loewen",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "Debra C.",
@@ -628,6 +664,7 @@
         "yearLeftSupportFleet" : 2022,
         "isActive" : "Retired",
         "photographerCredit" : "Gary Elkinton",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "Kurt J. Crosby",
@@ -645,6 +682,7 @@
         "yearLeftSupportFleet" : 0,
         "isActive" : "Active",
         "photographerCredit" : "Michael Farrell",
+        "marineFleetLink" : "",
     },
     {
         "supportVesselName" : "Crosby Skipper",
@@ -662,5 +700,6 @@
         "yearLeftSupportFleet" : 0,
         "isActive" : "Active",
         "photographerCredit" : "Peter Dieter Jansen",
+        "marineFleetLink" : "",
     },
 ]
