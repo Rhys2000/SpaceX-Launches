@@ -15,7 +15,7 @@ class SupportVesselDetailViewController: UIViewController {
     
     static let identifier = "SupportVesselDetailViewController"
     
-    var currentVessel = SupportVessel(supportVesselName: "", supportVesselFormerNames: [""], internationalMaritimeOrganizationNumber: 0, supportVesselOwner: "", supportVesselOperator: "", supportVesselType: "", countryOfRegistration: "", portOfCalling: "", yearBuilt: 0, hullLength: 0, hullWidth: 0, yearJoinedSupportFleet: 0, yearLeftSupportFleet: 0, isActive: "", photographerCredit: "")
+    var currentVessel = SupportVessel(supportVesselName: "", supportVesselFormerNames: [""], internationalMaritimeOrganizationNumber: 0, supportVesselOwner: "", ownerWebsite: "", supportVesselOperator: "", operatorWebsite: "", supportVesselType: "", countryOfRegistration: "", portOfCalling: "", yearBuilt: 0, hullLength: 0, hullWidth: 0, yearJoinedSupportFleet: 0, yearLeftSupportFleet: 0, isActive: "", photographerCredit: "", marineFleetLink: "")
     
     private let headerPhoto = UIImageView()
     private let scrollView = UIScrollView()
@@ -66,25 +66,43 @@ class SupportVesselDetailViewController: UIViewController {
         scrollView.addSubview(detailViewStatiticsSectionLabel)
         
         //owner
-        ownerLabel.text = "Owner:"
+        ownerLabel.text = "Owner: "
         ownerLabel.font = .boldSystemFont(ofSize: ownerLabel.font.pointSize)
         ownerLabel.sizeToFit()
         scrollView.addSubview(ownerLabel)
         
         //ownerData
-        ownerLabelData.text = " " + currentVessel.supportVesselOwner
+        ownerLabelData.text = "  " + currentVessel.supportVesselOwner + "  "
+        ownerLabelData.isUserInteractionEnabled = true
         ownerLabelData.sizeToFit()
+        ownerLabelData.layer.cornerRadius = 10
+        ownerLabelData.layer.borderWidth = 1
+        ownerLabelData.layer.borderColor = UIColor.white.cgColor
+        
+        let ownerLabelTapGesture = CustomTapGestureRecognizer(target: self, action: #selector(linkTap(sender:)))
+        ownerLabelTapGesture.customURL = currentVessel.ownerWebsite
+        ownerLabelData.addGestureRecognizer(ownerLabelTapGesture)
+        
         scrollView.addSubview(ownerLabelData)
         
         //operatorLabel
-        operatorLabel.text = "Operator:"
+        operatorLabel.text = "Operator: "
         operatorLabel.font = .boldSystemFont(ofSize: operatorLabel.font.pointSize)
         operatorLabel.sizeToFit()
         scrollView.addSubview(operatorLabel)
         
         //operatorLabelData
-        operatorLabelData.text = " " + currentVessel.supportVesselOperator
+        operatorLabelData.text = "  " + currentVessel.supportVesselOperator + "  "
+        operatorLabelData.isUserInteractionEnabled = true
         operatorLabelData.sizeToFit()
+        operatorLabelData.layer.cornerRadius = 10
+        operatorLabelData.layer.borderWidth = 1
+        operatorLabelData.layer.borderColor = UIColor.white.cgColor
+        
+        let operatorLabelTapGesture = CustomTapGestureRecognizer(target: self, action: #selector(linkTap(sender:)))
+        operatorLabelTapGesture.customURL = currentVessel.operatorWebsite
+        operatorLabelData.addGestureRecognizer(operatorLabelTapGesture)
+        
         scrollView.addSubview(operatorLabelData)
         
         //imoLabel
@@ -154,14 +172,23 @@ class SupportVesselDetailViewController: UIViewController {
         scrollView.addSubview(hullWidthLabelData)
         
         //homePortLabel
-        homePortLabel.text = "Home Port:"
+        homePortLabel.text = "Home Port: "
         homePortLabel.font = .boldSystemFont(ofSize: homePortLabel.font.pointSize)
         homePortLabel.sizeToFit()
         scrollView.addSubview(homePortLabel)
         
         //homePortLabelData
-        homePortLabelData.text = " " + currentVessel.portOfCalling
+        homePortLabelData.text = "  " + currentVessel.portOfCalling + "  "
+        homePortLabelData.isUserInteractionEnabled = true
         homePortLabelData.sizeToFit()
+        homePortLabelData.layer.cornerRadius = 10
+        homePortLabelData.layer.borderWidth = 1
+        homePortLabelData.layer.borderColor = UIColor.white.cgColor
+        
+        let homePortLabelTapGesture = CustomTapGestureRecognizer(target: self, action: #selector(linkTap(sender:)))
+        homePortLabelTapGesture.customURL = "http://maps.apple.com/"// + currentVessel.portOfCalling
+        homePortLabelData.addGestureRecognizer(homePortLabelTapGesture)
+        
         scrollView.addSubview(homePortLabelData)
         
         //previousNamessLabelData
@@ -180,10 +207,6 @@ class SupportVesselDetailViewController: UIViewController {
             }
         }
         previousNamesLabelData.numberOfLines = 0
-        //previousNamesLabelData.textAlignment = .center
-        //previousNamesLabelData.layer.cornerRadius = 10
-        //previousNamesLabelData.layer.borderWidth = 1
-        //previousNamesLabelData.layer.borderColor = UIColor.white.cgColor
         scrollView.addSubview(previousNamesLabelData)
         
         //marineFleetLabel
@@ -192,10 +215,6 @@ class SupportVesselDetailViewController: UIViewController {
         marineFleetLabel.sizeToFit()
         scrollView.addSubview(marineFleetLabel)
         
-        let tapGesture = CustomTapGestureRecognizer(target: self, action: #selector(linkTap(sender:)))
-        tapGesture.customURL = "https://google.com"
-        marineFleetLabelData.addGestureRecognizer(tapGesture)
-        
         //marineFleetLabelData
         marineFleetLabelData.text = "  " + currentVessel.supportVesselName + "  "
         marineFleetLabelData.isUserInteractionEnabled = true
@@ -203,6 +222,11 @@ class SupportVesselDetailViewController: UIViewController {
         marineFleetLabelData.layer.cornerRadius = 10
         marineFleetLabelData.layer.borderWidth = 1
         marineFleetLabelData.layer.borderColor = UIColor.white.cgColor
+        
+        let marineFleetLabelTapGesture = CustomTapGestureRecognizer(target: self, action: #selector(linkTap(sender:)))
+        marineFleetLabelTapGesture.customURL = currentVessel.marineFleetLink
+        marineFleetLabelData.addGestureRecognizer(marineFleetLabelTapGesture)
+        
         scrollView.addSubview(marineFleetLabelData)
         
 //        let window = UIApplication.shared.windows.first
