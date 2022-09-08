@@ -15,283 +15,357 @@ class SupportVesselDetailViewController: UIViewController {
     
     static let identifier = "SupportVesselDetailViewController"
     
-    var currentVessel = SupportVessel(supportVesselName: "", supportVesselFormerNames: [""], internationalMaritimeOrganizationNumber: 0, supportVesselOwner: "", ownerWebsite: "", supportVesselOperator: "", operatorWebsite: "", supportVesselType: "", countryOfRegistration: "", portOfCalling: "", yearBuilt: 0, hullLength: 0, hullWidth: 0, yearJoinedSupportFleet: 0, yearLeftSupportFleet: 0, isActive: "", photographerCredit: "", marineFleetLink: "")
+    var currentVessel = SupportVessel(supportVesselName: "", supportVesselFormerNames: [""], supportVesselDescription: [""], internationalMaritimeOrganizationNumber: 0, supportVesselOwner: "", ownerWebsite: "", supportVesselOperator: "", operatorWebsite: "", supportVesselType: "", countryOfRegistration: "", portOfCalling: "", portOfCallingLatitude: 0, portOfCallingLongitude: 0, yearBuilt: 0, hullLength: 0, hullWidth: 0, yearJoinedSupportFleet: 0, yearLeftSupportFleet: 0, isActive: "", photographerCredit: "", marineFleetLink: "")
     
-    private let headerPhoto = UIImageView()
     private let scrollView = UIScrollView()
-    private let detailViewStatiticsSectionLabel = UILabel()
+    private let headerPhotoImageView = UIImageView()
+    private let detailViewAboutSectionBackgroundView = UIView()
+    private let detailViewAboutSectionLabel = UILabel()
+    private let aboutSectionData = UILabel()
+    private let aboutSectionLabelButton = UILabel()
+    private let aboutSectionButtonImage = UIImageView()
+    private let detailViewStatisticsSectionLabel = UILabel()
+    private let detailViewStatisticsSectionBackgroundView = UIView()
     private let ownerLabel = UILabel()
     private let ownerLabelData = UILabel()
     private let operatorLabel = UILabel()
     private let operatorLabelData = UILabel()
-    private let previousNamesLabel = UILabel()
-    private let previousNamesLabelData = UILabel()
-    private let imoLabel = UILabel()
-    private let imoLabelData = UILabel()
-    private let yearBuiltLabel = UILabel()
-    private let yearBuiltLabelData = UILabel()
     private let vesselTypeLabel = UILabel()
     private let vesselTypeLabelData = UILabel()
+    private let yearsInFleetLabel = UILabel()
+    private let yearsInFleetLabelData = UILabel()
+    private let previousNamesLabel = UILabel()
+    private let previousNamesLabelData = UILabel()
+    private let yearBuiltLabel = UILabel()
+    private let yearBuiltLabelData = UILabel()
+    private let imoNumberLabel = UILabel()
+    private let imoNumberLabelData = UILabel()
+    private let homePortLabel = UILabel()
+    private let homePortLabelData = UILabel()
     private let hullLengthLabel = UILabel()
     private let hullLengthLabelData = UILabel()
     private let hullWidthLabel = UILabel()
     private let hullWidthLabelData = UILabel()
-    private let homePortLabel = UILabel()
-    private let homePortLabelData = UILabel()
     private let marineFleetLabel = UILabel()
     private let marineFleetLabelData = UILabel()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //Large Title
         title = currentVessel.supportVesselName
-        
-        //ScrollView
-        scrollView.contentSize = CGSize(width: view.frame.width, height: 1500)
+    
         view.addSubview(scrollView)
         
-        //SupportVesselHeaderImage image settings
-        headerPhoto.image = UIImage(named: currentVessel.supportVesselName.replacingOccurrences(of: " ", with: ""))
-        headerPhoto.contentMode = .scaleAspectFill
-        headerPhoto.clipsToBounds = true
-        headerPhoto.layer.cornerRadius = 10.0
-        scrollView.addSubview(headerPhoto)
+        headerPhotoImageView.image = UIImage(named: currentVessel.supportVesselName.replacingOccurrences(of: " ", with: ""))
+        headerPhotoImageView.contentMode = .scaleAspectFill
+        headerPhotoImageView.clipsToBounds = true
+        headerPhotoImageView.layer.cornerRadius = 10.0
+        headerPhotoImageView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        scrollView.addSubview(headerPhotoImageView)
         
-        //detailViewStatisticsSection label settings
-        detailViewStatiticsSectionLabel.text = "Vital Statistics"
-        detailViewStatiticsSectionLabel.textAlignment = .center
-        detailViewStatiticsSectionLabel.font = .boldSystemFont(ofSize: 28)
-        detailViewStatiticsSectionLabel.sizeToFit()
-        scrollView.addSubview(detailViewStatiticsSectionLabel)
+        detailViewAboutSectionBackgroundView.backgroundColor = .gray
+        detailViewAboutSectionBackgroundView.layer.cornerRadius = 10.0
+        detailViewAboutSectionBackgroundView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+        scrollView.addSubview(detailViewAboutSectionBackgroundView)
         
-        //owner
+        detailViewAboutSectionLabel.text = "About " + currentVessel.supportVesselName
+        detailViewAboutSectionLabel.font = .boldSystemFont(ofSize: 24)
+        detailViewAboutSectionLabel.textAlignment = .center
+        detailViewAboutSectionLabel.sizeToFit()
+        detailViewAboutSectionLabel.adjustsFontSizeToFitWidth = true
+        detailViewAboutSectionBackgroundView.addSubview(detailViewAboutSectionLabel)
+        
+        aboutSectionData.text = ""
+        if(currentVessel.supportVesselDescription.count >= 2) {
+            aboutSectionData.text = currentVessel.supportVesselDescription[0] + "\n\n" + currentVessel.supportVesselDescription[1]
+        } else {
+            aboutSectionData.text = currentVessel.supportVesselDescription[0]
+        }
+        aboutSectionData.numberOfLines = 0
+        detailViewAboutSectionBackgroundView.addSubview(aboutSectionData)
+        
+        if(currentVessel.supportVesselDescription.count > 2) {
+            aboutSectionLabelButton.text = "  Read More  "
+            aboutSectionLabelButton.font = .systemFont(ofSize: 20)
+            aboutSectionLabelButton.isUserInteractionEnabled = true
+            aboutSectionLabelButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(pushDetailViewAboutViewController)))
+            aboutSectionLabelButton.sizeToFit()
+            aboutSectionLabelButton.layer.cornerRadius = 10.0
+            aboutSectionLabelButton.layer.borderWidth = 1
+            aboutSectionLabelButton.layer.borderColor = UIColor.white.cgColor
+            detailViewAboutSectionBackgroundView.addSubview(aboutSectionLabelButton)
+    
+            aboutSectionButtonImage.image = UIImage(systemName: "text.book.closed")
+            aboutSectionButtonImage.tintColor = .white
+            aboutSectionButtonImage.frame.size = CGSize(width: aboutSectionLabelButton.frame.height, height: aboutSectionLabelButton.frame.height)
+            detailViewAboutSectionBackgroundView.addSubview(aboutSectionButtonImage)
+        }
+        
+        detailViewStatisticsSectionLabel.text = "Vital Statistics"
+        detailViewStatisticsSectionLabel.font = .boldSystemFont(ofSize: 24)
+        detailViewStatisticsSectionLabel.textAlignment = .center
+        detailViewStatisticsSectionLabel.sizeToFit()
+        scrollView.addSubview(detailViewStatisticsSectionLabel)
+        
+        detailViewStatisticsSectionBackgroundView.backgroundColor = .gray
+        detailViewStatisticsSectionBackgroundView.layer.cornerRadius = 10.0
+        scrollView.addSubview(detailViewStatisticsSectionBackgroundView)
+        
         ownerLabel.text = "Owner: "
         ownerLabel.font = .boldSystemFont(ofSize: ownerLabel.font.pointSize)
         ownerLabel.sizeToFit()
-        scrollView.addSubview(ownerLabel)
+        detailViewStatisticsSectionBackgroundView.addSubview(ownerLabel)
         
-        //ownerData
-        ownerLabelData.text = "  " + currentVessel.supportVesselOwner + "  "
+        ownerLabelData.text = " " + currentVessel.supportVesselOwner + " "
         ownerLabelData.isUserInteractionEnabled = true
+        let ownerLink = CustomTapGestureRecognizer(target: self, action: #selector(linkTap(sender:)))
+        ownerLink.customURL = currentVessel.ownerWebsite
+        ownerLabelData.addGestureRecognizer(ownerLink)
         ownerLabelData.sizeToFit()
-        ownerLabelData.layer.cornerRadius = 10
+        ownerLabelData.layer.cornerRadius = 10.0
         ownerLabelData.layer.borderWidth = 1
         ownerLabelData.layer.borderColor = UIColor.white.cgColor
+        detailViewStatisticsSectionBackgroundView.addSubview(ownerLabelData)
         
-        let ownerLabelTapGesture = CustomTapGestureRecognizer(target: self, action: #selector(linkTap(sender:)))
-        ownerLabelTapGesture.customURL = currentVessel.ownerWebsite
-        ownerLabelData.addGestureRecognizer(ownerLabelTapGesture)
-        
-        scrollView.addSubview(ownerLabelData)
-        
-        //operatorLabel
         operatorLabel.text = "Operator: "
         operatorLabel.font = .boldSystemFont(ofSize: operatorLabel.font.pointSize)
         operatorLabel.sizeToFit()
-        scrollView.addSubview(operatorLabel)
+        detailViewStatisticsSectionBackgroundView.addSubview(operatorLabel)
         
-        //operatorLabelData
-        operatorLabelData.text = "  " + currentVessel.supportVesselOperator + "  "
+        operatorLabelData.text = " " + currentVessel.supportVesselOperator + " "
         operatorLabelData.isUserInteractionEnabled = true
+        let operatorLink = CustomTapGestureRecognizer(target: self, action: #selector(linkTap(sender:)))
+        operatorLink.customURL = currentVessel.operatorWebsite
+        operatorLabelData.addGestureRecognizer(operatorLink)
         operatorLabelData.sizeToFit()
-        operatorLabelData.layer.cornerRadius = 10
+        operatorLabelData.layer.cornerRadius = 10.0
         operatorLabelData.layer.borderWidth = 1
         operatorLabelData.layer.borderColor = UIColor.white.cgColor
+        detailViewStatisticsSectionBackgroundView.addSubview(operatorLabelData)
         
-        let operatorLabelTapGesture = CustomTapGestureRecognizer(target: self, action: #selector(linkTap(sender:)))
-        operatorLabelTapGesture.customURL = currentVessel.operatorWebsite
-        operatorLabelData.addGestureRecognizer(operatorLabelTapGesture)
-        
-        scrollView.addSubview(operatorLabelData)
-        
-        //imoLabel
-        imoLabel.text = ""
-        if(String(currentVessel.internationalMaritimeOrganizationNumber).count == 9) {
-            imoLabel.text! += "MMSI Number: "
-        } else {
-            imoLabel.text! += "IMO Number: "
-        }
-        imoLabel.font = .boldSystemFont(ofSize: imoLabel.font.pointSize)
-        imoLabel.sizeToFit()
-        scrollView.addSubview(imoLabel)
-        
-        //imoLabelData
-        imoLabelData.text = String(currentVessel.internationalMaritimeOrganizationNumber)
-        imoLabelData.sizeToFit()
-        scrollView.addSubview(imoLabelData)
-        
-        //previousNamesLabel
-        previousNamesLabel.text = "Previous Names: "
-        previousNamesLabel.font = .boldSystemFont(ofSize: previousNamesLabel.font.pointSize)
-        previousNamesLabel.sizeToFit()
-        scrollView.addSubview(previousNamesLabel)
-        
-        //yearBuiltLabel
-        yearBuiltLabel.text = "Year Built:"
-        yearBuiltLabel.font = .boldSystemFont(ofSize: yearBuiltLabel.font.pointSize)
-        yearBuiltLabel.sizeToFit()
-        scrollView.addSubview(yearBuiltLabel)
-        
-        //yearBuiltDataLabel
-        yearBuiltLabelData.text = " " + String(currentVessel.yearBuilt)
-        yearBuiltLabelData.sizeToFit()
-        scrollView.addSubview(yearBuiltLabelData)
-        
-        //vesselTypeLabel
         vesselTypeLabel.text = "Vessel Type:"
         vesselTypeLabel.font = .boldSystemFont(ofSize: vesselTypeLabel.font.pointSize)
         vesselTypeLabel.sizeToFit()
-        scrollView.addSubview(vesselTypeLabel)
+        detailViewStatisticsSectionBackgroundView.addSubview(vesselTypeLabel)
         
-        //vesselTypeLabelData
         vesselTypeLabelData.text = " " + currentVessel.supportVesselType
         vesselTypeLabelData.sizeToFit()
-        scrollView.addSubview(vesselTypeLabelData)
+        vesselTypeLabelData.adjustsFontSizeToFitWidth = true
+        detailViewStatisticsSectionBackgroundView.addSubview(vesselTypeLabelData)
         
-        //hullLengthLabel
-        hullLengthLabel.text = "Hull Length:"
-        hullLengthLabel.font = .boldSystemFont(ofSize: hullLengthLabel.font.pointSize)
-        hullLengthLabel.sizeToFit()
-        scrollView.addSubview(hullLengthLabel)
+        yearsInFleetLabel.text = "Service Record:"
+        yearsInFleetLabel.font = .boldSystemFont(ofSize: yearsInFleetLabel.font.pointSize)
+        yearsInFleetLabel.sizeToFit()
+        detailViewStatisticsSectionBackgroundView.addSubview(yearsInFleetLabel)
         
-        //hullLengthLabelData
-        hullLengthLabelData.text = " " + String(currentVessel.hullLength) + " meters"
-        hullLengthLabelData.sizeToFit()
-        scrollView.addSubview(hullLengthLabelData)
+        yearsInFleetLabelData.text = " " + String(currentVessel.yearJoinedSupportFleet)
+        if(currentVessel.yearLeftSupportFleet == 0) {
+            yearsInFleetLabelData.text! += " - Present"
+        } else if(currentVessel.yearJoinedSupportFleet != currentVessel.yearLeftSupportFleet) {
+            yearsInFleetLabelData.text! += " - " + String(currentVessel.yearLeftSupportFleet)
+        }
+        yearsInFleetLabelData.sizeToFit()
+        detailViewStatisticsSectionBackgroundView.addSubview(yearsInFleetLabelData)
         
-        //hullWidthLabel
-        hullWidthLabel.text = "Hull Width:"
-        hullWidthLabel.font = .boldSystemFont(ofSize: hullWidthLabel.font.pointSize)
-        hullWidthLabel.sizeToFit()
-        scrollView.addSubview(hullWidthLabel)
+        if(currentVessel.supportVesselFormerNames.count >= 1 && currentVessel.supportVesselFormerNames[0] != "") {
+            
+            previousNamesLabel.text = "Previous Names: "
+            previousNamesLabel.font = .boldSystemFont(ofSize: previousNamesLabel.font.pointSize)
+            previousNamesLabel.sizeToFit()
+            detailViewStatisticsSectionBackgroundView.addSubview(previousNamesLabel)
+            
+            if(currentVessel.supportVesselFormerNames.count == 1) {
+                previousNamesLabelData.text = currentVessel.supportVesselFormerNames[0]
+            } else if(currentVessel.supportVesselFormerNames.count == 2) {
+                previousNamesLabelData.text = currentVessel.supportVesselFormerNames[0] + " and " + currentVessel.supportVesselFormerNames[1]
+            } else {
+                previousNamesLabelData.text = ""
+                for name in currentVessel.supportVesselFormerNames {
+                    if(name == currentVessel.supportVesselFormerNames.last) {
+                        previousNamesLabelData.text! += " and " + name
+                    } else {
+                        previousNamesLabelData.text! += name + ", "
+                    }
+                }
+            }
+            previousNamesLabelData.numberOfLines = 0
+            detailViewStatisticsSectionBackgroundView.addSubview(previousNamesLabelData)
+        }
         
-        //hullWidthLabelData
-        hullWidthLabelData.text = " " + String(currentVessel.hullWidth) + " meters"
-        hullWidthLabelData.sizeToFit()
-        scrollView.addSubview(hullWidthLabelData)
+        yearBuiltLabel.text = "Year Built:"
+        yearBuiltLabel.font = .boldSystemFont(ofSize: yearBuiltLabel.font.pointSize)
+        yearBuiltLabel.sizeToFit()
+        detailViewStatisticsSectionBackgroundView.addSubview(yearBuiltLabel)
         
-        //homePortLabel
+        yearBuiltLabelData.text = " " + String(currentVessel.yearBuilt)
+        yearBuiltLabelData.sizeToFit()
+        detailViewStatisticsSectionBackgroundView.addSubview(yearBuiltLabelData)
+        
+        if(String(currentVessel.internationalMaritimeOrganizationNumber).count == 7) {
+            imoNumberLabel.text = "IMO Number:"
+        } else {
+            imoNumberLabel.text = "MMSI Number:"
+        }
+        imoNumberLabel.font = .boldSystemFont(ofSize: imoNumberLabel.font.pointSize)
+        imoNumberLabel.sizeToFit()
+        detailViewStatisticsSectionBackgroundView.addSubview(imoNumberLabel)
+        
+        imoNumberLabelData.text = " " + String(currentVessel.internationalMaritimeOrganizationNumber)
+        imoNumberLabelData.sizeToFit()
+        detailViewStatisticsSectionBackgroundView.addSubview(imoNumberLabelData)
+        
         homePortLabel.text = "Home Port: "
         homePortLabel.font = .boldSystemFont(ofSize: homePortLabel.font.pointSize)
         homePortLabel.sizeToFit()
-        scrollView.addSubview(homePortLabel)
+        detailViewStatisticsSectionBackgroundView.addSubview(homePortLabel)
         
-        //homePortLabelData
-        homePortLabelData.text = "  " + currentVessel.portOfCalling + "  "
+        homePortLabelData.text = " " + currentVessel.portOfCalling + " "
         homePortLabelData.isUserInteractionEnabled = true
+        homePortLabelData.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(pushHomePortViewController)))
         homePortLabelData.sizeToFit()
-        homePortLabelData.layer.cornerRadius = 10
+        homePortLabelData.layer.cornerRadius = 10.0
         homePortLabelData.layer.borderWidth = 1
         homePortLabelData.layer.borderColor = UIColor.white.cgColor
+        detailViewStatisticsSectionBackgroundView.addSubview(homePortLabelData)
         
-        let homePortLabelTapGesture = CustomTapGestureRecognizer(target: self, action: #selector(linkTap(sender:)))
-        homePortLabelTapGesture.customURL = "http://maps.apple.com/"// + currentVessel.portOfCalling
-        homePortLabelData.addGestureRecognizer(homePortLabelTapGesture)
+        hullLengthLabel.text = "Hull Length:"
+        hullLengthLabel.font = .boldSystemFont(ofSize: hullLengthLabel.font.pointSize)
+        hullLengthLabel.sizeToFit()
+        detailViewStatisticsSectionBackgroundView.addSubview(hullLengthLabel)
         
-        scrollView.addSubview(homePortLabelData)
+        hullLengthLabelData.text = " " + String(currentVessel.hullLength)
+        hullLengthLabelData.sizeToFit()
+        detailViewStatisticsSectionBackgroundView.addSubview(hullLengthLabelData)
         
-        //previousNamessLabelData
-        previousNamesLabelData.text = ""
-        if(currentVessel.supportVesselFormerNames.count == 1) {
-            previousNamesLabelData.text! += currentVessel.supportVesselFormerNames[0]
-        } else if (currentVessel.supportVesselFormerNames.count == 2) {
-            previousNamesLabelData.text! += currentVessel.supportVesselFormerNames[0] + " and " + currentVessel.supportVesselFormerNames[1]
-        } else {
-            for name in currentVessel.supportVesselFormerNames {
-                if(name == currentVessel.supportVesselFormerNames.last) {
-                    previousNamesLabelData.text! += "and " + name
-                } else {
-                    previousNamesLabelData.text! += name + ", \n"
-                }
-            }
-        }
-        previousNamesLabelData.numberOfLines = 0
-        scrollView.addSubview(previousNamesLabelData)
+        hullLengthLabel.text = "Hull Length:"
+        hullLengthLabel.font = .boldSystemFont(ofSize: hullLengthLabel.font.pointSize)
+        hullLengthLabel.sizeToFit()
+        detailViewStatisticsSectionBackgroundView.addSubview(hullLengthLabel)
         
-        //marineFleetLabel
-        marineFleetLabel.text = "Marine Fleet Page: "
-        marineFleetLabel.font = .boldSystemFont(ofSize: marineFleetLabel.font.pointSize)
+        hullLengthLabelData.text = " " + String(currentVessel.hullLength) + " meters"
+        hullLengthLabelData.sizeToFit()
+        detailViewStatisticsSectionBackgroundView.addSubview(hullLengthLabelData)
+        
+        hullWidthLabel.text = "Hull Length:"
+        hullWidthLabel.font = .boldSystemFont(ofSize: hullWidthLabel.font.pointSize)
+        hullWidthLabel.sizeToFit()
+        detailViewStatisticsSectionBackgroundView.addSubview(hullWidthLabel)
+        
+        hullWidthLabelData.text = " " + String(currentVessel.hullWidth) + " meters"
+        hullWidthLabelData.sizeToFit()
+        detailViewStatisticsSectionBackgroundView.addSubview(hullWidthLabelData)
+        
+        marineFleetLabel.text = "Marine Fleet Link: "
+        marineFleetLabel.font = .boldSystemFont(ofSize: operatorLabel.font.pointSize)
         marineFleetLabel.sizeToFit()
-        scrollView.addSubview(marineFleetLabel)
+        detailViewStatisticsSectionBackgroundView.addSubview(marineFleetLabel)
         
-        //marineFleetLabelData
-        marineFleetLabelData.text = "  " + currentVessel.supportVesselName + "  "
+        marineFleetLabelData.text = " " + currentVessel.supportVesselName + " "
         marineFleetLabelData.isUserInteractionEnabled = true
+        let marineFleetLink = CustomTapGestureRecognizer(target: self, action: #selector(linkTap(sender:)))
+        marineFleetLink.customURL = currentVessel.marineFleetLink
+        marineFleetLabelData.addGestureRecognizer(marineFleetLink)
         marineFleetLabelData.sizeToFit()
-        marineFleetLabelData.layer.cornerRadius = 10
+        marineFleetLabelData.layer.cornerRadius = 10.0
         marineFleetLabelData.layer.borderWidth = 1
         marineFleetLabelData.layer.borderColor = UIColor.white.cgColor
-        
-        let marineFleetLabelTapGesture = CustomTapGestureRecognizer(target: self, action: #selector(linkTap(sender:)))
-        marineFleetLabelTapGesture.customURL = currentVessel.marineFleetLink
-        marineFleetLabelData.addGestureRecognizer(marineFleetLabelTapGesture)
-        
-        scrollView.addSubview(marineFleetLabelData)
-        
-//        let window = UIApplication.shared.windows.first
-//        print(window?.safeAreaInsets)
-//        print(self.navigationController?.navigationBar.frame.height)
-        //navigationController?.navigationBar.backgroundColor = .blue
-        //print(tabBarController?.tabBar.frame.height)
+        detailViewStatisticsSectionBackgroundView.addSubview(marineFleetLabelData)
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        //scrollView
-        scrollView.frame = CGRect(x: 0, y: 143, width: view.bounds.width, height: view.bounds
-            .height - 143 - 87)
+        scrollView.frame = view.bounds
         
-        //headerPhoto
-        headerPhoto.frame = CGRect(x: 10, y: 10, width: scrollView.bounds.width - 20, height: 200)
+        headerPhotoImageView.frame = CGRect(x: 10, y: 0, width: scrollView.bounds.width - 20, height: 200) //Need to scale based on screen size
         
-        //Statictics Section Label
-        detailViewStatiticsSectionLabel.frame = CGRect(x: 10, y: headerPhoto.frame.maxY + 10, width: scrollView.bounds.width - 20, height: detailViewStatiticsSectionLabel.bounds.height)
+        detailViewAboutSectionBackgroundView.frame = CGRect(x: 10, y: headerPhotoImageView.frame.maxY, width: scrollView.bounds.width - 20, height: 300)
         
-        //Owner Labels
-        ownerLabel.frame = CGRect(x: (scrollView.bounds.width - (ownerLabel.frame.width + ownerLabelData.frame.width)) / 2, y: detailViewStatiticsSectionLabel.frame.maxY + 10, width: ownerLabel.frame.width, height: ownerLabel.frame.height)
-        ownerLabelData.frame = CGRect(x: ownerLabel.frame.maxX, y: detailViewStatiticsSectionLabel.frame.maxY + 10, width: ownerLabelData.frame.width, height: ownerLabelData.frame.height)
+        detailViewAboutSectionLabel.frame = CGRect(x: 10, y: 5, width: detailViewAboutSectionBackgroundView.bounds.width - 20, height: detailViewAboutSectionLabel.frame.height)
         
-        //Operator Labels
-        operatorLabel.frame = CGRect(x: (scrollView.bounds.width - (operatorLabel.frame.width + operatorLabelData.frame.width)) / 2, y: ownerLabel.frame.maxY + 5, width: operatorLabel.frame.width, height: operatorLabel.frame.height)
-        operatorLabelData.frame = CGRect(x: operatorLabel.frame.maxX, y: ownerLabel.frame.maxY + 5, width: operatorLabelData.frame.width, height: operatorLabelData.frame.height)
+        aboutSectionData.frame.size = updateFrameUsingBackgroundView(for: aboutSectionData, using: detailViewAboutSectionBackgroundView)
+        aboutSectionData.frame.origin = CGPoint(x: 10, y: detailViewAboutSectionLabel.frame.maxY + 5)
         
-        //Marine Organization Numbr Labels
-        imoLabel.frame = CGRect(x: (scrollView.bounds.width - (imoLabel.frame.width + imoLabelData.frame.width)) / 2, y: operatorLabel.frame.maxY + 5, width: imoLabel.frame.width, height: imoLabel.frame.height)
-        imoLabelData.frame = CGRect(x: imoLabel.frame.maxX, y: operatorLabel.frame.maxY + 5, width: imoLabelData.frame.width, height: imoLabelData.frame.height)
+        aboutSectionButtonImage.frame.origin = CGPoint(x: (detailViewAboutSectionBackgroundView.frame.width - (aboutSectionLabelButton.frame.width + aboutSectionButtonImage.frame.width)) / 2, y: aboutSectionData.frame.maxY + 10)
+        aboutSectionLabelButton.frame.origin = CGPoint(x: aboutSectionButtonImage.frame.maxX, y: aboutSectionData.frame.maxY + 10)
         
-        //Year Built Labels
-        yearBuiltLabel.frame = CGRect(x: (scrollView.bounds.width - (yearBuiltLabel.frame.width + yearBuiltLabelData.frame.width)) / 2, y: imoLabel.frame.maxY + 5, width: yearBuiltLabel.frame.width, height: yearBuiltLabel.frame.height)
-        yearBuiltLabelData.frame = CGRect(x: yearBuiltLabel.frame.maxX, y: imoLabel.frame.maxY + 5, width: yearBuiltLabelData.frame.width, height: yearBuiltLabelData.frame.height)
+        var padding: CGFloat = 10
+        if(aboutSectionLabelButton.frame.height == CGFloat(0)) {
+            padding = 0
+        }
+        detailViewAboutSectionBackgroundView.frame = CGRect(x: 10, y: headerPhotoImageView.frame.maxY, width: scrollView.bounds.width - 20, height: aboutSectionLabelButton.frame.maxY + padding)
+        print(detailViewAboutSectionBackgroundView.frame.maxY)
+        print(aboutSectionLabelButton.frame.maxY)
         
-        //Vessel Type Labels
-        vesselTypeLabel.frame = CGRect(x: (scrollView.bounds.width - (vesselTypeLabel.frame.width + vesselTypeLabelData.frame.width)) / 2, y: yearBuiltLabel.frame.maxY + 5, width: vesselTypeLabel.frame.width, height: vesselTypeLabel.frame.height)
-        vesselTypeLabelData.frame = CGRect(x: vesselTypeLabel.frame.maxX, y: yearBuiltLabel.frame.maxY + 5, width: vesselTypeLabelData.frame.width, height: vesselTypeLabelData.frame.height)
+        detailViewStatisticsSectionLabel.frame = CGRect(x: 10, y: detailViewAboutSectionBackgroundView.frame.maxY + 10, width: scrollView.bounds.width - 20, height: detailViewStatisticsSectionLabel.frame.height)
         
-        //Hull Length Labels
-        hullLengthLabel.frame = CGRect(x: (scrollView.bounds.width - (hullLengthLabel.frame.width + hullLengthLabelData.frame.width)) / 2, y: vesselTypeLabel.frame.maxY + 5, width: hullLengthLabel.frame.width, height: hullLengthLabel.frame.height)
-        hullLengthLabelData.frame = CGRect(x: hullLengthLabel.frame.maxX, y: vesselTypeLabel.frame.maxY + 5, width: hullLengthLabelData.frame.width, height: hullLengthLabelData.frame.height)
+        detailViewStatisticsSectionBackgroundView.frame = CGRect(x: 10, y: detailViewStatisticsSectionLabel.frame.maxY + 10, width: scrollView.bounds.width - 20, height: 300)
         
-        //Hull Width Labels
-        hullWidthLabel.frame = CGRect(x: (scrollView.bounds.width - (hullWidthLabel.frame.width + hullWidthLabelData.frame.width)) / 2, y: hullLengthLabel.frame.maxY + 5, width: hullWidthLabel.frame.width, height: hullWidthLabel.frame.height)
-        hullWidthLabelData.frame = CGRect(x: hullWidthLabel.frame.maxX, y: hullLengthLabel.frame.maxY + 5, width: hullWidthLabelData.frame.width, height: hullWidthLabelData.frame.height)
+        ownerLabel.frame.origin = CGPoint(x: (detailViewStatisticsSectionBackgroundView.frame.width - (ownerLabel.frame.width + ownerLabelData.frame.width)) / 2, y: 10)
+        ownerLabelData.frame.origin = CGPoint(x: ownerLabel.frame.maxX, y: 10)
         
-        //Home Port Labels
-        homePortLabel.frame = CGRect(x: (scrollView.bounds.width - (homePortLabel.frame.width + homePortLabelData.frame.width)) / 2, y: hullWidthLabel.frame.maxY + 5, width: homePortLabel.frame.width, height: homePortLabel.frame.height)
-        homePortLabelData.frame = CGRect(x: homePortLabel.frame.maxX, y: hullWidthLabel.frame.maxY + 5, width: homePortLabelData.frame.width, height: homePortLabelData.frame.height)
+        operatorLabel.frame.origin = CGPoint(x: (detailViewStatisticsSectionBackgroundView.frame.width - (operatorLabel.frame.width + operatorLabelData.frame.width)) / 2, y: ownerLabel.frame.maxY + 5)
+        operatorLabelData.frame.origin = CGPoint(x: operatorLabel.frame.maxX, y: ownerLabel.frame.maxY + 5)
         
-        //Previous Names Labels
-        let previousNamesLabelDataSize = updateLabelFrame(for: previousNamesLabelData, using: previousNamesLabel)
-        previousNamesLabel.frame = CGRect(x: (scrollView.bounds.width - (previousNamesLabel.frame.width + previousNamesLabelDataSize.width)) / 2, y: homePortLabel.frame.maxY + 5, width: previousNamesLabel.frame.width, height: previousNamesLabel.frame.height)
-        previousNamesLabelData.frame = CGRect(x: previousNamesLabel.frame.maxX, y: homePortLabel.frame.maxY + 5, width: previousNamesLabelDataSize.width, height: previousNamesLabelDataSize.height)
+        vesselTypeLabel.frame.origin = CGPoint(x: (detailViewStatisticsSectionBackgroundView.frame.width - (vesselTypeLabel.frame.width + vesselTypeLabelData.frame.width)) / 2, y: operatorLabel.frame.maxY + 5)
+        vesselTypeLabelData.frame.origin = CGPoint(x: vesselTypeLabel.frame.maxX, y: operatorLabel.frame.maxY + 5)
         
-        marineFleetLabel.frame = CGRect(x: (scrollView.bounds.width - (marineFleetLabel.frame.width + marineFleetLabelData.frame.width)) / 2, y: previousNamesLabelData.frame.maxY + 5, width: marineFleetLabel.frame.width, height: marineFleetLabel.frame.height)
-        marineFleetLabelData.frame = CGRect(x: marineFleetLabel.frame.maxX, y: previousNamesLabelData.frame.maxY + 5, width: marineFleetLabelData.frame.width, height: marineFleetLabelData.frame.height)
+        yearsInFleetLabel.frame.origin = CGPoint(x: (detailViewStatisticsSectionBackgroundView.frame.width - (yearsInFleetLabel.frame.width + yearsInFleetLabelData.frame.width)) / 2, y: vesselTypeLabel.frame.maxY + 5)
+        yearsInFleetLabelData.frame.origin = CGPoint(x: yearsInFleetLabel.frame.maxX, y: vesselTypeLabel.frame.maxY + 5)
+        
+        previousNamesLabelData.frame.size = updateFrameUsingAdjacentLabel(for: previousNamesLabelData, using: previousNamesLabel, in: detailViewStatisticsSectionBackgroundView)
+        previousNamesLabel.frame.origin = CGPoint(x: (detailViewStatisticsSectionBackgroundView.frame.width - (previousNamesLabel.frame.width + previousNamesLabelData.frame.width)) / 2, y: yearsInFleetLabel.frame.maxY + 5)
+        previousNamesLabelData.frame.origin = CGPoint(x: previousNamesLabel.frame.maxX, y: yearsInFleetLabel.frame.maxY + 5)
+        
+        padding = 5
+        if(previousNamesLabelData.frame.height == CGFloat(0)) {
+            padding = 0
+        }
+        
+        yearBuiltLabel.frame.origin = CGPoint(x: (detailViewStatisticsSectionBackgroundView.frame.width - (yearBuiltLabel.frame.width + yearBuiltLabelData.frame.width)) / 2, y: previousNamesLabelData.frame.maxY + padding)
+        yearBuiltLabelData.frame.origin = CGPoint(x: yearBuiltLabel.frame.maxX, y: previousNamesLabelData.frame.maxY + padding)
+        
+        imoNumberLabel.frame.origin = CGPoint(x: (detailViewStatisticsSectionBackgroundView.frame.width - (imoNumberLabel.frame.width + imoNumberLabelData.frame.width)) / 2, y: yearBuiltLabel.frame.maxY + 5)
+        imoNumberLabelData.frame.origin = CGPoint(x: imoNumberLabel.frame.maxX, y: yearBuiltLabel.frame.maxY + 5)
+        
+        homePortLabel.frame.origin = CGPoint(x: (detailViewStatisticsSectionBackgroundView.frame.width - (homePortLabel.frame.width + homePortLabelData.frame.width)) / 2, y: imoNumberLabel.frame.maxY + 5)
+        homePortLabelData.frame.origin = CGPoint(x: homePortLabel.frame.maxX, y: imoNumberLabel.frame.maxY + 5)
+        
+        hullLengthLabel.frame.origin = CGPoint(x: (detailViewStatisticsSectionBackgroundView.frame.width - (hullLengthLabel.frame.width + hullLengthLabelData.frame.width)) / 2, y: homePortLabel.frame.maxY + 5)
+        hullLengthLabelData.frame.origin = CGPoint(x: hullLengthLabel.frame.maxX, y: homePortLabel.frame.maxY + 5)
+        
+        hullWidthLabel.frame.origin = CGPoint(x: (detailViewStatisticsSectionBackgroundView.frame.width - (hullWidthLabel.frame.width + hullWidthLabelData.frame.width)) / 2, y: hullLengthLabel.frame.maxY + 5)
+        hullWidthLabelData.frame.origin = CGPoint(x: hullWidthLabel.frame.maxX, y: hullLengthLabel.frame.maxY + 5)
+        
+        marineFleetLabel.frame.origin = CGPoint(x: (detailViewStatisticsSectionBackgroundView.frame.width - (marineFleetLabel.frame.width + marineFleetLabelData.frame.width)) / 2, y: hullWidthLabel.frame.maxY + 5)
+        marineFleetLabelData.frame.origin = CGPoint(x: marineFleetLabel.frame.maxX, y: hullWidthLabel.frame.maxY + 5)
+        
+        detailViewStatisticsSectionBackgroundView.frame = CGRect(x: 10, y: detailViewStatisticsSectionLabel.frame.maxY + 10, width: scrollView.bounds.width - 20, height: marineFleetLabel.frame.maxY + 10)
+        
+        scrollView.contentSize = CGSize(width: view.bounds.width, height: detailViewStatisticsSectionBackgroundView.frame.maxY + 10)
     }
     
-    func updateLabelFrame(for dataLabel: UILabel, using label: UILabel) -> CGSize {
-        let maxSize = CGSize(width: view.bounds.width - 20 - label.bounds.width, height: 1000)
-        return dataLabel.sizeThatFits(maxSize)
+    func updateFrameUsingBackgroundView(for label: UILabel, using view: UIView) -> CGSize {
+        let maxSize = CGSize(width: view.bounds.width - 20, height: 1000)
+        return label.sizeThatFits(maxSize)
+    }
+    
+    func updateFrameUsingAdjacentLabel(for label: UILabel, using titleLabel: UILabel, in background: UIView) -> CGSize {
+        let maxSize = CGSize(width: background.bounds.width - titleLabel.frame.width - 20, height: 1000)
+        return label.sizeThatFits(maxSize)
+    }
+    
+    @objc func pushDetailViewAboutViewController() {
+        let viewController = storyboard?.instantiateViewController(withIdentifier: SupportVesselDetailViewAboutViewController.identifier) as? SupportVesselDetailViewAboutViewController
+        viewController?.stringArray = currentVessel.supportVesselDescription
+        viewController?.vesselName = currentVessel.supportVesselName
+        self.navigationController?.pushViewController(viewController!, animated: true)
+    }
+    
+    @objc func pushHomePortViewController() {
+        let viewController = storyboard?.instantiateViewController(withIdentifier: SupportVesselHomePortViewController.identifier) as? SupportVesselHomePortViewController
+        viewController?.homeport = currentVessel.portOfCalling
+        viewController?.latitude = currentVessel.portOfCallingLatitude
+        viewController?.longitude = currentVessel.portOfCallingLongitude
+        self.navigationController?.pushViewController(viewController!, animated: true)
     }
     
     @objc func linkTap(sender: CustomTapGestureRecognizer) {

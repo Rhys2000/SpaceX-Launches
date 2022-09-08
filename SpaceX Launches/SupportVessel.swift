@@ -4,6 +4,7 @@ import Foundation
 struct SupportVessel: Codable {
     let supportVesselName: String
     let supportVesselFormerNames: [String]
+    let supportVesselDescription: [String]
     let internationalMaritimeOrganizationNumber: Int
     let supportVesselOwner: String
     let ownerWebsite: String

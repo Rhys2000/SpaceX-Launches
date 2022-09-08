@@ -121,9 +121,8 @@ class SupportVesselTableViewCell: UITableViewCell {
         contentView.addSubview(supportVesselOperationStatusLabel)
         contentView.addSubview(vesselFlagLabel)
         contentView.addSubview(supportVesselCountryOfRegistration)
-        //contentView.backgroundColor = .orange
     }
-    
+
     override func layoutSubviews() { //FIX THE SPACING OF THE TEXT LABELS IN THE UIVIEW
         super.layoutSubviews()
         supportVesselImageView.frame = CGRect(x: 10, y: 10, width: contentView.bounds.width - 20, height: 190)

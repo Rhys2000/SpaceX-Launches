@@ -348,6 +348,36 @@
             </objects>
             <point key="canvasLocation" x="-190" y="481"/>
         </scene>
+        <!--Support Vessel Detail View About View Controller-->
+        <scene sceneID="chX-Oo-zTk">
+            <objects>
+                <viewController storyboardIdentifier="SupportVesselDetailViewAboutViewController" id="cPS-Ki-zDe" customClass="SupportVesselDetailViewAboutViewController" customModule="SpaceX_Launches" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xrK-3Y-u2i">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="KhW-ZD-eJP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iIC-5M-F1g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2017" y="2620"/>
+        </scene>
+        <!--Support Vessel Home Port View Controller-->
+        <scene sceneID="f8s-87-hkp">
+            <objects>
+                <viewController storyboardIdentifier="SupportVesselHomePortViewController" id="eaP-kw-ik5" customClass="SupportVesselHomePortViewController" customModule="SpaceX_Launches" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n8M-8u-FG5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6hI-Cf-lVT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rBb-7q-86E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2017" y="3327"/>
+        </scene>
     </scenes>
     <resources>
         <image name="airplane.departure" catalog="system" width="128" height="83"/>

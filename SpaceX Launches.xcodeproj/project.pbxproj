@@ -27,6 +27,8 @@
 		904DB95F28C552AF000052C9 /* SupportVessel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904DB95E28C552AF000052C9 /* SupportVessel.swift */; };
 		904DB96128C553D6000052C9 /* SupportVesselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904DB96028C553D6000052C9 /* SupportVesselViewController.swift */; };
 		904DB96328C55574000052C9 /* SupportVesselDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904DB96228C55574000052C9 /* SupportVesselDetailViewController.swift */; };
+		904DB9A628C95170000052C9 /* SupportVesselDetailViewAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904DB9A528C95170000052C9 /* SupportVesselDetailViewAboutViewController.swift */; };
+		904DB9A828C99C99000052C9 /* SupportVesselHomePortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904DB9A728C99C99000052C9 /* SupportVesselHomePortViewController.swift */; };
 		9070517B28AC506500D51EB5 /* customer.json in Resources */ = {isa = PBXBuildFile; fileRef = 9070517A28AC506500D51EB5 /* customer.json */; };
 		90B25CA228C1999700559433 /* supportvessel.json in Resources */ = {isa = PBXBuildFile; fileRef = 90B25CA128C1999700559433 /* supportvessel.json */; };
 /* End PBXBuildFile section */
@@ -73,6 +75,8 @@
 		904DB95E28C552AF000052C9 /* SupportVessel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportVessel.swift; sourceTree = "<group>"; };
 		904DB96028C553D6000052C9 /* SupportVesselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportVesselViewController.swift; sourceTree = "<group>"; };
 		904DB96228C55574000052C9 /* SupportVesselDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportVesselDetailViewController.swift; sourceTree = "<group>"; };
+		904DB9A528C95170000052C9 /* SupportVesselDetailViewAboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportVesselDetailViewAboutViewController.swift; sourceTree = "<group>"; };
+		904DB9A728C99C99000052C9 /* SupportVesselHomePortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportVesselHomePortViewController.swift; sourceTree = "<group>"; };
 		9070517A28AC506500D51EB5 /* customer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = customer.json; sourceTree = "<group>"; };
 		90B25CA128C1999700559433 /* supportvessel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = supportvessel.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,8 +138,10 @@
 				904079CE28A2039700D967F9 /* LaunchCollectionViewCell.swift */,
 				904DB95E28C552AF000052C9 /* SupportVessel.swift */,
 				904DB96028C553D6000052C9 /* SupportVesselViewController.swift */,
-				904DB96228C55574000052C9 /* SupportVesselDetailViewController.swift */,
 				90203AAF28C4441900EDECA2 /* SupportVesselTableViewCell.swift */,
+				904DB96228C55574000052C9 /* SupportVesselDetailViewController.swift */,
+				904DB9A528C95170000052C9 /* SupportVesselDetailViewAboutViewController.swift */,
+				904DB9A728C99C99000052C9 /* SupportVesselHomePortViewController.swift */,
 				904079C428A045E400D967F9 /* launch.json */,
 				9070517A28AC506500D51EB5 /* customer.json */,
 				90B25CA128C1999700559433 /* supportvessel.json */,
@@ -305,6 +311,7 @@
 				90407996289C49D100D967F9 /* ViewController.swift in Sources */,
 				904DB96128C553D6000052C9 /* SupportVesselViewController.swift in Sources */,
 				90407992289C49D100D967F9 /* AppDelegate.swift in Sources */,
+				904DB9A628C95170000052C9 /* SupportVesselDetailViewAboutViewController.swift in Sources */,
 				904DB95F28C552AF000052C9 /* SupportVessel.swift in Sources */,
 				904079CD28A17BFD00D967F9 /* Launch.swift in Sources */,
 				904079CF28A2039700D967F9 /* LaunchCollectionViewCell.swift in Sources */,
@@ -312,6 +319,7 @@
 				9040799C289C49D100D967F9 /* SpaceX_Launches.xcdatamodeld in Sources */,
 				904079D128A2040600D967F9 /* LaunchViewController.swift in Sources */,
 				90203AB028C4441900EDECA2 /* SupportVesselTableViewCell.swift in Sources */,
+				904DB9A828C99C99000052C9 /* SupportVesselHomePortViewController.swift in Sources */,
 				90407994289C49D100D967F9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
