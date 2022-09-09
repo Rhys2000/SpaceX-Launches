@@ -17,6 +17,8 @@ class SupportVesselDetailViewController: UIViewController {
     
     var currentVessel = SupportVessel(supportVesselName: "", supportVesselFormerNames: [""], supportVesselDescription: [""], internationalMaritimeOrganizationNumber: 0, supportVesselOwner: "", ownerWebsite: "", supportVesselOperator: "", operatorWebsite: "", supportVesselType: "", countryOfRegistration: "", portOfCalling: "", portOfCallingLatitude: 0, portOfCallingLongitude: 0, yearBuilt: 0, hullLength: 0, hullWidth: 0, yearJoinedSupportFleet: 0, yearLeftSupportFleet: 0, isActive: "", photographerCredit: "", marineFleetLink: "")
     
+    var launchesUsingSupportVessel = [Launch]()
+    
     private let scrollView = UIScrollView()
     private let headerPhotoImageView = UIImageView()
     private let detailViewAboutSectionBackgroundView = UIView()
@@ -50,11 +52,20 @@ class SupportVesselDetailViewController: UIViewController {
     private let marineFleetLabelData = UILabel()
     private let detailViewMilestonesSectionBackgroundView = UIView()
     private let detailViewMilestonesSectionLabel = UILabel()
+    private let missionsDeployedLabel = UILabel()
+    private let missionRoleLabel = UILabel()
+    private let missionInvolementTimelineLabel = UILabel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = currentVessel.supportVesselName
-    
+        
+        for launch in LaunchLoader().allLaunches {
+            if(launch.missionSupportShips.contains(currentVessel.supportVesselName)) {
+                launchesUsingSupportVessel.append(launch)
+            }
+        }
+
         view.addSubview(scrollView)
         
         headerPhotoImageView.image = UIImage(named: currentVessel.supportVesselName.replacingOccurrences(of: " ", with: ""))
@@ -189,6 +200,7 @@ class SupportVesselDetailViewController: UIViewController {
                 }
             }
             previousNamesLabelData.numberOfLines = 0
+            previousNamesLabelData.lineBreakMode = .byWordWrapping
             detailViewStatisticsSectionBackgroundView.addSubview(previousNamesLabelData)
         }
 
@@ -272,11 +284,91 @@ class SupportVesselDetailViewController: UIViewController {
         detailViewMilestonesSectionLabel.sizeToFit()
         detailViewMilestonesSectionBackgroundView.addSubview(detailViewMilestonesSectionLabel)
         
+        missionsDeployedLabel.text = currentVessel.supportVesselName + " has been deployed for use on " + String(launchesUsingSupportVessel.count) + " SpaceX missions"
+        missionsDeployedLabel.numberOfLines = 0
+        detailViewMilestonesSectionBackgroundView.addSubview(missionsDeployedLabel)
         
+        var individualVesselRoles = [String](), filteredIndividualVesselRoles = [String](), valuesOfVesselRoles = [Int](), vesselRoleDictionary = [String: Int]()
+        for launch in launchesUsingSupportVessel {
+            individualVesselRoles.append(launch.missionSupportShipRoles[launch.missionSupportShips.firstIndex(of: currentVessel.supportVesselName)!])
+        }
+        for role in individualVesselRoles {
+            if(!filteredIndividualVesselRoles.contains(role)) {
+                filteredIndividualVesselRoles.append(role)
+                valuesOfVesselRoles.append(0)
+            }
+        }
+        vesselRoleDictionary = Dictionary(uniqueKeysWithValues: zip(filteredIndividualVesselRoles, valuesOfVesselRoles))
+        for role in individualVesselRoles {
+            vesselRoleDictionary[role]! += 1
+        }
+        let tempKeys = [String](vesselRoleDictionary.keys)
+        let tempValues = [Int](vesselRoleDictionary.values)
+        missionRoleLabel.text = "\(currentVessel.supportVesselName) has been deployed in the role of "
+        if(vesselRoleDictionary.count == 1) {
+            missionRoleLabel.text! += "\(tempKeys[0].lowercased()) \(getProperWording(for: tempValues[0]))"
+        } else if(vesselRoleDictionary.count == 2) {
+            missionRoleLabel.text! += "\(tempKeys[0].lowercased()) \(getProperWording(for: tempValues[0])) and \(tempKeys[1].lowercased()) \(getProperWording(for: tempValues[1]))"
+        } else {
+           for (key, value) in vesselRoleDictionary {
+               if(key == tempKeys.last) {
+                   missionRoleLabel.text! += " and a \(key.lowercased()) \(getProperWording(for: value))"
+                } else {
+                    missionRoleLabel.text! += "\(key.lowercased()) \(getProperWording(for: value)), "
+                }
+            }
+        }
+        missionRoleLabel.numberOfLines = 0
+        detailViewMilestonesSectionBackgroundView.addSubview(missionRoleLabel)
+        
+        print(launchesUsingSupportVessel[0].liftOffTime)
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        let firstDate = (launchesUsingSupportVessel.first?.liftOffTime)!
+        let lastDate = (launchesUsingSupportVessel.last?.liftOffTime)!
+        
+        if(firstDate == lastDate) {
+            missionInvolementTimelineLabel.text = currentVessel.supportVesselName + " was involved in a singular SpaceX mission, meaning it was part of the fleet for about 10 days"
+        } else {
+            var totalSeconds = Int((dateFormatter.date(from: lastDate)! - dateFormatter.date(from: firstDate)!))
+            var timeSegments = [String]()
+            missionInvolementTimelineLabel.text = "\(currentVessel.supportVesselName) has been used in the SpaceX fleet for "
+            if(totalSeconds > 31536000) {
+                timeSegments.append("\(totalSeconds / 31536000) years")
+            }
+            totalSeconds = totalSeconds % 31536000
+            if(totalSeconds != 0) {
+                timeSegments.append("\(totalSeconds / 86400) days")
+            }
+            totalSeconds = totalSeconds % 86400
+            if(totalSeconds != 0) {
+                timeSegments.append("\(totalSeconds / 3600) hours")
+            }
+            totalSeconds = totalSeconds % 3600
+            if(totalSeconds != 0) {
+                timeSegments.append("\(totalSeconds / 60) minutes")
+            }
+            totalSeconds = totalSeconds % 60
+            if(totalSeconds != 0) {
+                timeSegments.append("\(totalSeconds) seconds")
+            }
+            for element in timeSegments {
+                if(element == timeSegments.last) {
+                    missionInvolementTimelineLabel.text! += "and \(element) "
+                } else {
+                    missionInvolementTimelineLabel.text! += "\(element), "
+                }
+            }
+            missionInvolementTimelineLabel.text! += "between its first and last missions"
+        }
+        missionInvolementTimelineLabel.numberOfLines = 0
+        detailViewMilestonesSectionBackgroundView.addSubview(missionInvolementTimelineLabel)
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+        
         scrollView.frame = view.bounds
         
         headerPhotoImageView.frame = CGRect(x: 10, y: 0, width: scrollView.bounds.width - 20, height: 200) //Need to scale based on screen size
@@ -345,8 +437,17 @@ class SupportVesselDetailViewController: UIViewController {
         detailViewMilestonesSectionBackgroundView.frame = CGRect(x: 10, y: detailViewStatisticsSectionBackgroundView.frame.maxY + 10, width: scrollView.bounds.width - 20, height: 300)
 
         detailViewMilestonesSectionLabel.frame = CGRect(x: 10, y: 5, width: detailViewMilestonesSectionBackgroundView.bounds.width - 20, height: detailViewMilestonesSectionLabel.frame.height)
+        
+        missionsDeployedLabel.frame.size = updateFrameUsingBackgroundView(for: missionsDeployedLabel, using: detailViewMilestonesSectionBackgroundView)
+        missionsDeployedLabel.frame.origin = CGPoint(x: 10, y: detailViewMilestonesSectionLabel.frame.maxY + 5)
+        
+        missionRoleLabel.frame.size = updateFrameUsingBackgroundView(for: missionRoleLabel, using: detailViewMilestonesSectionBackgroundView)
+        missionRoleLabel.frame.origin = CGPoint(x: 10, y: missionsDeployedLabel.frame.maxY + 5)
+        
+        missionInvolementTimelineLabel.frame.size = updateFrameUsingBackgroundView(for: missionInvolementTimelineLabel, using: detailViewMilestonesSectionBackgroundView)
+        missionInvolementTimelineLabel.frame.origin = CGPoint(x: 10, y: missionRoleLabel.frame.maxY + 5)
 
-        detailViewMilestonesSectionBackgroundView.frame = CGRect(x: 10, y: detailViewStatisticsSectionBackgroundView.frame.maxY + 10, width: scrollView.bounds.width - 20, height: detailViewMilestonesSectionLabel.frame.maxY + 10)
+        detailViewMilestonesSectionBackgroundView.frame = CGRect(x: 10, y: detailViewStatisticsSectionBackgroundView.frame.maxY + 10, width: scrollView.bounds.width - 20, height: missionInvolementTimelineLabel.frame.maxY + 10)
         
         scrollView.contentSize = CGSize(width: view.bounds.width, height: detailViewMilestonesSectionBackgroundView.frame.maxY + 10)
     }
@@ -359,6 +460,16 @@ class SupportVesselDetailViewController: UIViewController {
     func updateFrameUsingAdjacentLabel(for label: UILabel, using titleLabel: UILabel, in background: UIView) -> CGSize {
         let maxSize = CGSize(width: background.bounds.width - titleLabel.frame.width - 20, height: 1000)
         return label.sizeThatFits(maxSize)
+    }
+    
+    func getProperWording(for number: Int) -> String {
+        if(number == 1) {
+            return "once"
+        } else if(number == 2) {
+            return "twice"
+        } else {
+            return "\(number) times"
+        }
     }
     
     @objc func pushDetailViewAboutViewController() {
