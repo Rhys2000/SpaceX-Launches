@@ -41,7 +41,6 @@ class SupportVesselViewController: UIViewController, UITableViewDelegate, UITabl
         supportVesselTableView.delegate = self
         supportVesselTableView.dataSource = self
         supportVesselTableView.keyboardDismissMode = .onDrag
-        
         supportVesselTableView.separatorStyle = .none
     }
     
@@ -76,6 +75,7 @@ class SupportVesselViewController: UIViewController, UITableViewDelegate, UITabl
             viewController?.currentVessel = supportVesselData[indexPath.row]
         }
         self.navigationController?.pushViewController(viewController!, animated: true)
+        supportVesselTableView.deselectRow(at: indexPath, animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

@@ -21,6 +21,8 @@ class SupportVesselTableViewCell: UITableViewCell {
     private let supportVesselOperationStatusLabel = UILabel()
     private let vesselFlagLabel = UILabel()
     private let supportVesselCountryOfRegistration = UILabel()
+    private let homePortLabel = UILabel()
+    private let homePortLabelData = UILabel()
     
     public func createSupportVesselPreview(with currentVessel: SupportVessel) {
         
@@ -37,24 +39,27 @@ class SupportVesselTableViewCell: UITableViewCell {
         supportVesselBackgroundView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
         
         //Photographer Credit settings
-        photographerTagLabel.text = " PC: " + currentVessel.photographerCredit + " "
-        photographerTagLabel.backgroundColor = .brown
-        photographerTagLabel.font = .systemFont(ofSize: 10)
+        photographerTagLabel.text = " Photo Credit: " + currentVessel.photographerCredit + " "
+        photographerTagLabel.font = .systemFont(ofSize: 8)
         photographerTagLabel.sizeToFit()
-        photographerTagLabel.layoutIfNeeded()
+        photographerTagLabel.layer.opacity = 0.7
         photographerTagLabel.layer.cornerRadius = 3.0
         photographerTagLabel.layer.masksToBounds = true
         
         //SupportVesselName label settings
-        supportVesselNameLabel.text = currentVessel.supportVesselName
+        supportVesselNameLabel.text = " " + currentVessel.supportVesselName + " "
+        supportVesselNameLabel.font = .systemFont(ofSize: 22)
+        supportVesselNameLabel.textColor = .black
+        supportVesselNameLabel.backgroundColor = .white
         supportVesselNameLabel.sizeToFit()
-        supportVesselNameLabel.layoutIfNeeded()
+        supportVesselNameLabel.layer.opacity = 0.6
+        supportVesselNameLabel.layer.cornerRadius = 10.0
+        supportVesselNameLabel.clipsToBounds = true
         
         //SupportVesselService label settings
         supportVesselServiceLabel.text = "Service Record:"
         supportVesselServiceLabel.font = .boldSystemFont(ofSize: supportVesselServiceLabel.font.pointSize)
         supportVesselServiceLabel.sizeToFit()
-        supportVesselServiceLabel.layoutIfNeeded()
         
         //SupportVesselYearsOfService label Settings
         var tempService: String = " " + String(currentVessel.yearJoinedSupportFleet)
@@ -66,13 +71,11 @@ class SupportVesselTableViewCell: UITableViewCell {
         }
         supportVesselYearsOfServiceLabel.text = tempService
         supportVesselYearsOfServiceLabel.sizeToFit()
-        supportVesselYearsOfServiceLabel.layoutIfNeeded()
         
         //SupportVesselStatus label setting
         supportVesselStatusLabel.text = "Status: "
         supportVesselStatusLabel.font = .boldSystemFont(ofSize: supportVesselStatusLabel.font.pointSize)
         supportVesselStatusLabel.sizeToFit()
-        supportVesselStatusLabel.layoutIfNeeded()
         
         //SupportVesselOperationStatus label settings
         supportVesselOperationStatusLabel.text = " " + currentVessel.isActive + " "
@@ -82,7 +85,6 @@ class SupportVesselTableViewCell: UITableViewCell {
             supportVesselOperationStatusLabel.backgroundColor = .systemRed
         }
         supportVesselOperationStatusLabel.sizeToFit()
-        supportVesselOperationStatusLabel.layoutIfNeeded()
         supportVesselOperationStatusLabel.layer.cornerRadius = 3.0
         supportVesselOperationStatusLabel.layer.masksToBounds = true
         
@@ -97,6 +99,12 @@ class SupportVesselTableViewCell: UITableViewCell {
         supportVesselCountryOfRegistration.sizeToFit()
         supportVesselCountryOfRegistration.layoutIfNeeded()
         
+        homePortLabel.text = "Home Port:"
+        homePortLabel.font = .boldSystemFont(ofSize: homePortLabel.font.pointSize)
+        homePortLabel.sizeToFit()
+        
+        homePortLabelData.text = " " + currentVessel.portOfCalling
+        homePortLabelData.sizeToFit()
     }
     
     override func prepareForReuse() {
@@ -117,27 +125,35 @@ class SupportVesselTableViewCell: UITableViewCell {
         contentView.addSubview(supportVesselNameLabel)
         contentView.addSubview(supportVesselServiceLabel)
         contentView.addSubview(supportVesselYearsOfServiceLabel)
-        contentView.addSubview(supportVesselStatusLabel)
-        contentView.addSubview(supportVesselOperationStatusLabel)
         contentView.addSubview(vesselFlagLabel)
         contentView.addSubview(supportVesselCountryOfRegistration)
+        contentView.addSubview(supportVesselStatusLabel)
+        contentView.addSubview(supportVesselOperationStatusLabel)
+        contentView.addSubview(homePortLabel)
+        contentView.addSubview(homePortLabelData)
     }
 
-    override func layoutSubviews() { //FIX THE SPACING OF THE TEXT LABELS IN THE UIVIEW
+    override func layoutSubviews() {
         super.layoutSubviews()
         supportVesselImageView.frame = CGRect(x: 10, y: 10, width: contentView.bounds.width - 20, height: 190)
+        
         supportVesselBackgroundView.frame = CGRect(x: 10, y: supportVesselImageView.frame.maxY, width: contentView.bounds.width - 20, height: 65)
-        photographerTagLabel.frame = CGRect(x: 15, y: 15, width: photographerTagLabel.frame.width, height: photographerTagLabel.frame.height)
-        supportVesselNameLabel.frame = CGRect(x: 15, y: 205, width: supportVesselNameLabel.frame.width, height: supportVesselNameLabel.frame.height)
         
-        supportVesselServiceLabel.frame = CGRect(x: 15, y: supportVesselNameLabel.frame.maxY + 10, width: supportVesselServiceLabel.frame.width, height: supportVesselServiceLabel.frame.height)
-        supportVesselYearsOfServiceLabel.frame = CGRect(x: supportVesselServiceLabel.frame.maxX, y: supportVesselNameLabel.frame.maxY + 10, width: supportVesselYearsOfServiceLabel.frame.width, height: supportVesselYearsOfServiceLabel.frame.height)
+        photographerTagLabel.frame.origin = CGPoint(x: supportVesselImageView.frame.maxX - photographerTagLabel.frame.width - 3, y: supportVesselImageView.frame.maxY - photographerTagLabel.frame.height - 3)
         
-        supportVesselOperationStatusLabel.frame = CGRect(x: 375 - supportVesselOperationStatusLabel.frame.width, y: 205, width: supportVesselOperationStatusLabel.frame.width, height: supportVesselOperationStatusLabel.frame.height)
-        supportVesselStatusLabel.frame = CGRect(x: supportVesselOperationStatusLabel.frame.origin.x - supportVesselStatusLabel.frame.width, y: 205, width: supportVesselStatusLabel.frame.width, height: supportVesselStatusLabel.frame.height)
+        supportVesselNameLabel.frame.origin = CGPoint(x: 15, y: 15)
         
-        supportVesselCountryOfRegistration.frame = CGRect(x: 375 - supportVesselCountryOfRegistration.frame.width, y: supportVesselNameLabel.frame.maxY + 10, width: supportVesselCountryOfRegistration.frame.width, height: supportVesselCountryOfRegistration.frame.height)
-        vesselFlagLabel.frame = CGRect(x: supportVesselCountryOfRegistration.frame.origin.x - vesselFlagLabel.frame.width, y: supportVesselNameLabel.frame.maxY + 10, width: vesselFlagLabel.frame.width, height: vesselFlagLabel.frame.height)
+        supportVesselServiceLabel.frame.origin = CGPoint(x: 15, y: 205)
+        supportVesselYearsOfServiceLabel.frame.origin = CGPoint(x: supportVesselServiceLabel.frame.maxX, y: 205)
+        
+        vesselFlagLabel.frame.origin = CGPoint(x: contentView.bounds.width - vesselFlagLabel.frame.width - 15 - supportVesselCountryOfRegistration.frame.width, y: 205)
+        supportVesselCountryOfRegistration.frame.origin = CGPoint(x: vesselFlagLabel.frame.maxX, y: 205)
+        
+        homePortLabel.frame.origin = CGPoint(x: 15, y: supportVesselServiceLabel.frame.maxY + 10)
+        homePortLabelData.frame.origin = CGPoint(x: homePortLabel.frame.maxX, y: supportVesselServiceLabel.frame.maxY + 10)
+        
+        supportVesselStatusLabel.frame.origin = CGPoint(x: contentView.bounds.width - 15 - supportVesselStatusLabel.frame.width - supportVesselOperationStatusLabel.frame.width, y: vesselFlagLabel.frame.maxY + 10)
+        supportVesselOperationStatusLabel.frame.origin = CGPoint(x: supportVesselStatusLabel.frame.maxX, y: vesselFlagLabel.frame.maxY + 10)
     }
     
     required init?(coder: NSCoder) {

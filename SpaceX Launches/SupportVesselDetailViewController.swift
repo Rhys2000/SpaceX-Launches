@@ -11,6 +11,10 @@ class CustomTapGestureRecognizer: UITapGestureRecognizer {
     var customURL: String?
 }
 
+class MissionTapGestureRecognizer: UITapGestureRecognizer {
+    var launch: Launch?
+}
+
 class SupportVesselDetailViewController: UIViewController {
     
     static let identifier = "SupportVesselDetailViewController"
@@ -55,6 +59,10 @@ class SupportVesselDetailViewController: UIViewController {
     private let missionsDeployedLabel = UILabel()
     private let missionRoleLabel = UILabel()
     private let missionInvolementTimelineLabel = UILabel()
+    private let detailViewMissionSectionBackgroundView = UIView()
+    private let detailViewMissionSectionLabel = UILabel()
+    private let missionLabel = UILabel()
+    private let missionLabelView = UIView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -284,27 +292,41 @@ class SupportVesselDetailViewController: UIViewController {
         detailViewMilestonesSectionLabel.sizeToFit()
         detailViewMilestonesSectionBackgroundView.addSubview(detailViewMilestonesSectionLabel)
         
-        missionsDeployedLabel.text = currentVessel.supportVesselName + " has been deployed for use on " + String(launchesUsingSupportVessel.count) + " SpaceX missions"
+        let status: String = (currentVessel.isActive == "Active") ? "has been" : "was"
+        missionsDeployedLabel.text = "\(currentVessel.supportVesselName) \(status) deployed for use on " + String(launchesUsingSupportVessel.count) + " SpaceX missions"
         missionsDeployedLabel.numberOfLines = 0
         detailViewMilestonesSectionBackgroundView.addSubview(missionsDeployedLabel)
         
-        var individualVesselRoles = [String](), filteredIndividualVesselRoles = [String](), valuesOfVesselRoles = [Int](), vesselRoleDictionary = [String: Int]()
+        var individualVesselRoles = [String](), filteredIndividualVesselRoles = [String](), valuesOfVesselRoles = [Int](), vesselRoleDictionary = [String: Int](), tempIndividualVesselRoles = [String]()
         for launch in launchesUsingSupportVessel {
             individualVesselRoles.append(launch.missionSupportShipRoles[launch.missionSupportShips.firstIndex(of: currentVessel.supportVesselName)!])
         }
+        
         for role in individualVesselRoles {
-            if(!filteredIndividualVesselRoles.contains(role)) {
+            if(role.contains("|")) {
+                let tempArray = role.split(separator: "|")
+                for split in tempArray {
+                    tempIndividualVesselRoles.append(String(split))
+                    if(!filteredIndividualVesselRoles.contains(String(split))) {
+                        filteredIndividualVesselRoles.append(String(split))
+                        valuesOfVesselRoles.append(0)
+                    }
+                }
+            }
+            else if(!filteredIndividualVesselRoles.contains(role)) {
                 filteredIndividualVesselRoles.append(role)
+                tempIndividualVesselRoles.append(role)
                 valuesOfVesselRoles.append(0)
             }
         }
+        individualVesselRoles = tempIndividualVesselRoles
         vesselRoleDictionary = Dictionary(uniqueKeysWithValues: zip(filteredIndividualVesselRoles, valuesOfVesselRoles))
         for role in individualVesselRoles {
             vesselRoleDictionary[role]! += 1
         }
         let tempKeys = [String](vesselRoleDictionary.keys)
         let tempValues = [Int](vesselRoleDictionary.values)
-        missionRoleLabel.text = "\(currentVessel.supportVesselName) has been deployed in the role of "
+        missionRoleLabel.text = "\(currentVessel.supportVesselName) \(status) deployed in the role of "
         if(vesselRoleDictionary.count == 1) {
             missionRoleLabel.text! += "\(tempKeys[0].lowercased()) \(getProperWording(for: tempValues[0]))"
         } else if(vesselRoleDictionary.count == 2) {
@@ -312,7 +334,7 @@ class SupportVesselDetailViewController: UIViewController {
         } else {
            for (key, value) in vesselRoleDictionary {
                if(key == tempKeys.last) {
-                   missionRoleLabel.text! += " and a \(key.lowercased()) \(getProperWording(for: value))"
+                   missionRoleLabel.text! += "and \(key.lowercased()) \(getProperWording(for: value))"
                 } else {
                     missionRoleLabel.text! += "\(key.lowercased()) \(getProperWording(for: value)), "
                 }
@@ -321,37 +343,35 @@ class SupportVesselDetailViewController: UIViewController {
         missionRoleLabel.numberOfLines = 0
         detailViewMilestonesSectionBackgroundView.addSubview(missionRoleLabel)
         
-        print(launchesUsingSupportVessel[0].liftOffTime)
-        
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
         let firstDate = (launchesUsingSupportVessel.first?.liftOffTime)!
         let lastDate = (launchesUsingSupportVessel.last?.liftOffTime)!
         
         if(firstDate == lastDate) {
-            missionInvolementTimelineLabel.text = currentVessel.supportVesselName + " was involved in a singular SpaceX mission, meaning it was part of the fleet for about 10 days"
+            missionInvolementTimelineLabel.text = currentVessel.supportVesselName + " was apart of a singular mission, meaning it was chartered for SpaceX's fleet for approximately 10 days"
         } else {
             var totalSeconds = Int((dateFormatter.date(from: lastDate)! - dateFormatter.date(from: firstDate)!))
             var timeSegments = [String]()
-            missionInvolementTimelineLabel.text = "\(currentVessel.supportVesselName) has been used in the SpaceX fleet for "
+            missionInvolementTimelineLabel.text = "\(currentVessel.supportVesselName) \(status) apart the SpaceX fleet for a total of "
             if(totalSeconds > 31536000) {
-                timeSegments.append("\(totalSeconds / 31536000) years")
+                timeSegments.append((totalSeconds / 31536000) == 1 ? "\(totalSeconds / 31536000) year" : "\(totalSeconds / 31536000) years")
             }
             totalSeconds = totalSeconds % 31536000
             if(totalSeconds != 0) {
-                timeSegments.append("\(totalSeconds / 86400) days")
+                timeSegments.append((totalSeconds / 86400) == 1 ? "\(totalSeconds / 86400) day" : "\(totalSeconds / 86400) days")
             }
             totalSeconds = totalSeconds % 86400
             if(totalSeconds != 0) {
-                timeSegments.append("\(totalSeconds / 3600) hours")
+                timeSegments.append((totalSeconds / 3600) == 1 ? "\(totalSeconds / 3600) hour" : "\(totalSeconds / 3600) hours")
             }
             totalSeconds = totalSeconds % 3600
             if(totalSeconds != 0) {
-                timeSegments.append("\(totalSeconds / 60) minutes")
+                timeSegments.append((totalSeconds / 60) == 1 ? "\(totalSeconds / 60) minute" : "\(totalSeconds / 60) minutes")
             }
             totalSeconds = totalSeconds % 60
             if(totalSeconds != 0) {
-                timeSegments.append("\(totalSeconds) seconds")
+                timeSegments.append(totalSeconds == 1 ? "\(totalSeconds) second" : "\(totalSeconds) seconds")
             }
             for element in timeSegments {
                 if(element == timeSegments.last) {
@@ -360,10 +380,48 @@ class SupportVesselDetailViewController: UIViewController {
                     missionInvolementTimelineLabel.text! += "\(element), "
                 }
             }
-            missionInvolementTimelineLabel.text! += "between its first and last missions"
+            missionInvolementTimelineLabel.text! += "between its first and most recent mission"
         }
         missionInvolementTimelineLabel.numberOfLines = 0
         detailViewMilestonesSectionBackgroundView.addSubview(missionInvolementTimelineLabel)
+        
+        detailViewMissionSectionBackgroundView.backgroundColor = .gray
+        detailViewMissionSectionBackgroundView.layer.cornerRadius = 10.0
+        scrollView.addSubview(detailViewMissionSectionBackgroundView)
+        
+        detailViewMissionSectionLabel.text = "Vessel Missions"
+        detailViewMissionSectionLabel.font = .boldSystemFont(ofSize: 24)
+        detailViewMissionSectionLabel.textAlignment = .center
+        detailViewMissionSectionLabel.sizeToFit()
+        detailViewMissionSectionBackgroundView.addSubview(detailViewMissionSectionLabel)
+        
+        scrollView.frame.size.width = view.bounds.width
+        detailViewMissionSectionBackgroundView.frame.size.width = scrollView.frame.width - 20
+        missionLabelView.frame.size.width = detailViewMissionSectionBackgroundView.frame.width - 20
+        
+        var x: CGFloat = 0
+        var y: CGFloat = 0
+        for launch in launchesUsingSupportVessel {
+            let tempLabel = UILabel(frame: CGRect(x: x, y: y, width: 0, height: 0))
+            tempLabel.text = " " + launch.abbreviatedLaunchName + " "
+            tempLabel.isUserInteractionEnabled = true
+            let temp = MissionTapGestureRecognizer(target: self, action: #selector(pushLaunchDetailViewController(sender:)))
+            temp.launch = launch
+            tempLabel.addGestureRecognizer(temp)
+            tempLabel.sizeToFit()
+            tempLabel.layer.cornerRadius = 10.0
+            tempLabel.layer.borderWidth = 1
+            tempLabel.layer.borderColor = UIColor.white.cgColor
+            if(tempLabel.frame.maxX > missionLabelView.frame.width) {
+                x = 0
+                y = tempLabel.frame.maxY + 5
+                tempLabel.frame.origin = CGPoint(x: x, y: y)
+            }
+            x = tempLabel.frame.maxX + 5
+            missionLabelView.addSubview(tempLabel)
+        }
+        missionLabelView.frame.size.height = CGFloat(y + 20.333333)
+        detailViewMissionSectionBackgroundView.addSubview(missionLabelView)
     }
     
     override func viewDidLayoutSubviews() {
@@ -449,7 +507,15 @@ class SupportVesselDetailViewController: UIViewController {
 
         detailViewMilestonesSectionBackgroundView.frame = CGRect(x: 10, y: detailViewStatisticsSectionBackgroundView.frame.maxY + 10, width: scrollView.bounds.width - 20, height: missionInvolementTimelineLabel.frame.maxY + 10)
         
-        scrollView.contentSize = CGSize(width: view.bounds.width, height: detailViewMilestonesSectionBackgroundView.frame.maxY + 10)
+        detailViewMissionSectionBackgroundView.frame = CGRect(x: 10, y: detailViewMilestonesSectionBackgroundView.frame.maxY + 10, width: scrollView.bounds.width - 20, height: 300)
+        
+        detailViewMissionSectionLabel.frame = CGRect(x: 10, y: 5, width: detailViewMissionSectionBackgroundView.bounds.width - 20, height: detailViewMissionSectionLabel.frame.height)
+        
+        missionLabelView.frame = CGRect(x: 10, y: detailViewMissionSectionLabel.frame.maxY + 5, width: detailViewMissionSectionBackgroundView.frame.width - 20, height: missionLabelView.frame.height)
+        
+        detailViewMissionSectionBackgroundView.frame = CGRect(x: 10, y: detailViewMilestonesSectionBackgroundView.frame.maxY + 10, width: scrollView.bounds.width - 20, height: missionLabelView.frame.maxY + 10)
+        
+        scrollView.contentSize = CGSize(width: view.bounds.width, height: detailViewMissionSectionBackgroundView.frame.maxY + 10)
     }
     
     func updateFrameUsingBackgroundView(for label: UILabel, using view: UIView) -> CGSize {
@@ -484,6 +550,12 @@ class SupportVesselDetailViewController: UIViewController {
         viewController?.homeport = currentVessel.portOfCalling
         viewController?.latitude = currentVessel.portOfCallingLatitude
         viewController?.longitude = currentVessel.portOfCallingLongitude
+        self.navigationController?.pushViewController(viewController!, animated: true)
+    }
+    
+    @objc func pushLaunchDetailViewController(sender: MissionTapGestureRecognizer) {
+        let viewController = storyboard?.instantiateViewController(withIdentifier: "LaunchDetailViewController") as? LaunchDetailViewController
+        viewController?.currentLaunch = sender.launch!
         self.navigationController?.pushViewController(viewController!, animated: true)
     }
     
