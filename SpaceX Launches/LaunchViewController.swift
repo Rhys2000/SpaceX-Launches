@@ -52,7 +52,9 @@ class LaunchViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("tapped")
+        let viewController = storyboard?.instantiateViewController(withIdentifier: LaunchDetailViewController.identifier) as? LaunchDetailViewController
+        viewController?.currentLaunch = launchData[indexPath.row]
+        self.navigationController?.pushViewController(viewController!, animated: true)
     }
     
     func updateSearchResults(for searchController: UISearchController) {
