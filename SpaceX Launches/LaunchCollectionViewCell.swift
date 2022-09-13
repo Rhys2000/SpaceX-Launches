@@ -26,8 +26,8 @@ class LaunchCollectionViewCell: UICollectionViewCell {
         launchPreviewImage.contentMode = .scaleToFill
         launchPreviewImage.layer.masksToBounds = true
         launchPreviewImage.layer.cornerRadius = 10.0
-        launchPreviewImage.layer.borderWidth = 1.0
-        launchPreviewImage.layer.borderColor = (currentLaunch.missionOutcome == .success ? UIColor.green.cgColor : UIColor.red.cgColor) //Change to function for all outcomes
+        launchPreviewImage.layer.borderWidth = 3.0
+        launchPreviewImage.layer.borderColor = (currentLaunch.missionOutcome == .success ? UIColor.systemGreen.cgColor : UIColor.systemRed.cgColor) //Change to function for all outcomes
         contentView.addSubview(launchPreviewImage)
         
         missionNameLabel.text = " " + currentLaunch.abbreviatedLaunchName + " "
@@ -53,7 +53,7 @@ class LaunchCollectionViewCell: UICollectionViewCell {
         dateFormatter.locale = Locale(identifier: "en-US")
         let userTimezoneLaunchTime = dateFormatter.date(from: currentLaunch.liftOffTime)!
         let userTimezoneCurrentTime = Date()
-        refreshCountdownClock(using: userTimezoneLaunchTime)
+        missionDateLabel.text = "Calculating..."
         userTimezoneCurrentTime > userTimezoneLaunchTime ? previousLaunchDate(using: userTimezoneLaunchTime) : upcomingLaunchCountdown(using: userTimezoneLaunchTime)
         missionDateLabel.frame.size = CGSize(width: contentView.frame.width - 10, height: 21)
         missionDateLabel.adjustsFontSizeToFitWidth = true

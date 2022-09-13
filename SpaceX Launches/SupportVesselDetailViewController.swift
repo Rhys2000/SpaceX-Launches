@@ -40,6 +40,8 @@ class SupportVesselDetailViewController: UIViewController {
     private let vesselTypeLabelData = UILabel()
     private let yearsInFleetLabel = UILabel()
     private let yearsInFleetLabelData = UILabel()
+    private let statusLabel = UILabel()
+    private let statusLabelData = UILabel()
     private let previousNamesLabel = UILabel()
     private let previousNamesLabelData = UILabel()
     private let yearBuiltLabel = UILabel()
@@ -91,7 +93,7 @@ class SupportVesselDetailViewController: UIViewController {
         detailViewAboutSectionLabel.text = "About " + currentVessel.supportVesselName
         detailViewAboutSectionLabel.font = .boldSystemFont(ofSize: 24)
         detailViewAboutSectionLabel.textAlignment = .center
-        detailViewAboutSectionLabel.sizeToFit()
+        detailViewAboutSectionLabel.sizeToFit() //Possisbly can get rid of this line
         detailViewAboutSectionLabel.adjustsFontSizeToFitWidth = true
         detailViewAboutSectionBackgroundView.addSubview(detailViewAboutSectionLabel)
         
@@ -185,6 +187,22 @@ class SupportVesselDetailViewController: UIViewController {
         }
         yearsInFleetLabelData.sizeToFit()
         detailViewStatisticsSectionBackgroundView.addSubview(yearsInFleetLabelData)
+        
+        statusLabel.text = "Current Status: "
+        statusLabel.font = .boldSystemFont(ofSize: statusLabel.font.pointSize)
+        statusLabel.sizeToFit()
+        detailViewStatisticsSectionBackgroundView.addSubview(statusLabel)
+        
+        statusLabelData.text = " " + currentVessel.isActive + " "
+        if(currentVessel.isActive == "Active") {
+            statusLabelData.backgroundColor = .systemGreen
+        } else {
+            statusLabelData.backgroundColor = .systemRed
+        }
+        statusLabelData.sizeToFit()
+        statusLabelData.layer.cornerRadius = 3.0
+        statusLabelData.layer.masksToBounds = true
+        detailViewStatisticsSectionBackgroundView.addSubview(statusLabelData)
 
         if(currentVessel.supportVesselFormerNames.count >= 1 && currentVessel.supportVesselFormerNames[0] != "") {
 
@@ -463,9 +481,12 @@ class SupportVesselDetailViewController: UIViewController {
         yearsInFleetLabel.frame.origin = CGPoint(x: 10, y: vesselTypeLabel.frame.maxY + 5)
         yearsInFleetLabelData.frame.origin = CGPoint(x: yearsInFleetLabel.frame.maxX, y: vesselTypeLabel.frame.maxY + 5)
         
+        statusLabel.frame.origin = CGPoint(x: 10, y: yearsInFleetLabel.frame.maxY + 5)
+        statusLabelData.frame.origin = CGPoint(x: statusLabel.frame.maxX, y: yearsInFleetLabel.frame.maxY + 5)
+        
         previousNamesLabelData.frame.size = updateFrameUsingAdjacentLabel(for: previousNamesLabelData, using: previousNamesLabel, in: detailViewStatisticsSectionBackgroundView)
-        previousNamesLabel.frame.origin = CGPoint(x: 10, y: yearsInFleetLabel.frame.maxY + 5)
-        previousNamesLabelData.frame.origin = CGPoint(x: previousNamesLabel.frame.maxX, y: yearsInFleetLabel.frame.maxY + 5)
+        previousNamesLabel.frame.origin = CGPoint(x: 10, y: statusLabel.frame.maxY + 5)
+        previousNamesLabelData.frame.origin = CGPoint(x: previousNamesLabel.frame.maxX, y: statusLabel.frame.maxY + 5)
         
         padding = 5
         if(previousNamesLabelData.frame.height == CGFloat(0)) {

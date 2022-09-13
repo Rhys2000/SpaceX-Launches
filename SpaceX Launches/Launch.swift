@@ -14,6 +14,7 @@ enum Outcome: String, Codable {
     case failure = "Failure"
     case partialSuccess = "Partial Success"
     case unknown = "Unknown"
+    case tbd = "To Be Determined"
 }
 
 enum Rocket: String, Codable {
@@ -132,7 +133,7 @@ enum OrbitalLocation: String, Codable {
 }
 
 struct Customer: Codable {
-    let customerName: String
+    var customerName: String
     let customerAbbreviation: String
     let customerWikipediaPageLink: String
     let customerWebsiteLink: String
@@ -160,6 +161,8 @@ struct Launch: Codable {
     let launchLocation: LaunchLocation
     let launchVehicle: Rocket
     let orbitalDestination: OrbitalLocation //Also could be redone
+    let launchProvider: String
+    let launchProviderLink: String
     let customerArray: [String] //Need to update data in .json file becausee may rideshare missions are missing customers such as starlink and others
     
     let staticFirePerformed: Bool
@@ -190,6 +193,23 @@ struct Launch: Codable {
     
     let missionOutcome: Outcome
     //let webcastLink: String
+    
+    func returnOutcomeColor(outcome: Outcome) -> CGColor {
+        switch(outcome) {
+        case .success:
+            return UIColor.green.cgColor
+        case .noOutcomeToReport:
+            return UIColor.black.cgColor
+        case .failure:
+            return UIColor.red.cgColor
+        case .partialSuccess:
+            return UIColor.systemMint.cgColor
+        case .unknown:
+            return UIColor.blue.cgColor
+        case .tbd:
+            return UIColor.yellow.cgColor
+        }
+    }
 }
 
 public class LaunchLoader {
