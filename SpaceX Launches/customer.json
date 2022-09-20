@@ -13,5 +13,18 @@
         "customerWebsiteLink" : "https://www.nasa.gov",
         "customerLogoColors" : ["blue", "red", "white"],
     },
-    
+    {
+        "customerName" : "Defense Advanced Research Projects Agency",
+        "abbreviatedCustomerName" : "DARPA",
+        "customerWikipediaPageLink" : "https://en.wikipedia.org/wiki/DARPA",
+        "customerWebsiteLink" : "https://www.darpa.mil",
+        "customerLogoColors" : ["blue", "white"],
+    },
+    {
+        "customerName" : "",
+        "abbreviatedCustomerName" : "",
+        "customerWikipediaPageLink" : "https://en.wikipedia.org/wiki/",
+        "customerWebsiteLink" : "https://www.",
+        "customerLogoColors" : [""],
+    },
 ]
