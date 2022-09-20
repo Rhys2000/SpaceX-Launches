@@ -16,33 +16,40 @@ class LaunchDetailViewController: UIViewController {
     static let identifier = "LaunchDetailViewController"
     
     let sidePadding: CGFloat = 10
-    var heightPadding: CGFloat = 5
+    var heightPadding: CGFloat = 8
     let dateFormatter = DateFormatter()
     let calendar = Calendar.current
     var countdownTimer = Timer()
     
-    var currentLaunch = Launch(launchID: 1, launchName: "", alternativeLaunchName: "", abbreviatedLaunchName: "", alternativeAbbreviatedLaunchName: "", liftOffTime: "", launchLocation: .capeCanaveralSpaceForceStation, launchVehicle: .falcon1, orbitalDestination: .leo, launchProvider: "", launchProviderLink: "", customerArray: [""], staticFirePerformed: true, staticFireToLaunchGap: 2, boosterNumbers: ["2"], boosterVariant: .block1, boosterRecoveryAttempted: true, boosterRecoveryMethod: .aborted, boosterRecoveryDistance: [1], boosterRecoveryLocations: [.droneShip], boosterRecoveryOutcome: [.failure], fairingVersion: 1, fairingFlights: [4], fairingRecoveryAttempted: true, fairingPlannedRecoveryMethod: [.aborted], fairingActualRecoveryMethod: [.aborted], fairingRecoveryDistance: 1, fairingRecoveryLocations: [.droneShip], fairingRecoveryOutcome: [.failure], missionSupportShips: [""], missionSupportShipRoles: [""], missionOutcome: .failure)
+    var currentLaunch = Launch(launchID: 1, launchName: "", abbreviatedLaunchName: "", alternativeLaunchName: "", liftOffTime: "", launchLocation: .capeCanaveralSpaceForceStation, launchVehicle: .falcon1, orbitalDestination: .leo, launchProvider: "", launchProviderLink: "", customerArray: [""], staticFirePerformed: true, staticFireToLaunchGap: 2, boosterNumbers: ["2"], boosterVariant: .block1, boosterRecoveryAttempted: true, boosterRecoveryMethod: .aborted, boosterRecoveryDistance: [1], boosterRecoveryLocations: [.droneShip], boosterRecoveryOutcome: [.failure], fairingVersion: 1, fairingFlights: [4], fairingRecoveryAttempted: true, fairingPlannedRecoveryMethod: [.aborted], fairingActualRecoveryMethod: [.aborted], fairingRecoveryDistance: 1, fairingRecoveryLocations: [.droneShip], fairingRecoveryOutcome: [.failure], missionSupportShips: [""], missionSupportShipRoles: [""], missionOutcome: .failure)
     
     private let scrollView = UIScrollView()
     private let headerPhotoImageView = UIImageView()
     private let countdownLabel = UILabel()
     private let detailViewMissionStatisticsBackgroundView = UIView()
     private let detailViewMissionStatisticsLabel = UILabel()
+    private let sectionTitleSeparator = UIView()
     private let liftOffTimeLabel = UILabel()
     private let liftOffTimeLabelDataUserTimezone = UILabel()
     private let liftOffTimeLabelUTC = UILabel()
+    private let liftOffTimeSeparator = UIView()
     private let missionNameLabel = UILabel()
     private let missionNameLabelData = UILabel()
+    private let abbreviatedNameLabel = UILabel()
+    private let abbreviatedNameLabelData = UILabel()
     private let alternativeMissionNameLabel = UILabel()
     private let alternativeMissionNameLabelData = UILabel()
+    private let missionNameSeparator = UIView()
     private let launchProviderLabel = UILabel()
     private let launchProviderLabelData = UILabel()
+    private let launchProviderSeparator = UIView()
     private let launchCustomersLabel = UILabel()
     private let launchCustomerLabelData = UILabel()
+    private let launchVehicleLabel = UILabel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = (currentLaunch.launchName == "Starlink" ? currentLaunch.alternativeLaunchName : currentLaunch.launchName)
+        title = currentLaunch.launchName
         
         view.addSubview(scrollView)
         
@@ -74,21 +81,25 @@ class LaunchDetailViewController: UIViewController {
         detailViewMissionStatisticsBackgroundView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
         scrollView.addSubview(detailViewMissionStatisticsBackgroundView)
         
-        detailViewMissionStatisticsLabel.text = "\(currentLaunch.launchName) Mission"
-        detailViewMissionStatisticsLabel.font = .boldSystemFont(ofSize: 24)
+        detailViewMissionStatisticsLabel.text = "Mission Details"
+        detailViewMissionStatisticsLabel.font = .boldSystemFont(ofSize: 28)
         detailViewMissionStatisticsLabel.textAlignment = .center
-        detailViewMissionStatisticsLabel.adjustsFontSizeToFitWidth = true
+        detailViewMissionStatisticsLabel.sizeToFit()
         detailViewMissionStatisticsBackgroundView.addSubview(detailViewMissionStatisticsLabel)
         
-        liftOffTimeLabel.text = "Lift Off Time: "
-        liftOffTimeLabel.font = .boldSystemFont(ofSize: 15)
+        sectionTitleSeparator.backgroundColor = .white
+        sectionTitleSeparator.layer.opacity = 0.75
+        sectionTitleSeparator.layer.cornerRadius = 2.0
+        detailViewMissionStatisticsBackgroundView.addSubview(sectionTitleSeparator)
+        
+        liftOffTimeLabel.text = "LiftOff: "
+        liftOffTimeLabel.font = .boldSystemFont(ofSize: liftOffTimeLabel.font.pointSize)
         liftOffTimeLabel.sizeToFit()
         detailViewMissionStatisticsBackgroundView.addSubview(liftOffTimeLabel)
         
         let localComponents = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second, .timeZone], from: dateFormatter.date(from: currentLaunch.liftOffTime)!)
         dateFormatter.dateFormat = "MMMM d, yyyy h:mm:ss a (zzz)"
         liftOffTimeLabelDataUserTimezone.text = dateFormatter.string(from: calendar.date(from: localComponents)!)
-        liftOffTimeLabelDataUserTimezone.font = .systemFont(ofSize: 15)
         liftOffTimeLabelDataUserTimezone.adjustsFontSizeToFitWidth = true
         detailViewMissionStatisticsBackgroundView.addSubview(liftOffTimeLabelDataUserTimezone)
         
@@ -97,42 +108,65 @@ class LaunchDetailViewController: UIViewController {
         let universalComponents = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second], from: dateFormatter.date(from: currentLaunch.liftOffTime)!)
         dateFormatter.dateFormat = "MMMM d, yyyy h:mm:ss a"
         liftOffTimeLabelUTC.text = dateFormatter.string(from: calendar.date(from: universalComponents)!) + " (UTC)"
-        liftOffTimeLabelUTC.font = .systemFont(ofSize: 15)
         liftOffTimeLabelUTC.adjustsFontSizeToFitWidth = true
         detailViewMissionStatisticsBackgroundView.addSubview(liftOffTimeLabelUTC)
         
-        missionNameLabel.text = "Mission Name:"
-        missionNameLabel.font = .boldSystemFont(ofSize: 15)
+        liftOffTimeSeparator.backgroundColor = .white
+        liftOffTimeSeparator.layer.opacity = 0.5
+        liftOffTimeSeparator.layer.cornerRadius = 1.0
+        detailViewMissionStatisticsBackgroundView.addSubview(liftOffTimeSeparator)
+        
+        missionNameLabel.text = "Name: "
+        missionNameLabel.font = .boldSystemFont(ofSize: missionNameLabel.font.pointSize)
         missionNameLabel.sizeToFit()
         detailViewMissionStatisticsBackgroundView.addSubview(missionNameLabel)
         
-        missionNameLabelData.text = " \(currentLaunch.launchName) (\(currentLaunch.abbreviatedLaunchName))"
-        missionNameLabelData.font = .systemFont(ofSize: 15)
-        missionNameLabelData.adjustsFontSizeToFitWidth = true
+        if(currentLaunch.launchName == currentLaunch.abbreviatedLaunchName) {
+            missionNameLabelData.text = currentLaunch.launchName
+        } else {
+            missionNameLabelData.text = "\(currentLaunch.launchName) (\(currentLaunch.abbreviatedLaunchName))"
+        }
+        missionNameLabelData.sizeToFit()
+        
+        if(missionNameLabelData.frame.width + missionNameLabel.frame.width > view.bounds.width - (4 * sidePadding)) {
+            abbreviatedNameLabel.text = "Abbr. Name: "
+            abbreviatedNameLabel.font = .boldSystemFont(ofSize: abbreviatedNameLabel.font.pointSize)
+            abbreviatedNameLabel.sizeToFit()
+            detailViewMissionStatisticsBackgroundView.addSubview(abbreviatedNameLabel)
+
+            abbreviatedNameLabelData.text = currentLaunch.abbreviatedLaunchName
+            abbreviatedNameLabelData.sizeToFit()
+            detailViewMissionStatisticsBackgroundView.addSubview(abbreviatedNameLabelData)
+
+            missionNameLabelData.text = "\(currentLaunch.launchName)"
+        }
+        missionNameLabelData.numberOfLines = 0
+        missionNameLabelData.lineBreakMode = .byWordWrapping
         detailViewMissionStatisticsBackgroundView.addSubview(missionNameLabelData)
         
         if(currentLaunch.alternativeLaunchName != "") {
-            alternativeMissionNameLabel.text = "Alternative Name:"
-            alternativeMissionNameLabel.font = .boldSystemFont(ofSize: 15)
+            alternativeMissionNameLabel.text = "Alt. Name:"
+            alternativeMissionNameLabel.font = .boldSystemFont(ofSize: alternativeMissionNameLabel.font.pointSize)
             alternativeMissionNameLabel.sizeToFit()
             detailViewMissionStatisticsBackgroundView.addSubview(alternativeMissionNameLabel)
             
             alternativeMissionNameLabelData.text = " \(currentLaunch.alternativeLaunchName)"
-            if(currentLaunch.alternativeAbbreviatedLaunchName != "") {
-                alternativeMissionNameLabelData.text! += " (\(currentLaunch.alternativeAbbreviatedLaunchName))"
-            }
-            alternativeMissionNameLabelData.font = .systemFont(ofSize: 15)
             alternativeMissionNameLabelData.adjustsFontSizeToFitWidth = true
+            alternativeMissionNameLabelData.sizeToFit()
             detailViewMissionStatisticsBackgroundView.addSubview(alternativeMissionNameLabelData)
         }
         
+        missionNameSeparator.backgroundColor = .white
+        missionNameSeparator.layer.opacity = 0.5
+        missionNameSeparator.layer.cornerRadius = 1.0
+        detailViewMissionStatisticsBackgroundView.addSubview(missionNameSeparator)
+        
         launchProviderLabel.text = "Launch Provider: "
-        launchProviderLabel.font = .boldSystemFont(ofSize: 15)
+        launchProviderLabel.font = .boldSystemFont(ofSize: launchProviderLabel.font.pointSize)
         launchProviderLabel.sizeToFit()
         detailViewMissionStatisticsBackgroundView.addSubview(launchProviderLabel)
-        
+
         launchProviderLabelData.text = " SpaceX "
-        launchProviderLabelData.font = .systemFont(ofSize: 15)
         launchProviderLabelData.isUserInteractionEnabled = true
         let launchProviderLink = CustomTapGestureRecognizer(target: self, action: #selector(linkTap(sender:)))
         launchProviderLink.customURL = currentLaunch.launchProviderLink
@@ -143,11 +177,20 @@ class LaunchDetailViewController: UIViewController {
         launchProviderLabelData.layer.borderColor = UIColor.white.cgColor
         detailViewMissionStatisticsBackgroundView.addSubview(launchProviderLabelData)
         
-        launchCustomersLabel.text = "Launch Customers: "
-        launchCustomersLabel.font = .boldSystemFont(ofSize: 15)
+        launchProviderSeparator.backgroundColor = .white
+        launchProviderSeparator.layer.opacity = 0.5
+        launchProviderSeparator.layer.cornerRadius = 1.0
+        detailViewMissionStatisticsBackgroundView.addSubview(launchProviderSeparator)
+
+        launchCustomersLabel.text = "Customers: "
+        launchCustomersLabel.font = .boldSystemFont(ofSize: launchCustomersLabel.font.pointSize)
         launchCustomersLabel.sizeToFit()
         detailViewMissionStatisticsBackgroundView.addSubview(launchCustomersLabel)
-        
+
+        launchVehicleLabel.text = "Vehicle: "
+        launchVehicleLabel.font = .boldSystemFont(ofSize: launchVehicleLabel.font.pointSize)
+        launchVehicleLabel.sizeToFit()
+        detailViewMissionStatisticsBackgroundView.addSubview(launchVehicleLabel)
     }
     
     override func viewDidLayoutSubviews() {
@@ -161,41 +204,56 @@ class LaunchDetailViewController: UIViewController {
         
         detailViewMissionStatisticsBackgroundView.frame = CGRect(x: sidePadding, y: headerPhotoImageView.frame.maxY, width: scrollView.bounds.width - (sidePadding * 2), height: 300)
         
-        detailViewMissionStatisticsLabel.frame = CGRect(x: sidePadding, y: heightPadding, width: detailViewMissionStatisticsBackgroundView.frame.width - (sidePadding * 2), height: 25)
+        detailViewMissionStatisticsLabel.frame = CGRect(x: sidePadding, y: 5, width: detailViewMissionStatisticsBackgroundView.frame.width - (sidePadding * 2), height: detailViewMissionStatisticsLabel.frame.height)
         
-        liftOffTimeLabel.frame.origin = CGPoint(x: sidePadding, y: detailViewMissionStatisticsLabel.frame.maxY + heightPadding)
+        sectionTitleSeparator.frame = CGRect(x: sidePadding, y: detailViewMissionStatisticsLabel.frame.maxY + 2, width: detailViewMissionStatisticsBackgroundView.frame.width - (sidePadding * 2), height: 4)
         
-        liftOffTimeLabelDataUserTimezone.frame = CGRect(x: liftOffTimeLabel.frame.maxX, y: detailViewMissionStatisticsLabel.frame.maxY + heightPadding, width: detailViewMissionStatisticsBackgroundView.frame.width - liftOffTimeLabel.frame.width - (2 * sidePadding), height: liftOffTimeLabel.frame.height)
+        liftOffTimeLabel.frame.origin = CGPoint(x: sidePadding, y: sectionTitleSeparator.frame.maxY + heightPadding)
         
-        liftOffTimeLabelUTC.frame = CGRect(x: liftOffTimeLabel.frame.maxX, y: liftOffTimeLabelDataUserTimezone.frame.maxY + heightPadding, width: liftOffTimeLabelDataUserTimezone.frame.width, height: liftOffTimeLabel.frame.height)
+        liftOffTimeLabelDataUserTimezone.frame = CGRect(x: liftOffTimeLabel.frame.maxX, y: sectionTitleSeparator.frame.maxY + heightPadding, width: detailViewMissionStatisticsBackgroundView.frame.width - liftOffTimeLabel.frame.width - (2 * sidePadding), height: liftOffTimeLabel.frame.height)
         
-        missionNameLabel.frame.origin = CGPoint(x: sidePadding, y: liftOffTimeLabelUTC.frame.maxY + heightPadding)
+        liftOffTimeLabelUTC.frame = CGRect(x: liftOffTimeLabel.frame.maxX, y: liftOffTimeLabelDataUserTimezone.frame.maxY + 5, width: liftOffTimeLabelDataUserTimezone.frame.width, height: liftOffTimeLabel.frame.height)
         
-        missionNameLabelData.frame = CGRect(x: missionNameLabel.frame.maxX, y: liftOffTimeLabelUTC.frame.maxY + heightPadding, width: detailViewMissionStatisticsBackgroundView.frame.width - missionNameLabel.frame.width - (2 * sidePadding), height: missionNameLabel.frame.height)
+        liftOffTimeSeparator.frame = CGRect(x: sidePadding, y: liftOffTimeLabelUTC.frame.maxY + heightPadding, width: detailViewMissionStatisticsBackgroundView.frame.width - (2 * sidePadding), height: 2)
+        
+        missionNameLabelData.frame.size = updateFrameUsingAdjacentLabel(for: missionNameLabelData, using: missionNameLabel, in: detailViewMissionStatisticsBackgroundView)
+        missionNameLabel.frame.origin = CGPoint(x: sidePadding, y: liftOffTimeSeparator.frame.maxY + heightPadding)
+        missionNameLabelData.frame.origin = CGPoint(x: missionNameLabel.frame.maxX, y: liftOffTimeSeparator.frame.maxY + heightPadding)
+        
+        heightPadding = 5
+        if(abbreviatedNameLabel.frame.height == CGFloat(0)) {
+            heightPadding = 0
+        }
+        abbreviatedNameLabel.frame.origin = CGPoint(x: sidePadding, y: missionNameLabelData.frame.maxY + heightPadding)
+        abbreviatedNameLabelData.frame.origin = CGPoint(x: abbreviatedNameLabel.frame.maxX, y: missionNameLabelData.frame.maxY + heightPadding)
+        heightPadding = 5
         
         if(alternativeMissionNameLabel.frame.height == CGFloat(0)) {
             heightPadding = 0
         }
-        alternativeMissionNameLabel.frame.origin = CGPoint(x: sidePadding, y: missionNameLabel.frame.maxY + heightPadding)
+        alternativeMissionNameLabel.frame.origin = CGPoint(x: sidePadding, y: abbreviatedNameLabel.frame.maxY + heightPadding)
+        alternativeMissionNameLabelData.frame  = CGRect(x: alternativeMissionNameLabel.frame.maxX, y: abbreviatedNameLabel.frame.maxY + heightPadding, width: detailViewMissionStatisticsBackgroundView.frame.width - alternativeMissionNameLabel.frame.width - (2 * sidePadding), height: alternativeMissionNameLabel.frame.height)
+        heightPadding = 8
         
-        alternativeMissionNameLabelData.frame = CGRect(x: alternativeMissionNameLabel.frame.maxX, y: missionNameLabel.frame.maxY + heightPadding, width: detailViewMissionStatisticsBackgroundView.frame.width - alternativeMissionNameLabel.frame.width - (2 * sidePadding), height: alternativeMissionNameLabel.frame.height)
-        heightPadding = 5
+        missionNameSeparator.frame = CGRect(x: sidePadding, y: alternativeMissionNameLabel.frame.maxY + heightPadding, width: detailViewMissionStatisticsBackgroundView.frame.width - (2 * sidePadding), height: 2)
         
-        launchProviderLabel.frame.origin = CGPoint(x: sidePadding, y: alternativeMissionNameLabel.frame.maxY + heightPadding)
+        launchProviderLabel.frame.origin = CGPoint(x: sidePadding, y: missionNameSeparator.frame.maxY + heightPadding)
+        launchProviderLabelData.frame.origin = CGPoint(x: launchProviderLabel.frame.maxX, y: missionNameSeparator.frame.maxY + heightPadding)
         
-        launchProviderLabelData.frame.origin = CGPoint(x: launchProviderLabel.frame.maxX, y: alternativeMissionNameLabel.frame.maxY + heightPadding)
+        launchProviderSeparator.frame = CGRect(x: sidePadding, y: launchProviderLabel.frame.maxY + heightPadding, width: detailViewMissionStatisticsBackgroundView.frame.width - (2 * sidePadding), height: 2)
         
-        launchCustomersLabel.frame.origin = CGPoint(x: sidePadding, y: launchProviderLabel.frame.maxY + heightPadding)
+        launchCustomersLabel.frame.origin = CGPoint(x: sidePadding, y: launchProviderSeparator.frame.maxY + heightPadding)
         
         var x: CGFloat = launchCustomersLabel.frame.maxX
         var y: CGFloat = launchCustomersLabel.frame.origin.y
+        var finalLabelHeight: CGFloat = 0
         for customer in currentLaunch.customerArray {
-            let tempLabel = UILabel(frame: CGRect(x: x, y: y, width: 0, height: 0))
+            let tempLabel = GradientLabel(frame: CGRect(x: x, y: y, width: 0, height: 0))
             tempLabel.text = " \(customer) "
-            tempLabel.font = .systemFont(ofSize: 15)
             tempLabel.isUserInteractionEnabled = true
             let temp = CustomerTapGestureRecognizer(target: self, action: #selector(pushCustomerDetailViewController(sender:)))
             temp.customer?.customerName = customer
+            tempLabel.gradientColors = [UIColor.blue.cgColor, UIColor.red.cgColor, UIColor.white.cgColor]
             tempLabel.addGestureRecognizer(temp)
             tempLabel.sizeToFit()
             tempLabel.layer.cornerRadius = 7.5
@@ -208,7 +266,19 @@ class LaunchDetailViewController: UIViewController {
             }
             x = tempLabel.frame.maxX + 5
             detailViewMissionStatisticsBackgroundView.addSubview(tempLabel)
+            finalLabelHeight = y + tempLabel.frame.height
         }
+        
+        launchVehicleLabel.frame.origin = CGPoint(x: sidePadding, y: finalLabelHeight + heightPadding)
+        
+        detailViewMissionStatisticsBackgroundView.frame.size.height = CGFloat(launchVehicleLabel.frame.maxY + 10)
+        
+        scrollView.contentSize = CGSize(width: view.bounds.width, height: detailViewMissionStatisticsBackgroundView.frame.maxY + 10)
+    }
+    
+    func updateFrameUsingAdjacentLabel(for label: UILabel, using titleLabel: UILabel, in background: UIView) -> CGSize {
+        let maxSize = CGSize(width: background.bounds.width - titleLabel.frame.width - 20, height: 1000)
+        return label.sizeThatFits(maxSize)
     }
     
     func refreshCountdownClock(using liftOffTime: Date) {

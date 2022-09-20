@@ -30,7 +30,11 @@ class LaunchCollectionViewCell: UICollectionViewCell {
         launchPreviewImage.layer.borderColor = (currentLaunch.missionOutcome == .success ? UIColor.systemGreen.cgColor : UIColor.systemRed.cgColor) //Change to function for all outcomes
         contentView.addSubview(launchPreviewImage)
         
-        missionNameLabel.text = " " + currentLaunch.abbreviatedLaunchName + " "
+        if(currentLaunch.abbreviatedLaunchName == "Starlink") {
+            missionNameLabel.text = " \(currentLaunch.alternativeLaunchName) "
+        } else {
+            missionNameLabel.text = " " + currentLaunch.abbreviatedLaunchName + " "
+        }
         missionNameLabel.backgroundColor = .white
         missionNameLabel.font = .systemFont(ofSize: 22)
         missionNameLabel.textColor = .black
@@ -75,7 +79,7 @@ class LaunchCollectionViewCell: UICollectionViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         launchPreviewImage.frame = CGRect(x: 0, y: 0, width: 175, height: 300)
-        missionNameLabel.frame.origin = CGPoint(x: contentView.frame.minX + 5, y: contentView.frame.minY + 5)
+        missionNameLabel.frame.origin = CGPoint(x: (contentView.frame.width - missionNameLabel.frame.width) / 2, y: contentView.frame.minY + 5)
         missionDateLabel.frame.origin = CGPoint(x: contentView.frame.minX + 5, y: contentView.frame.maxY - missionDateLabel.frame.height - 5)
     }
     

@@ -132,13 +132,6 @@ enum OrbitalLocation: String, Codable {
     }
 }
 
-struct Customer: Codable {
-    var customerName: String
-    let customerAbbreviation: String
-    let customerWikipediaPageLink: String
-    let customerWebsiteLink: String
-}
-
 struct LaunchSiteOrLandingZone: Codable {
     let launchSiteShortName: String
     let launchsiteFullName: String
@@ -154,9 +147,8 @@ struct LaunchSiteOrLandingZone: Codable {
 struct Launch: Codable {
     let launchID: Int
     let launchName: String
-    let alternativeLaunchName: String
     let abbreviatedLaunchName: String
-    let alternativeAbbreviatedLaunchName: String
+    let alternativeLaunchName: String
     let liftOffTime: String
     let launchLocation: LaunchLocation
     let launchVehicle: Rocket

@@ -31,6 +31,7 @@
 		904DB9A828C99C99000052C9 /* SupportVesselHomePortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904DB9A728C99C99000052C9 /* SupportVesselHomePortViewController.swift */; };
 		9070517B28AC506500D51EB5 /* customer.json in Resources */ = {isa = PBXBuildFile; fileRef = 9070517A28AC506500D51EB5 /* customer.json */; };
 		90B25CA228C1999700559433 /* supportvessel.json in Resources */ = {isa = PBXBuildFile; fileRef = 90B25CA128C1999700559433 /* supportvessel.json */; };
+		90BD636128D29C600047CC0A /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BD636028D29C600047CC0A /* Customer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		904DB9A728C99C99000052C9 /* SupportVesselHomePortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportVesselHomePortViewController.swift; sourceTree = "<group>"; };
 		9070517A28AC506500D51EB5 /* customer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = customer.json; sourceTree = "<group>"; };
 		90B25CA128C1999700559433 /* supportvessel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = supportvessel.json; sourceTree = "<group>"; };
+		90BD636028D29C600047CC0A /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				904DB96228C55574000052C9 /* SupportVesselDetailViewController.swift */,
 				904DB9A528C95170000052C9 /* SupportVesselDetailViewAboutViewController.swift */,
 				904DB9A728C99C99000052C9 /* SupportVesselHomePortViewController.swift */,
+				90BD636028D29C600047CC0A /* Customer.swift */,
 				904079C428A045E400D967F9 /* launch.json */,
 				9070517A28AC506500D51EB5 /* customer.json */,
 				90B25CA128C1999700559433 /* supportvessel.json */,
@@ -313,6 +316,7 @@
 				90407992289C49D100D967F9 /* AppDelegate.swift in Sources */,
 				904DB9A628C95170000052C9 /* SupportVesselDetailViewAboutViewController.swift in Sources */,
 				904DB95F28C552AF000052C9 /* SupportVessel.swift in Sources */,
+				90BD636128D29C600047CC0A /* Customer.swift in Sources */,
 				904079CD28A17BFD00D967F9 /* Launch.swift in Sources */,
 				904079CF28A2039700D967F9 /* LaunchCollectionViewCell.swift in Sources */,
 				904DB96328C55574000052C9 /* SupportVesselDetailViewController.swift in Sources */,
