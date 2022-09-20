@@ -1,8 +1,17 @@
 [
     {
-        "customerName" : "National Aeronautics and Space Administration",
-        "customerAbbreviation" : "",
-        "customerWikipediaPageLink" : "",
-        "customerWebsiteLink" : "",
+        "customerName" : "Space Exploration Technologies Corporation",
+        "abbreviatedCustomerName" : "SpaceX",
+        "customerWikipediaPageLink" : "https://en.wikipedia.org/wiki/SpaceX",
+        "customerWebsiteLink" : "https://www.spacex.com",
+        "customerLogoColors" : ["white", "black"],
     },
+    {
+        "customerName" : "National Aeronautics and Space Administration",
+        "abbreviatedCustomerName" : "NASA",
+        "customerWikipediaPageLink" : "https://en.wikipedia.org/wiki/NASA",
+        "customerWebsiteLink" : "https://www.nasa.gov",
+        "customerLogoColors" : ["blue", "red", "white"],
+    },
+    
 ]

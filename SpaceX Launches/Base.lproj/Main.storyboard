@@ -185,6 +185,21 @@
             </objects>
             <point key="canvasLocation" x="-2017" y="2620"/>
         </scene>
+        <!--Customer Detail View Controller-->
+        <scene sceneID="U3X-NI-eyL">
+            <objects>
+                <viewController storyboardIdentifier="CustomerDetailViewController" id="8QO-n5-OOk" customClass="CustomerDetailViewController" customModule="SpaceX_Launches" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HX5-jX-RIi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="BLP-rM-EVW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B86-aO-jjd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1120" y="2620"/>
+        </scene>
         <!--Support Vessel Home Port View Controller-->
         <scene sceneID="f8s-87-hkp">
             <objects>

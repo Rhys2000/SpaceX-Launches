@@ -21,6 +21,8 @@ class LaunchDetailViewController: UIViewController {
     let calendar = Calendar.current
     var countdownTimer = Timer()
     
+    var customerAssociatedWithLaunch = [Customer]()
+    
     var currentLaunch = Launch(launchID: 1, launchName: "", abbreviatedLaunchName: "", alternativeLaunchName: "", liftOffTime: "", launchLocation: .capeCanaveralSpaceForceStation, launchVehicle: .falcon1, orbitalDestination: .leo, launchProvider: "", launchProviderLink: "", customerArray: [""], staticFirePerformed: true, staticFireToLaunchGap: 2, boosterNumbers: ["2"], boosterVariant: .block1, boosterRecoveryAttempted: true, boosterRecoveryMethod: .aborted, boosterRecoveryDistance: [1], boosterRecoveryLocations: [.droneShip], boosterRecoveryOutcome: [.failure], fairingVersion: 1, fairingFlights: [4], fairingRecoveryAttempted: true, fairingPlannedRecoveryMethod: [.aborted], fairingActualRecoveryMethod: [.aborted], fairingRecoveryDistance: 1, fairingRecoveryLocations: [.droneShip], fairingRecoveryOutcome: [.failure], missionSupportShips: [""], missionSupportShipRoles: [""], missionOutcome: .failure)
     
     private let scrollView = UIScrollView()
@@ -50,6 +52,15 @@ class LaunchDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = currentLaunch.launchName
+        
+        for customer in currentLaunch.customerArray {
+            for element in CustomerLoader().allCutomers {
+                if(customer == element.abbreviatedCustomerName) {
+                    customerAssociatedWithLaunch.append(element)
+                }
+            }
+        }
+        //print(customerAssociatedWithLaunch)
         
         view.addSubview(scrollView)
         
@@ -247,12 +258,12 @@ class LaunchDetailViewController: UIViewController {
         var x: CGFloat = launchCustomersLabel.frame.maxX
         var y: CGFloat = launchCustomersLabel.frame.origin.y
         var finalLabelHeight: CGFloat = 0
-        for customer in currentLaunch.customerArray {
+        for customer in customerAssociatedWithLaunch {
             let tempLabel = GradientLabel(frame: CGRect(x: x, y: y, width: 0, height: 0))
-            tempLabel.text = " \(customer) "
+            tempLabel.text = " \(customer.abbreviatedCustomerName) "
             tempLabel.isUserInteractionEnabled = true
             let temp = CustomerTapGestureRecognizer(target: self, action: #selector(pushCustomerDetailViewController(sender:)))
-            temp.customer?.customerName = customer
+            temp.customer = customer
             tempLabel.gradientColors = [UIColor.blue.cgColor, UIColor.red.cgColor, UIColor.white.cgColor]
             tempLabel.addGestureRecognizer(temp)
             tempLabel.sizeToFit()
@@ -307,7 +318,9 @@ class LaunchDetailViewController: UIViewController {
     }
     
     @objc func pushCustomerDetailViewController(sender: CustomerTapGestureRecognizer) {
-        print("Tapped")
+        let viewController = storyboard?.instantiateViewController(withIdentifier: CustomerDetailViewController.identifier) as? CustomerDetailViewController
+        viewController?.customer = sender.customer!
+        self.navigationController?.pushViewController(viewController!, animated: true)
     }
         
 //    func getSuffixForNumber(currentValue: Int) -> String {
