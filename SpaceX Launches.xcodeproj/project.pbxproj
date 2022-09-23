@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		900924DB28B41E3B009C4692 /* launchsiteandlandingzone.json in Resources */ = {isa = PBXBuildFile; fileRef = 900924DA28B41E3B009C4692 /* launchsiteandlandingzone.json */; };
+		900924DB28B41E3B009C4692 /* launchsitelandingzone.json in Resources */ = {isa = PBXBuildFile; fileRef = 900924DA28B41E3B009C4692 /* launchsitelandingzone.json */; };
 		90103AB928DA32D200E5656C /* CustomerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90103AB828DA32D200E5656C /* CustomerDetailViewController.swift */; };
 		90203AB028C4441900EDECA2 /* SupportVesselTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90203AAF28C4441900EDECA2 /* SupportVesselTableViewCell.swift */; };
 		90407992289C49D100D967F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90407991289C49D100D967F9 /* AppDelegate.swift */; };
@@ -57,7 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		900924DA28B41E3B009C4692 /* launchsiteandlandingzone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = launchsiteandlandingzone.json; sourceTree = "<group>"; };
+		900924DA28B41E3B009C4692 /* launchsitelandingzone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = launchsitelandingzone.json; sourceTree = "<group>"; };
 		90103AB828DA32D200E5656C /* CustomerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDetailViewController.swift; sourceTree = "<group>"; };
 		90203AAF28C4441900EDECA2 /* SupportVesselTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportVesselTableViewCell.swift; sourceTree = "<group>"; };
 		9040798E289C49D100D967F9 /* SpaceX Launches.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpaceX Launches.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,7 +150,7 @@
 				904079CE28A2039700D967F9 /* LaunchCollectionViewCell.swift */,
 				904079C428A045E400D967F9 /* launch.json */,
 				90F8D4BC28DE1AAB00B59B6B /* LaunchSiteLandingZone.swift */,
-				900924DA28B41E3B009C4692 /* launchsiteandlandingzone.json */,
+				900924DA28B41E3B009C4692 /* launchsitelandingzone.json */,
 				904DB95E28C552AF000052C9 /* SupportVessel.swift */,
 				904DB96028C553D6000052C9 /* SupportVesselViewController.swift */,
 				90203AAF28C4441900EDECA2 /* SupportVesselTableViewCell.swift */,
@@ -300,7 +300,7 @@
 				9040799E289C49D300D967F9 /* Assets.xcassets in Resources */,
 				90B25CA228C1999700559433 /* supportvessel.json in Resources */,
 				90407999289C49D100D967F9 /* Main.storyboard in Resources */,
-				900924DB28B41E3B009C4692 /* launchsiteandlandingzone.json in Resources */,
+				900924DB28B41E3B009C4692 /* launchsitelandingzone.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
