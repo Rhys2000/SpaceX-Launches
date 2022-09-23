@@ -44,6 +44,28 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var counter = 0
+        while(counter < 10) {
+            print(counter)
+            counter += 1
+        }
+        
+        var mostRecentBoosterLaunchDates = [String]()
+        var launchData = LaunchLoader().allLaunches
+        launchData = launchData.reversed()
+        var iterator = 0
+        
+        while(mostRecentBoosterLaunchDates.count < 2) {
+            for element in launchData[iterator].boosterNumbers {
+                if(element.contains("1051")) {
+                    mostRecentBoosterLaunchDates.append(launchData[iterator].liftOffTime)
+                }
+            }
+            iterator += 1
+        }
+        
+        print(mostRecentBoosterLaunchDates)
     }
 }
 

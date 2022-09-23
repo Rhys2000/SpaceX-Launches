@@ -215,6 +215,51 @@
             </objects>
             <point key="canvasLocation" x="-2017" y="3327"/>
         </scene>
+        <!--Rocket Detail View Controller-->
+        <scene sceneID="rFN-Rh-uRC">
+            <objects>
+                <viewController storyboardIdentifier="RocketDetailViewController" id="eSJ-Zz-nYS" customClass="RocketDetailViewController" customModule="SpaceX_Launches" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hS4-MD-rxb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="QPh-96-W3t"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YGe-Ic-0ys" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1120" y="3327"/>
+        </scene>
+        <!--Rocket Variant Detail View Controller-->
+        <scene sceneID="2Aj-F6-eLi">
+            <objects>
+                <viewController storyboardIdentifier="RocketVariantDetailViewController" id="4P8-ja-ujS" customClass="RocketVariantDetailViewController" customModule="SpaceX_Launches" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dCZ-Gj-pW7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="5Nr-B3-5Sc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NtN-RR-2dN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1120" y="4084"/>
+        </scene>
+        <!--Booster Detail View Controller-->
+        <scene sceneID="C1t-mI-e1t">
+            <objects>
+                <viewController storyboardIdentifier="BoosterDetailViewController" id="MUa-nk-MIn" customClass="BoosterDetailViewController" customModule="SpaceX_Launches" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LNv-J3-RjQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dTw-82-g1E"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q5s-g3-m7l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1120" y="4815"/>
+        </scene>
     </scenes>
     <resources>
         <image name="airplane.departure" catalog="system" width="128" height="83"/>

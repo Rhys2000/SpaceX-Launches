@@ -132,18 +132,6 @@ enum OrbitalLocation: String, Codable {
     }
 }
 
-struct LaunchSiteOrLandingZone: Codable {
-    let launchSiteShortName: String
-    let launchsiteFullName: String
-    let launchSiteAbbreviation: String
-    let launchSiteLatitude: Double
-    let launchSiteLongitude: Double
-    let launchPadName: String
-    let launchPadAbbreviation: String
-    let launchPadLatitude: Double
-    let launchPadLongitude: Double
-}
-
 struct Launch: Codable {
     let launchID: Int
     let launchName: String

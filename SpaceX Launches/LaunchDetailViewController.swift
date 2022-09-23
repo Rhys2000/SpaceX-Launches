@@ -6,9 +6,22 @@
 //
 
 import UIKit
+import Foundation
 
 class CustomerTapGestureRecognizer: UITapGestureRecognizer {
     var customer: Customer?
+}
+
+class RocketTapGestureRecognizer: UITapGestureRecognizer {
+    var rocket: Rocket?
+}
+
+class RocketVariantTapGestureRecognizer: UITapGestureRecognizer {
+    var rocketVariant: BoosterVariant?
+}
+
+class BoosterTapGestureRecognizer: UITapGestureRecognizer {
+    var booster: String?
 }
 
 class LaunchDetailViewController: UIViewController {
@@ -46,8 +59,19 @@ class LaunchDetailViewController: UIViewController {
     private let launchProviderLabelData = UILabel()
     private let launchProviderSeparator = UIView()
     private let launchCustomersLabel = UILabel()
-    private let launchCustomerLabelData = UILabel()
+    private let launchCustomersSeparator = UIView()
     private let launchVehicleLabel = UILabel()
+    private let launchVehicleLabelData = UILabel()
+    private let launchVehicleVariantLabelData = UILabel()
+    private let launchVehicleSeparator = UIView()
+    private let boosterNumberLabel = UILabel()
+    private let boosterDateLabelData = UILabel()
+    private let boosterNumberSeparator = UIView()
+    private let launchLocationLabel = UILabel()
+    private let launchLocationLabelData = UILabel()
+    private let launchLocaionSeparator = UIView()
+    
+    private let detailViewMilestonesSectionBackgroundView = UIView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,7 +84,6 @@ class LaunchDetailViewController: UIViewController {
                 }
             }
         }
-        //print(customerAssociatedWithLaunch)
         
         view.addSubview(scrollView)
         
@@ -183,7 +206,7 @@ class LaunchDetailViewController: UIViewController {
         launchProviderLink.customURL = currentLaunch.launchProviderLink
         launchProviderLabelData.addGestureRecognizer(launchProviderLink)
         launchProviderLabelData.sizeToFit()
-        launchProviderLabelData.layer.cornerRadius = 7.5
+        launchProviderLabelData.layer.cornerRadius = 10
         launchProviderLabelData.layer.borderWidth = 1.0
         launchProviderLabelData.layer.borderColor = UIColor.white.cgColor
         detailViewMissionStatisticsBackgroundView.addSubview(launchProviderLabelData)
@@ -197,11 +220,103 @@ class LaunchDetailViewController: UIViewController {
         launchCustomersLabel.font = .boldSystemFont(ofSize: launchCustomersLabel.font.pointSize)
         launchCustomersLabel.sizeToFit()
         detailViewMissionStatisticsBackgroundView.addSubview(launchCustomersLabel)
+        
+        launchCustomersSeparator.backgroundColor = .white
+        launchCustomersSeparator.layer.opacity = 0.5
+        launchCustomersSeparator.layer.cornerRadius = 1.0
+        detailViewMissionStatisticsBackgroundView.addSubview(launchCustomersSeparator)
 
         launchVehicleLabel.text = "Vehicle: "
         launchVehicleLabel.font = .boldSystemFont(ofSize: launchVehicleLabel.font.pointSize)
         launchVehicleLabel.sizeToFit()
         detailViewMissionStatisticsBackgroundView.addSubview(launchVehicleLabel)
+        
+        launchVehicleLabelData.text = " \(currentLaunch.launchVehicle.rawValue) "
+        launchVehicleLabelData.isUserInteractionEnabled = true
+        let rocketLink = RocketTapGestureRecognizer(target: self, action: #selector(pushRocketDetailViewController(sender:)))
+        rocketLink.rocket = currentLaunch.launchVehicle
+        launchVehicleLabelData.addGestureRecognizer(rocketLink)
+        launchVehicleLabelData.layer.cornerRadius = 10
+        launchVehicleLabelData.layer.borderWidth = 1.0
+        launchVehicleLabelData.layer.borderColor = UIColor.white.cgColor
+        launchVehicleLabelData.sizeToFit()
+        detailViewMissionStatisticsBackgroundView.addSubview(launchVehicleLabelData)
+        
+        if(currentLaunch.boosterVariant != .noVariant) {
+            launchVehicleVariantLabelData.text = " \(currentLaunch.boosterVariant.rawValue) "
+            launchVehicleVariantLabelData.isUserInteractionEnabled = true
+            let rocketVariantLink = RocketVariantTapGestureRecognizer(target: self, action: #selector(pushRocketVariantDetailViewController(sender:)))
+            rocketVariantLink.rocketVariant = currentLaunch.boosterVariant
+            launchVehicleVariantLabelData.addGestureRecognizer(rocketVariantLink)
+            launchVehicleVariantLabelData.sizeToFit()
+            detailViewMissionStatisticsBackgroundView.addSubview(launchVehicleVariantLabelData)
+            launchVehicleVariantLabelData.layer.cornerRadius = 10
+            launchVehicleVariantLabelData.layer.borderWidth = 1.0
+            launchVehicleVariantLabelData.layer.borderColor = UIColor.white.cgColor
+            detailViewMilestonesSectionBackgroundView.backgroundColor = .gray
+            detailViewMilestonesSectionBackgroundView.layer.cornerRadius = 10.0
+            scrollView.addSubview(detailViewMilestonesSectionBackgroundView)
+        }
+        
+        launchVehicleSeparator.backgroundColor = .white
+        launchVehicleSeparator.layer.opacity = 0.5
+        launchVehicleSeparator.layer.cornerRadius = 1.0
+        detailViewMissionStatisticsBackgroundView.addSubview(launchVehicleSeparator)
+        
+        boosterNumberLabel.text = (currentLaunch.boosterNumbers.count > 1 ? "Boosters: " : "Booster: ")
+        boosterNumberLabel.font = .boldSystemFont(ofSize: boosterNumberLabel.font.pointSize)
+        boosterNumberLabel.sizeToFit()
+        detailViewMissionStatisticsBackgroundView.addSubview(boosterNumberLabel)
+        
+        boosterDateLabelData.text = ""
+        for booster in currentLaunch.boosterNumbers {
+            let launchCount: String
+            if let period = booster.range(of: ".") {
+                launchCount = String(booster[(period.lowerBound..<(booster.endIndex))])
+                if(launchCount == ".1") {
+                    boosterDateLabelData.text! += "First launch attempt for B\(booster[(booster.startIndex)..<period.lowerBound])"
+                } else {
+                    var mostRecentBoosterLaunchDates = [String]()
+                    var launchData = LaunchLoader().allLaunches
+                    launchData = launchData.reversed()
+                    var iterator = 0
+                    
+                    while(mostRecentBoosterLaunchDates.count < 2) {
+                        for element in launchData[iterator].boosterNumbers {
+                            if(element.contains(booster[(booster.startIndex)..<period.lowerBound])) {
+                                mostRecentBoosterLaunchDates.append(launchData[iterator].liftOffTime)
+                            }
+                        }
+                        iterator += 1
+                    }
+                    dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+                    let numberFormatter = NumberFormatter()
+                    numberFormatter.usesSignificantDigits = true
+                    numberFormatter.maximumSignificantDigits = 4
+                    let timeDifference = (dateFormatter.date(from: mostRecentBoosterLaunchDates[0])! - dateFormatter.date(from: mostRecentBoosterLaunchDates[1])!) / 86400
+                    boosterDateLabelData.text! += "Turnaround of " + numberFormatter.string(from: NSNumber(value: timeDifference))! + " days for B\(booster[(booster.startIndex)..<period.lowerBound])"
+                }
+                if(booster != currentLaunch.boosterNumbers.last) {
+                    boosterDateLabelData.text! += ",\n"
+                }
+            }
+        }
+        boosterDateLabelData.numberOfLines = 0
+        boosterDateLabelData.sizeToFit()
+        detailViewMissionStatisticsBackgroundView.addSubview(boosterDateLabelData)
+        
+        boosterNumberSeparator.backgroundColor = .white
+        boosterNumberSeparator.layer.opacity = 0.5
+        boosterNumberSeparator.layer.cornerRadius = 1.0
+        detailViewMissionStatisticsBackgroundView.addSubview(boosterNumberSeparator)
+        
+        launchLocationLabel.text = "Location: "
+        launchLocationLabel.font = .boldSystemFont(ofSize: launchLocationLabel.font.pointSize)
+        launchLocationLabel.sizeToFit()
+        detailViewMissionStatisticsBackgroundView.addSubview(launchLocationLabel)
+        
+        //for
+        //launchVehicleLabelData.text =
     }
     
     override func viewDidLayoutSubviews() {
@@ -264,10 +379,10 @@ class LaunchDetailViewController: UIViewController {
             tempLabel.isUserInteractionEnabled = true
             let temp = CustomerTapGestureRecognizer(target: self, action: #selector(pushCustomerDetailViewController(sender:)))
             temp.customer = customer
-            tempLabel.gradientColors = [UIColor.blue.cgColor, UIColor.red.cgColor, UIColor.white.cgColor]
+            tempLabel.gradientColors = [UIColor.white.cgColor, UIColor.white.cgColor]
             tempLabel.addGestureRecognizer(temp)
             tempLabel.sizeToFit()
-            tempLabel.layer.cornerRadius = 7.5
+            tempLabel.layer.cornerRadius = 10
             tempLabel.layer.borderWidth = 1
             tempLabel.layer.borderColor = UIColor.white.cgColor
             if(tempLabel.frame.maxX > detailViewMissionStatisticsBackgroundView.frame.width - (2 * sidePadding)) {
@@ -280,11 +395,50 @@ class LaunchDetailViewController: UIViewController {
             finalLabelHeight = y + tempLabel.frame.height
         }
         
-        launchVehicleLabel.frame.origin = CGPoint(x: sidePadding, y: finalLabelHeight + heightPadding)
+        launchCustomersSeparator.frame = CGRect(x: sidePadding, y: finalLabelHeight + heightPadding, width: detailViewMissionStatisticsBackgroundView.frame.width - (2 * sidePadding), height: 2)
         
-        detailViewMissionStatisticsBackgroundView.frame.size.height = CGFloat(launchVehicleLabel.frame.maxY + 10)
+        launchVehicleLabel.frame.origin = CGPoint(x: sidePadding, y: launchCustomersSeparator.frame.maxY + heightPadding)
+        launchVehicleLabelData.frame.origin = CGPoint(x: launchVehicleLabel.frame.maxX, y: launchCustomersSeparator.frame.maxY + heightPadding)
+        launchVehicleVariantLabelData.frame.origin = CGPoint(x: launchVehicleLabelData.frame.maxX + 5, y: launchCustomersSeparator.frame.maxY + heightPadding)
         
-        scrollView.contentSize = CGSize(width: view.bounds.width, height: detailViewMissionStatisticsBackgroundView.frame.maxY + 10)
+        launchVehicleSeparator.frame = CGRect(x: sidePadding, y: launchVehicleLabel.frame.maxY + heightPadding, width: detailViewMissionStatisticsBackgroundView.frame.width - (2 * sidePadding), height: 2)
+        
+        boosterNumberLabel.frame.origin = CGPoint(x: sidePadding, y: launchVehicleSeparator.frame.maxY + heightPadding)
+        
+        var boosterX: CGFloat = boosterNumberLabel.frame.maxX
+        for booster in currentLaunch.boosterNumbers {
+            let tempBoosterLabel = UILabel(frame: CGRect(x: boosterX, y: launchVehicleSeparator.frame.maxY + heightPadding, width: 0, height: 0))
+            if(booster == "0") {
+                tempBoosterLabel.text = "Unknown Booster Number"
+                tempBoosterLabel.sizeToFit()
+                detailViewMissionStatisticsBackgroundView.addSubview(tempBoosterLabel)
+            } else {
+                tempBoosterLabel.text = " B\(booster) "
+                tempBoosterLabel.isUserInteractionEnabled = true
+                let boosterLink = BoosterTapGestureRecognizer(target: self, action: #selector(pushBoosterDetailViewController(sender:)))
+                boosterLink.booster = booster
+                tempBoosterLabel.addGestureRecognizer(boosterLink)
+                tempBoosterLabel.sizeToFit()
+                tempBoosterLabel.layer.cornerRadius = 10
+                tempBoosterLabel.layer.borderWidth = 1
+                tempBoosterLabel.layer.borderColor = UIColor.white.cgColor
+                boosterX = tempBoosterLabel.frame.maxX + 5
+                detailViewMissionStatisticsBackgroundView.addSubview(tempBoosterLabel)
+            }
+        }
+        
+        boosterDateLabelData.frame.origin = CGPoint(x: boosterNumberLabel.frame.maxX, y: boosterNumberLabel.frame.maxY + 5)
+        
+        boosterNumberSeparator.frame = CGRect(x: sidePadding, y: boosterDateLabelData.frame.maxY + heightPadding, width: detailViewMissionStatisticsBackgroundView.frame.width - (2 * sidePadding), height: 2)
+        
+        launchLocationLabel.frame.origin = CGPoint(x: sidePadding, y: boosterNumberSeparator.frame.maxY + heightPadding)
+        //launchVehicleLabelData.frame.origin =
+        
+        detailViewMissionStatisticsBackgroundView.frame.size.height = CGFloat(boosterNumberSeparator.frame.maxY + 10)
+        
+        detailViewMilestonesSectionBackgroundView.frame = CGRect(x: sidePadding, y: detailViewMissionStatisticsBackgroundView.frame.maxY + 10, width: scrollView.bounds.width - (sidePadding * 2), height: 300)
+        
+        scrollView.contentSize = CGSize(width: view.bounds.width, height: detailViewMilestonesSectionBackgroundView.frame.maxY + 10)
     }
     
     func updateFrameUsingAdjacentLabel(for label: UILabel, using titleLabel: UILabel, in background: UIView) -> CGSize {
@@ -320,6 +474,24 @@ class LaunchDetailViewController: UIViewController {
     @objc func pushCustomerDetailViewController(sender: CustomerTapGestureRecognizer) {
         let viewController = storyboard?.instantiateViewController(withIdentifier: CustomerDetailViewController.identifier) as? CustomerDetailViewController
         viewController?.customer = sender.customer!
+        self.navigationController?.pushViewController(viewController!, animated: true)
+    }
+    
+    @objc func pushRocketDetailViewController(sender: RocketTapGestureRecognizer) {
+        let viewController = storyboard?.instantiateViewController(withIdentifier: RocketDetailViewController.identifier) as? RocketDetailViewController
+        viewController?.currentRocket = sender.rocket!
+        self.navigationController?.pushViewController(viewController!, animated: true)
+    }
+    
+    @objc func pushRocketVariantDetailViewController(sender: RocketVariantTapGestureRecognizer) {
+        let viewController = storyboard?.instantiateViewController(withIdentifier: RocketVariantDetailViewController.identifier) as? RocketVariantDetailViewController
+        viewController?.currentRocketVariant = sender.rocketVariant!
+        self.navigationController?.pushViewController(viewController!, animated: true)
+    }
+    
+    @objc func pushBoosterDetailViewController(sender: BoosterTapGestureRecognizer) {
+        let viewController  = storyboard?.instantiateViewController(withIdentifier: BoosterDetailViewController.identifier) as? BoosterDetailViewController
+        viewController?.currentBooster = sender.booster!
         self.navigationController?.pushViewController(viewController!, animated: true)
     }
         
