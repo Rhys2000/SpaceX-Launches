@@ -70,6 +70,9 @@ class LaunchDetailViewController: UIViewController {
     private let launchLocationLabel = UILabel()
     private let launchLocationLabelData = UILabel()
     private let launchLocaionSeparator = UIView()
+    private let payloadMassLabel = UILabel()
+    private let payloadMassLabelData = UILabel()
+    private let payloadMassSeparator = UIView()
     
     private let detailViewMilestonesSectionBackgroundView = UIView()
     
@@ -315,8 +318,37 @@ class LaunchDetailViewController: UIViewController {
         launchLocationLabel.sizeToFit()
         detailViewMissionStatisticsBackgroundView.addSubview(launchLocationLabel)
         
-        //for
-        //launchVehicleLabelData.text =
+        var location: LaunchSiteLandingZone?
+        for place in LaunchSiteLandingZoneLoader().allLocations {
+            if(location == nil && place.launchSiteAbbreviation == currentLaunch.launchLocation.rawValue) {
+                location = place
+            }
+        }
+        
+        launchLocationLabelData.text = "\(location!.launchPadName) (\(location!.launchPadAbbreviation)), \(location!.launchSiteFullName) (\(location!.launchSiteAbbreviation)), \(location!.launchSiteTerritory), \(location!.launchSiteCountry)"
+        launchLocationLabelData.font = .systemFont(ofSize: 16)
+        launchLocationLabelData.numberOfLines = 0
+        launchLocationLabelData.lineBreakMode = .byWordWrapping
+        detailViewMissionStatisticsBackgroundView.addSubview(launchLocationLabelData)
+        
+        launchLocaionSeparator.backgroundColor = .white
+        launchLocaionSeparator.layer.opacity = 0.5
+        launchLocaionSeparator.layer.cornerRadius = 1.0
+        detailViewMissionStatisticsBackgroundView.addSubview(launchLocaionSeparator)
+        
+        payloadMassLabel.text = "Payload Mass: "
+        payloadMassLabel.font = .boldSystemFont(ofSize: payloadMassLabel.font.pointSize)
+        payloadMassLabel.sizeToFit()
+        detailViewMissionStatisticsBackgroundView.addSubview(payloadMassLabel)
+        
+        payloadMassLabelData.text = ""
+        payloadMassLabelData.sizeToFit()
+        detailViewMissionStatisticsBackgroundView.addSubview(payloadMassLabelData)
+        
+        payloadMassSeparator.backgroundColor = .white
+        payloadMassSeparator.layer.opacity = 0.5
+        payloadMassSeparator.layer.cornerRadius = 1.0
+        detailViewMissionStatisticsBackgroundView.addSubview(payloadMassSeparator)
     }
     
     override func viewDidLayoutSubviews() {
@@ -431,10 +463,16 @@ class LaunchDetailViewController: UIViewController {
         
         boosterNumberSeparator.frame = CGRect(x: sidePadding, y: boosterDateLabelData.frame.maxY + heightPadding, width: detailViewMissionStatisticsBackgroundView.frame.width - (2 * sidePadding), height: 2)
         
+        launchLocationLabelData.frame.size = updateFrameUsingAdjacentLabel(for: launchLocationLabelData, using: launchLocationLabel, in: detailViewMissionStatisticsBackgroundView)
         launchLocationLabel.frame.origin = CGPoint(x: sidePadding, y: boosterNumberSeparator.frame.maxY + heightPadding)
-        //launchVehicleLabelData.frame.origin =
+        launchLocationLabelData.frame.origin = CGPoint(x: launchLocationLabel.frame.maxX, y: boosterNumberSeparator.frame.maxY + heightPadding)
+        launchLocaionSeparator.frame = CGRect(x: sidePadding, y: launchLocationLabelData.frame.maxY + heightPadding, width: detailViewMissionStatisticsBackgroundView.frame.width - (2 * sidePadding), height: 2)
         
-        detailViewMissionStatisticsBackgroundView.frame.size.height = CGFloat(boosterNumberSeparator.frame.maxY + 10)
+        payloadMassLabel.frame.origin = CGPoint(x: sidePadding, y: launchLocaionSeparator.frame.maxY + heightPadding)
+        payloadMassLabelData.frame.origin = CGPoint(x: payloadMassLabel.frame.maxX, y: launchLocaionSeparator.frame.maxY + heightPadding)
+        payloadMassSeparator.frame = CGRect(x: sidePadding, y: payloadMassLabel.frame.maxY + heightPadding, width: detailViewMissionStatisticsBackgroundView.frame.width - (2 * sidePadding), height: 2)
+        
+        detailViewMissionStatisticsBackgroundView.frame.size.height = CGFloat(payloadMassSeparator.frame.maxY + 10)
         
         detailViewMilestonesSectionBackgroundView.frame = CGRect(x: sidePadding, y: detailViewMissionStatisticsBackgroundView.frame.maxY + 10, width: scrollView.bounds.width - (sidePadding * 2), height: 300)
         
