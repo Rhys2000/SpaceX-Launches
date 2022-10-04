@@ -117,7 +117,7 @@ enum OrbitalLocation: String, Codable {
         case .heo:
             return "High Earth Orbit"
         case .iss:
-            return "Low Earth Orbit (ISS)"
+            return "Low Earth Orbit"
         case .pleo:
             return "Polar Low Earth Orbit"
         case .sel1:
@@ -141,10 +141,12 @@ struct Launch: Codable {
     let launchLocation: LaunchLocation
     let launchVehicle: Rocket
     let orbitalDestination: OrbitalLocation //Also could be redone
+    let finalOrbitalInsertion: [Double]
     let launchProvider: String
     let launchProviderLink: String
-    let customerArray: [String] //Need to update data in .json file becausee may rideshare missions are missing customers such as starlink and others
-    
+    let customerArray: [String]
+    let payloadMass: Double
+    let cosparCode: String //Will apply to a satellite of payload which are both made form the same superclass
     let staticFirePerformed: Bool
     let staticFireToLaunchGap: Int
     

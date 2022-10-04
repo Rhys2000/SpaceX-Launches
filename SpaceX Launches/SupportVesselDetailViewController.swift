@@ -421,7 +421,6 @@ class SupportVesselDetailViewController: UIViewController {
         var y: CGFloat = 0
         for launch in launchesUsingSupportVessel {
             let tempLabel = UILabel(frame: CGRect(x: x, y: y, width: 0, height: 0))
-            //tempLabel.text = " " + launch.abbreviatedLaunchName + " "
             tempLabel.text = (launch.abbreviatedLaunchName == "Starlink" ? " \(launch.alternativeLaunchName) " : " \(launch.abbreviatedLaunchName) ")
             tempLabel.isUserInteractionEnabled = true
             let temp = MissionTapGestureRecognizer(target: self, action: #selector(pushLaunchDetailViewController(sender:)))

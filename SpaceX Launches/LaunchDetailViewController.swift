@@ -36,7 +36,7 @@ class LaunchDetailViewController: UIViewController {
     
     var customerAssociatedWithLaunch = [Customer]()
     
-    var currentLaunch = Launch(launchID: 1, launchName: "", abbreviatedLaunchName: "", alternativeLaunchName: "", liftOffTime: "", launchLocation: .capeCanaveralSpaceForceStation, launchVehicle: .falcon1, orbitalDestination: .leo, launchProvider: "", launchProviderLink: "", customerArray: [""], staticFirePerformed: true, staticFireToLaunchGap: 2, boosterNumbers: ["2"], boosterVariant: .block1, boosterRecoveryAttempted: true, boosterRecoveryMethod: .aborted, boosterRecoveryDistance: [1], boosterRecoveryLocations: [.droneShip], boosterRecoveryOutcome: [.failure], fairingVersion: 1, fairingFlights: [4], fairingRecoveryAttempted: true, fairingPlannedRecoveryMethod: [.aborted], fairingActualRecoveryMethod: [.aborted], fairingRecoveryDistance: 1, fairingRecoveryLocations: [.droneShip], fairingRecoveryOutcome: [.failure], missionSupportShips: [""], missionSupportShipRoles: [""], missionOutcome: .failure)
+    var currentLaunch = Launch(launchID: 1, launchName: "", abbreviatedLaunchName: "", alternativeLaunchName: "", liftOffTime: "", launchLocation: .capeCanaveralSpaceForceStation, launchVehicle: .falcon1, orbitalDestination: .leo, finalOrbitalInsertion: [0], launchProvider: "", launchProviderLink: "", customerArray: [""], staticFirePerformed: true, staticFireToLaunchGap: 2, boosterNumbers: ["2"], boosterVariant: .block1, boosterRecoveryAttempted: true, boosterRecoveryMethod: .aborted, boosterRecoveryDistance: [1], boosterRecoveryLocations: [.droneShip], boosterRecoveryOutcome: [.failure], fairingVersion: 1, fairingFlights: [4], fairingRecoveryAttempted: true, fairingPlannedRecoveryMethod: [.aborted], fairingActualRecoveryMethod: [.aborted], fairingRecoveryDistance: 1, fairingRecoveryLocations: [.droneShip], fairingRecoveryOutcome: [.failure], missionSupportShips: [""], missionSupportShipRoles: [""], missionOutcome: .failure)
     
     private let scrollView = UIScrollView()
     private let headerPhotoImageView = UIImageView()
@@ -73,6 +73,11 @@ class LaunchDetailViewController: UIViewController {
     private let payloadMassLabel = UILabel()
     private let payloadMassLabelData = UILabel()
     private let payloadMassSeparator = UIView()
+    private let orbitalLocationLabel = UILabel()
+    private let orbitalLocationLabelData = UILabel()
+    private let initialInsertionLabel = UILabel()
+    private let initialInsertionLabelData = UILabel()
+    private let orbitalSeparator = UIView()
     
     private let detailViewMilestonesSectionBackgroundView = UIView()
     
@@ -349,6 +354,38 @@ class LaunchDetailViewController: UIViewController {
         payloadMassSeparator.layer.opacity = 0.5
         payloadMassSeparator.layer.cornerRadius = 1.0
         detailViewMissionStatisticsBackgroundView.addSubview(payloadMassSeparator)
+        
+        orbitalLocationLabel.text = "Orbital Location: "
+        orbitalLocationLabel.font = .boldSystemFont(ofSize: orbitalLocationLabel.font.pointSize)
+        orbitalLocationLabel.sizeToFit()
+        detailViewMissionStatisticsBackgroundView.addSubview(orbitalLocationLabel)
+        
+        orbitalLocationLabelData.text = "\(currentLaunch.orbitalDestination.returnOrbitalLocationFullName()) (\(currentLaunch.orbitalDestination.rawValue))"
+        orbitalLocationLabelData.numberOfLines = 0
+        orbitalLocationLabelData.lineBreakMode = .byWordWrapping
+        detailViewMissionStatisticsBackgroundView.addSubview(orbitalLocationLabelData)
+        
+        initialInsertionLabel.text = (currentLaunch.missionOutcome == .success) ? "Final Orbit: " : "Plannd Final Orbit: "
+        initialInsertionLabel.font = .boldSystemFont(ofSize: initialInsertionLabel.font.pointSize)
+        initialInsertionLabel.sizeToFit()
+        detailViewMissionStatisticsBackgroundView.addSubview(initialInsertionLabel)
+        
+        if(currentLaunch.finalOrbitalInsertion.count == 2) {
+            initialInsertionLabelData.text = "Circular \(currentLaunch.finalOrbitalInsertion[0])km orbit at \(currentLaunch.finalOrbitalInsertion[1])°"
+        } else if(currentLaunch.finalOrbitalInsertion.count == 3) {
+            initialInsertionLabelData.text = "\(currentLaunch.finalOrbitalInsertion[0])km x \(currentLaunch.finalOrbitalInsertion[1])km orbit at \(currentLaunch.finalOrbitalInsertion[2])°"
+        } else if(currentLaunch.finalOrbitalInsertion[0] == 0) {
+            initialInsertionLabelData.text = "Suborbital"
+        } else if(currentLaunch.finalOrbitalInsertion[0] == 1) {
+            initialInsertionLabelData.text = "Inter-Solar Orbit"
+        }
+        initialInsertionLabelData.sizeToFit()
+        detailViewMissionStatisticsBackgroundView.addSubview(initialInsertionLabelData)
+        
+        orbitalSeparator.backgroundColor = .white
+        orbitalSeparator.layer.opacity = 0.5
+        orbitalSeparator.layer.cornerRadius = 1.0
+        detailViewMissionStatisticsBackgroundView.addSubview(orbitalSeparator)
     }
     
     override func viewDidLayoutSubviews() {
@@ -472,7 +509,15 @@ class LaunchDetailViewController: UIViewController {
         payloadMassLabelData.frame.origin = CGPoint(x: payloadMassLabel.frame.maxX, y: launchLocaionSeparator.frame.maxY + heightPadding)
         payloadMassSeparator.frame = CGRect(x: sidePadding, y: payloadMassLabel.frame.maxY + heightPadding, width: detailViewMissionStatisticsBackgroundView.frame.width - (2 * sidePadding), height: 2)
         
-        detailViewMissionStatisticsBackgroundView.frame.size.height = CGFloat(payloadMassSeparator.frame.maxY + 10)
+        orbitalLocationLabelData.frame.size = updateFrameUsingAdjacentLabel(for: orbitalLocationLabelData, using: orbitalLocationLabel, in: detailViewMissionStatisticsBackgroundView)
+        orbitalLocationLabel.frame.origin = CGPoint(x: sidePadding, y: payloadMassSeparator.frame.maxY + heightPadding)
+        orbitalLocationLabelData.frame.origin = CGPoint(x: orbitalLocationLabel.frame.maxX, y: payloadMassSeparator.frame.maxY + heightPadding)
+        
+        initialInsertionLabel.frame.origin = CGPoint(x: sidePadding, y: orbitalLocationLabelData.frame.maxY + 5)
+        initialInsertionLabelData.frame.origin = CGPoint(x: initialInsertionLabel.frame.maxX, y: orbitalLocationLabelData.frame.maxY + 5)
+        orbitalSeparator.frame = CGRect(x: sidePadding, y: initialInsertionLabel.frame.maxY + heightPadding, width: detailViewMissionStatisticsBackgroundView.frame.width - (2 * sidePadding), height: 2)
+        
+        detailViewMissionStatisticsBackgroundView.frame.size.height = CGFloat(orbitalSeparator.frame.maxY + 10)
         
         detailViewMilestonesSectionBackgroundView.frame = CGRect(x: sidePadding, y: detailViewMissionStatisticsBackgroundView.frame.maxY + 10, width: scrollView.bounds.width - (sidePadding * 2), height: 300)
         

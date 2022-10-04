@@ -1052,13 +1052,6 @@
         "customerLogoColors" : ["blue", "white", "black"],
     },
     {
-        "customerName" : "Bigelow Aerospace",
-        "abbreviatedCustomerName" : "Bigelow",
-        "customerWikipediaPageLink" : "https://en.wikipedia.org/wiki/Bigelow_Aerospace",
-        "customerWebsiteLink" : "http://bigelowaerospace.com/",
-        "customerLogoColors" : ["orange", "red", "purple", "blue"],
-    },
-    {
         "customerName" : "Kyushu Institute of Technology",
         "abbreviatedCustomerName" : "KIT",
         "customerWikipediaPageLink" : "https://en.wikipedia.org/wiki/Kyushu_Institute_of_Technology",

@@ -31,6 +31,8 @@
 		904DB9A628C95170000052C9 /* SupportVesselDetailViewAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904DB9A528C95170000052C9 /* SupportVesselDetailViewAboutViewController.swift */; };
 		904DB9A828C99C99000052C9 /* SupportVesselHomePortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904DB9A728C99C99000052C9 /* SupportVesselHomePortViewController.swift */; };
 		9070517B28AC506500D51EB5 /* customer.json in Resources */ = {isa = PBXBuildFile; fileRef = 9070517A28AC506500D51EB5 /* customer.json */; };
+		90761C4028E11655002DA335 /* payload.json in Resources */ = {isa = PBXBuildFile; fileRef = 90761C3F28E11655002DA335 /* payload.json */; };
+		90761C4228E11668002DA335 /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90761C4128E11668002DA335 /* Payload.swift */; };
 		90B25CA228C1999700559433 /* supportvessel.json in Resources */ = {isa = PBXBuildFile; fileRef = 90B25CA128C1999700559433 /* supportvessel.json */; };
 		90BD636128D29C600047CC0A /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BD636028D29C600047CC0A /* Customer.swift */; };
 		90DE906F28DC131E002E586C /* RocketDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE906E28DC131E002E586C /* RocketDetailViewController.swift */; };
@@ -85,6 +87,8 @@
 		904DB9A528C95170000052C9 /* SupportVesselDetailViewAboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportVesselDetailViewAboutViewController.swift; sourceTree = "<group>"; };
 		904DB9A728C99C99000052C9 /* SupportVesselHomePortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportVesselHomePortViewController.swift; sourceTree = "<group>"; };
 		9070517A28AC506500D51EB5 /* customer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = customer.json; sourceTree = "<group>"; };
+		90761C3F28E11655002DA335 /* payload.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = payload.json; sourceTree = "<group>"; };
+		90761C4128E11668002DA335 /* Payload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payload.swift; sourceTree = "<group>"; };
 		90B25CA128C1999700559433 /* supportvessel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = supportvessel.json; sourceTree = "<group>"; };
 		90BD636028D29C600047CC0A /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		90DE906E28DC131E002E586C /* RocketDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +168,8 @@
 				90DE906E28DC131E002E586C /* RocketDetailViewController.swift */,
 				90DE907028DC1570002E586C /* RocketVariantDetailViewController.swift */,
 				90DE907228DCD926002E586C /* BoosterDetailViewController.swift */,
+				90761C4128E11668002DA335 /* Payload.swift */,
+				90761C3F28E11655002DA335 /* payload.json */,
 				90407997289C49D100D967F9 /* Main.storyboard */,
 				9040799D289C49D300D967F9 /* Assets.xcassets */,
 				9040799F289C49D300D967F9 /* LaunchScreen.storyboard */,
@@ -300,6 +306,7 @@
 				9040799E289C49D300D967F9 /* Assets.xcassets in Resources */,
 				90B25CA228C1999700559433 /* supportvessel.json in Resources */,
 				90407999289C49D100D967F9 /* Main.storyboard in Resources */,
+				90761C4028E11655002DA335 /* payload.json in Resources */,
 				900924DB28B41E3B009C4692 /* launchsitelandingzone.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +347,7 @@
 				9040799C289C49D100D967F9 /* SpaceX_Launches.xcdatamodeld in Sources */,
 				904079D128A2040600D967F9 /* LaunchViewController.swift in Sources */,
 				90DE906F28DC131E002E586C /* RocketDetailViewController.swift in Sources */,
+				90761C4228E11668002DA335 /* Payload.swift in Sources */,
 				90DE907328DCD926002E586C /* BoosterDetailViewController.swift in Sources */,
 				90203AB028C4441900EDECA2 /* SupportVesselTableViewCell.swift in Sources */,
 				904DB9A828C99C99000052C9 /* SupportVesselHomePortViewController.swift in Sources */,
