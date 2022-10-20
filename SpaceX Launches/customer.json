@@ -1242,7 +1242,7 @@
     },
     {
         "customerName" : "Hiber Global",
-        "abbreviatedCustomerName" : "",
+        "abbreviatedCustomerName" : "Hiber",
         "customerWikipediaPageLink" : "",
         "customerWebsiteLink" : "https://hiber.global",
         "customerLogoColors" : ["white"],
@@ -1381,8 +1381,8 @@
         "customerLogoColors" : ["white"],
     },
     {
-        "customerName" : "University of North Carolina - Chapel Hill",
-        "abbreviatedCustomerName" : "UNC",
+        "customerName" : "University of North Carolina - Wilmington",
+        "abbreviatedCustomerName" : "UNCW",
         "customerWikipediaPageLink" : "https://en.wikipedia.org/wiki/University_of_North_Carolina_at_Chapel_Hill",
         "customerWebsiteLink" : "https://www.unc.edu/",
         "customerLogoColors" : ["lightblue", "white:"],
@@ -1403,7 +1403,7 @@
     },
     {
         "customerName" : "Aurora Insight",
-        "abbreviatedCustomerName" : "",
+        "abbreviatedCustomerName" : "Aurora",
         "customerWikipediaPageLink" : "",
         "customerWebsiteLink" : "https://aurorainsight.com",
         "customerLogoColors" : ["purple", "blue", "lightblue"],
@@ -1445,7 +1445,7 @@
     },
     {
         "customerName" : "John Hopkins University Applied Physics Laboratory",
-        "abbreviatedCustomerName" : "APL",
+        "abbreviatedCustomerName" : "JHUAPL",
         "customerWikipediaPageLink" : "https://en.wikipedia.org/wiki/Applied_Physics_Laboratory",
         "customerWebsiteLink" : "https://www.jhuapl.edu/",
         "customerLogoColors" : ["blue", "white"],
@@ -1871,10 +1871,31 @@
         "customerLogoColors" : ["blue", "white"],
     },
     {
-        "customerName" : "Th Boeing Company",
+        "customerName" : "The Boeing Company",
         "abbreviatedCustomerName" : "Boeing",
         "customerWikipediaPageLink" : "https://en.wikipedia.org/wiki/Boeing",
         "customerWebsiteLink" : "https://www.boeing.com/",
         "customerLogoColors" : ["blue"],
+    },
+    {
+        "customerName" : "Crown Prince Foundation",
+        "abbreviatedCustomerName" : "CPF",
+        "customerWikipediaPageLink" : "",
+        "customerWebsiteLink" : "",
+        "customerLogoColors" : [""],
+    },
+    {
+        "customerName" : "",
+        "abbreviatedCustomerName" : "SEOPS",
+        "customerWikipediaPageLink" : "",
+        "customerWebsiteLink" : "",
+        "customerLogoColors" : [""],
+    },
+    {
+        "customerName" : "Hypergiant",
+        "abbreviatedCustomerName" : "",
+        "customerWikipediaPageLink" : "",
+        "customerWebsiteLink" : "",
+        "customerLogoColors" : [""],
     },
 ]
