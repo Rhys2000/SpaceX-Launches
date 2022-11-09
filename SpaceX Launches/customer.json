@@ -1696,7 +1696,7 @@
         "customerLogoColors" : ["white", "blue", "yellow", "aqua", "darkgray", "lightblue"],
     },
     {
-        "customerName" : "aerospacelab",
+        "customerName" : "Aerospacelab",
         "abbreviatedCustomerName" : "",
         "customerWikipediaPageLink" : "",
         "customerWebsiteLink" : "https://www.aerospacelab.be",
@@ -1787,7 +1787,7 @@
         "customerLogoColors" : ["orange", "red", "white"],
     },
     {
-        "customerName" : "Inter American University of Purto Rico",
+        "customerName" : "Inter American University of Puerto Rico",
         "abbreviatedCustomerName" : "UIPR",
         "customerWikipediaPageLink" : "https://en.wikipedia.org/wiki/Interamerican_University_of_Puerto_Rico",
         "customerWebsiteLink" : "http://www.inter.edu/",
