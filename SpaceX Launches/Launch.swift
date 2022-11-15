@@ -33,7 +33,7 @@ enum BoosterVariant: String, Codable {
 }
 
 enum RecoveryMethod: String, Codable {
-    case noRecoveryMethod = "No Recovery Method"
+    case expendeds = "Expended"
     case parachute = "Parachute"
     case splashdown = "Controlled Splashdown"
     case landing = "Propulsive Landing"
@@ -95,6 +95,7 @@ enum OrbitalLocation: String, Codable {
     case leo = "LEO"
     case sso = "SSO"
     case gto = "GTO"
+    case geo = "GEO"
     case meo = "MEO"
     case heo = "HEO"
     case iss = "ISS"
@@ -128,6 +129,8 @@ enum OrbitalLocation: String, Codable {
             return "Heliocentric Orbit"
         case .tli:
             return "Trans Lunar Injection Orbit"
+        case .geo:
+            return "Geosychronous Equatorial Orbit"
         }
     }
 }
@@ -145,7 +148,6 @@ struct Launch: Codable {
     let launchProvider: String
     let launchProviderLink: String
     let customerArray: [String]
-    let payloadMass: Double
     let cosparCode: String //Will apply to a satellite of payload which are both made form the same superclass
     let staticFirePerformed: Bool
     let staticFireToLaunchGap: Int
